@@ -1,4 +1,4 @@
 .styledLinkContainer {
-  flex-wrap: wrap;
+  display: block;
   padding: 0;
 }
