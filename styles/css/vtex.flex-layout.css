@@ -21,6 +21,15 @@
   color: #fff;
 }
 
+.flexRowContent--menu-link {
+  position: fixed;
+  left: 0%;
+  width: 5%;
+  height: 100%;
+  margin-top: -15px;
+  z-index: 2;
+}
+
 .flexRowContent--main-header {
   background-color: #f0f0f0;
 }
