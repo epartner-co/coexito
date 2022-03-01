@@ -88,3 +88,13 @@
     line-height: 1.3em;
   }
 }
+
+/*------------------------------------*/
+/*         Porcentaje footer3        */
+/*----------------------------------*/
+.container {
+  width: 93.3%;
+  margin-left: 6.6%;
+  background-color: #d3d3d3;
+}
+/*>>>>>>>>>Cierre Flechas de slider*/

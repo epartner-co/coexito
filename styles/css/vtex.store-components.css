@@ -111,3 +111,13 @@
   font-weight: bold;
   font-size: 30px;
 }
+
+/*------------------------------*/
+/*      Tamaño de buscador     */
+/*----------------------------*/
+.autoCompleteOuterContainer {
+  width: 36rem;
+  margin-right: 3rem;
+}
+/*>>>>>Cierre Tamaño de buscador*/
+

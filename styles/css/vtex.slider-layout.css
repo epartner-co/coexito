@@ -25,3 +25,28 @@
   padding-left: .5rem;
   padding-right: .5rem;
 }
+
+/*----------------------------------*/
+/*         Flechas de slider       */
+/*--------------------------------*/
+/*svg derecho*/
+.caretIcon--carousel {
+  margin-top: 35rem;
+  margin-right: 5rem;
+}
+
+/*svg izquierdo*/
+.caretIcon.caretIcon--carousel {
+  margin-left: 73rem;
+}
+/*>>>>>>Cierre Flechas de slider*/
+
+
+/*-------------------------------------*/
+/*         Porcentaje de slider       */
+/*-----------------------------------*/
+.imageElement--carousel {
+  width: 92.4%;
+  margin-left: 7.6%;
+}
+/*>>>>>>>>>Cierre Flechas de slider*/

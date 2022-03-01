@@ -16,19 +16,24 @@
   }
 }
 
+
+/*---------------------------------------------*/
+/*       Aside izquierdo - menú lateral       */
+/*-------------------------------------------*/
 .flexRowContent--menu-link {
-  background-color: #03044e;
-  color: #fff;
+  background-color: #dadada;
+  color: black;
 }
 
 .flexRowContent--menu-link {
   position: fixed;
   left: 0%;
-  width: 5%;
+  width: 6.6%;
   height: 100%;
   margin-top: -15px;
   z-index: 2;
 }
+/*>>>>>>>>>>>>>>>>Cierre Flechas de slider*/
 
 .flexRowContent--main-header {
   background-color: #f0f0f0;
@@ -101,3 +106,23 @@
 .flexRow--addToCartRow {
   padding-bottom: 1rem;
 }
+
+
+/*----------------------------------*/
+/*         Porcentaje deals       */
+/*-------------------------------*/
+.flexRow--deals {
+  width: 95%;
+  margin-left: 5%;
+}
+/*>>>>>>>>>Cierre Flechas de slider*/
+
+
+/*------------------------------------*/
+/*         Porcentaje footer1        */
+/*----------------------------------*/
+.flexRowContent--menu-row {
+  width: 90%;
+  margin-left: 10%;
+}
+/*>>>>>>>>>Cierre Flechas de slider*/

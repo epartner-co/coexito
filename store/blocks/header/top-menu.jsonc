@@ -1,0 +1,191 @@
+{
+  "vtex.menu@2.x:menu#websites": {
+    "children": [
+      "menu-item#shop",
+      "menu-item#about-us"
+    ]
+  },
+  "menu-item#shop": {
+    "props": {
+      "id": "menu-item-shop",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Shop",
+        "text": "Shop"
+      }
+    }
+  },
+  "vtex.menu@2.x:menu#institutional": {
+    "children": [
+      //"image#icon-calendar",
+      "menu-item#vtex-website",
+      "menu-item#vtex-website1",
+      "menu-item#vtex-website2",
+      "menu-item#vtex-website3",
+      //"image#icon-calendar4",
+      "menu-item#vtex-website4",
+      "menu-item#vtex-website5",
+      "menu-item#vtex-website6",
+      "menu-item#vtex-website7",
+      "menu-item#vtex-website8"
+
+    ]
+  },
+  "image#icon-calendar": {
+    "props": {
+      "src": "https://coexitob2b.myvtex.com.br/arquivos/calendar.png",
+      "maxHeight": "15px",
+      "maxWidth": "15px",
+      "blockClass": "storePrint"
+    }
+  },
+  "menu-item#vtex-website": {
+    "props": {
+      "blockClass": "vertical",
+      "id": "menu-item-vtex-website",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "http://vtex.com",
+        "noFollow": false,
+        "tagTitle": "visit vtex.com",
+        "text": "INICIO"
+      }
+    }
+  },
+  "menu-item#vtex-website1": {
+    "props": {
+      "blockClass": "vertical",
+      "id": "menu-item-vtex-website",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "http://vtex.com",
+        "noFollow": false,
+        "tagTitle": "visit vtex.com",
+        "text": "FILTRO M"
+      }
+    }
+  },
+  "menu-item#vtex-website2": {
+    "props": {
+      "blockClass": "vertical",
+      "id": "menu-item-vtex-website",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "http://vtex.com",
+        "noFollow": false,
+        "tagTitle": "visit vtex.com",
+        "text": "DPT 1"
+      }
+    }
+  },
+  "menu-item#vtex-website3": {
+    "props": {
+      "blockClass": "vertical",
+      "id": "menu-item-vtex-website",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "http://vtex.com",
+        "noFollow": false,
+        "tagTitle": "visit vtex.com",
+        "text": "DPT 2"
+      }
+    }
+  },
+  "menu-item#vtex-website4": {
+    "props": {
+      "blockClass": "vertical",
+      "id": "menu-item-vtex-website",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "http://vtex.com",
+        "noFollow": false,
+        "tagTitle": "visit vtex.com",
+        "text": "DPT 3"
+      }
+    }
+  },
+  "menu-item#vtex-website5": {
+    "props": {
+      "blockClass": "vertical",
+      "id": "menu-item-vtex-website",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "http://vtex.com",
+        "noFollow": false,
+        "tagTitle": "visit vtex.com",
+        "text": "DPT 4"
+      }
+    }
+  },
+  "menu-item#vtex-website6": {
+    "props": {
+      "blockClass": "vertical",
+      "id": "menu-item-vtex-website",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "http://vtex.com",
+        "noFollow": false,
+        "tagTitle": "visit vtex.com",
+        "text": "DPT 5"
+      }
+    }
+  },
+  "menu-item#vtex-website7": {
+    "props": {
+      "blockClass": "vertical",
+      "id": "menu-item-vtex-website",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "http://vtex.com",
+        "noFollow": false,
+        "tagTitle": "visit vtex.com",
+        "text": "DPT 6"
+      }
+    }
+  },
+  "menu-item#vtex-website8": {
+    "props": {
+      "blockClass": "vertical",
+      "id": "menu-item-vtex-website",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "http://vtex.com",
+        "noFollow": false,
+        "tagTitle": "visit vtex.com",
+        "text": "MÁS"
+      }
+    }
+  }
+}
