@@ -22,23 +22,29 @@
   },
   "vtex.menu@2.x:menu#institutional": {
     "children": [
-      //"image#icon-calendar",
+      "image#icon-battery",
       "menu-item#vtex-website",
+      "image#icon-battery1",
       "menu-item#vtex-website1",
+      "image#icon-battery2",
       "menu-item#vtex-website2",
+      "image#icon-battery3",
       "menu-item#vtex-website3",
-      //"image#icon-calendar4",
+      "image#icon-battery4",
       "menu-item#vtex-website4",
+      "image#icon-battery5",
       "menu-item#vtex-website5",
+      "image#icon-battery6",
       "menu-item#vtex-website6",
+      "image#icon-battery7",
       "menu-item#vtex-website7",
       "menu-item#vtex-website8"
 
     ]
   },
-  "image#icon-calendar": {
+  "image#icon-battery": {
     "props": {
-      "src": "https://coexitob2b.myvtex.com.br/arquivos/calendar.png",
+      "src": "https://coexitob2b.vteximg.com.br/arquivos/batery12345.png",
       "maxHeight": "15px",
       "maxWidth": "15px",
       "blockClass": "storePrint"
@@ -60,6 +66,14 @@
       }
     }
   },
+  "image#icon-battery1": {
+    "props": {
+      "src": "https://coexitob2b.vteximg.com.br/arquivos/batery12345.png",
+      "maxHeight": "15px",
+      "maxWidth": "15px",
+      "blockClass": "storePrint"
+    }
+  },
   "menu-item#vtex-website1": {
     "props": {
       "blockClass": "vertical",
@@ -74,6 +88,14 @@
         "tagTitle": "visit vtex.com",
         "text": "FILTRO M"
       }
+    }
+  },
+  "image#icon-battery2": {
+    "props": {
+      "src": "https://coexitob2b.vteximg.com.br/arquivos/batery12345.png",
+      "maxHeight": "15px",
+      "maxWidth": "15px",
+      "blockClass": "storePrint"
     }
   },
   "menu-item#vtex-website2": {
@@ -92,6 +114,14 @@
       }
     }
   },
+  "image#icon-battery3": {
+    "props": {
+      "src": "https://coexitob2b.vteximg.com.br/arquivos/batery12345.png",
+      "maxHeight": "15px",
+      "maxWidth": "15px",
+      "blockClass": "storePrint"
+    }
+  },
   "menu-item#vtex-website3": {
     "props": {
       "blockClass": "vertical",
@@ -106,6 +136,14 @@
         "tagTitle": "visit vtex.com",
         "text": "DPT 2"
       }
+    }
+  },
+  "image#icon-battery4": {
+    "props": {
+      "src": "https://coexitob2b.vteximg.com.br/arquivos/batery12345.png",
+      "maxHeight": "15px",
+      "maxWidth": "15px",
+      "blockClass": "storePrint"
     }
   },
   "menu-item#vtex-website4": {
@@ -124,6 +162,14 @@
       }
     }
   },
+  "image#icon-battery5": {
+    "props": {
+      "src": "https://coexitob2b.vteximg.com.br/arquivos/batery12345.png",
+      "maxHeight": "15px",
+      "maxWidth": "15px",
+      "blockClass": "storePrint"
+    }
+  },
   "menu-item#vtex-website5": {
     "props": {
       "blockClass": "vertical",
@@ -140,6 +186,14 @@
       }
     }
   },
+  "image#icon-battery6": {
+    "props": {
+      "src": "https://coexitob2b.vteximg.com.br/arquivos/batery12345.png",
+      "maxHeight": "15px",
+      "maxWidth": "15px",
+      "blockClass": "storePrint"
+    }
+  },
   "menu-item#vtex-website6": {
     "props": {
       "blockClass": "vertical",
@@ -154,6 +208,14 @@
         "tagTitle": "visit vtex.com",
         "text": "DPT 5"
       }
+    }
+  },
+  "image#icon-battery7": {
+    "props": {
+      "src": "https://coexitob2b.vteximg.com.br/arquivos/batery12345.png",
+      "maxHeight": "15px",
+      "maxWidth": "15px",
+      "blockClass": "storePrint"
     }
   },
   "menu-item#vtex-website7": {

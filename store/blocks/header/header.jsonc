@@ -59,8 +59,7 @@
   },
   "login": {
     "props": {
-      "blockClass": "main-header",
-      "text": "Iniciar sesión"
+      "iconLabel":"Iniciar Sesion"
     }
   },
   "sticky-layout#4-desktop": {
