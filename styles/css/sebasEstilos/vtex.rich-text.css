@@ -1,0 +1,240 @@
+.paragraph--cotizarButton{
+    color: #808080;
+    font-weight: 300;
+    font-size: 14px;
+    margin: 0;
+    text-transform: capitalize;
+}
+.container--cotizarButton::before{
+    content: "";
+    background: url(/arquivos/cotizarLogo.png);
+    background-size: 100%;
+    height: 14.8px;
+    width: 14px;
+    display: block;
+    margin-right: 10px;
+}
+.container--cotizarButton {
+    align-items: center;
+    width: 100%;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--accesossecundarios) .wrapper--cotizarButton{
+    padding: 10px 0;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--accesossecundarios) .paragraph--cotizarButton{
+    color: #004D9D;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--accesossecundarios) .container--cotizarButton::before{
+    content: "";
+    display: none;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--accesossecundarios) .container--cotizarButton::after{
+    content: "";
+    display: block;
+    background: url(https://orbeim.vteximg.com.br/arquivos/cotizarFicha.png) no-repeat;
+    background-size: 100%;
+    width: 17px;
+    height: 18px;
+    margin-left: 10px;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--accesossecundarios) .paragraph--cotizarButton{
+    color: #004D9D;
+    font-weight: 300;
+    text-transform: uppercase;
+    display: flex;
+    height: 37px;
+    align-items: center;
+}
+.container--tituloRightProduct {
+    margin: 5px 0 5px 0;
+    border-top: 1px solid #E7E7E7;
+    padding-top: 12px;
+}
+.container--simuladorTiempo {
+    margin: 0 0 15px 0;
+}
+.paragraph--tituloRightProduct{
+    margin: 0%;
+    font-size: 13px;
+    color: black;
+    font-weight: bold;
+}
+.paragraph--simuladorTiempo{
+    margin: 0%;
+    font-size: 12px;
+}
+.paragraph--productMOBILE1{
+    text-transform: capitalize !important;
+}
+.wrapper--botonMenu-post {
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+    border: 1px solid #004D9D;
+}
+.container--botonMenu-post {
+    margin-left: 0;
+    margin-right: 0;
+    margin: 5px 5px;
+}
+.paragraph--botonMenu-post {
+    text-align:center;
+    margin: 10px 0;
+    font-size: 13px;
+}
+.link--botonMenu-post {
+    color: #808080;
+    text-decoration: none;
+}
+.wrapper--botonMenu-post.wrapper--sesion{
+    border: 1px solid #004D9D;
+    background: #004D9D;
+}
+.link--botonMenu-post.link--sesion {
+    color: white;
+    text-decoration: none;
+}
+.link--botonMenu-post {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.link--botonMenu-post::before {
+    content: "";
+    display: block;
+    background-size: 100%!important;
+    width: 21px;
+    height: 22px;
+    margin-right: 5px;
+    background-position: center !important;
+}
+.link--Ubicacion::before{
+    background: url(/arquivos/ubiacion-menunohover.png) no-repeat;
+}
+.link--idioma::before{
+    background: url(/arquivos/educate-menunohover.png) no-repeat;
+}
+.link--coti::before{
+    background: url(/arquivos/cotizacion-menunohover.png) no-repeat;
+}
+.link--sesion::before{
+    background: url(/arquivos/usuario-1-selected.png) no-repeat;
+}
+.paragraph--simuladorTiempo::before{
+    content: "";
+    background: url(/arquivos/akar-icons_clock.png);
+    background-size: 100%;
+    width: 12px;
+    height: 12px;
+    display: block;
+    margin-right: 8px;
+}
+.paragraph--simuladorTiempo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.container--layout-option {
+    display: none;
+}
+.container--layout-option {
+    display: none;
+}
+.wrapper--tituloVitrineCategory .heading--shelfTitle {
+    padding: 0;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+.paragraph--titleCategory{
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+}
+.paragraph--titleCategory{
+    margin: 0;
+}
+.paragraph--contenCate {
+    margin: 10px 0;
+    font-size: 13px;
+}
+.container--titleCategory {
+    margin-left: 0;
+}
+.container--historiatittle {
+    width: 60%;
+    margin-left: 0px !important;
+}
+.strong--titlePreguntasfreqContenido{
+    color: #182841 !important;
+}
+.listItem::marker{
+    display: none;
+}
+.link--titlePreguntasfreqContenido{
+    color: #ED6B10;
+}
+@media (max-width: 600px) {
+    :global(.vtex-flex-layout-0-x-flexColChild--productContainer) .headingLevel2--shelfTitle {
+        padding: 0;
+        text-align: left;
+        font-size: 17px;
+    }
+    .wrapper--tituloVitrineCategory .heading--shelfTitle{
+        width: 56%;
+        font-size: 20px;
+        text-align: left;
+        margin-top: 30px;
+    }
+    .heading--shelfTitle::after {
+        width: 70px;
+    }
+    .container--historiatittle {
+        width: 100%;
+        text-align: center;
+        margin-left: 0px!important;
+    }
+    .headingLevel2.headingLevel2--historiatittle {
+        width: 100%!important;
+        margin: 30px 0 !important;
+        text-align: center!important;
+    }
+    .headingLevel2.headingLevel2--historiatittle::after {
+        content: "";
+        background: #ED6B10;
+        width: 170px;
+        height: 3px;
+        display: block;
+        margin-left: 25%;
+    }
+    .headingLevel1--content-quienes-somos {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        text-align: center;
+
+        /* gray */
+
+        color: #808080;
+    }
+    .container--content-quienes-somos {
+        padding: 0 10px;
+        margin: 0  auto !important;
+    }
+    .container.container--valor {
+        margin: 15px auto !important;
+    }
+    .strong--valor{
+        font-size: 19px !important;
+    }
+  .paragraph.paragraph--tituloC {min-height: 45px;}
+
+}
+.container.container--categoriaC {margin: 0;}
+
+.wrapper.wrapper--MarcaD {margin: 0;}
+
+.container.container--MarcaD {margin: 0;}
+

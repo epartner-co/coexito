@@ -1,0 +1,446 @@
+{
+    "vtex.menu@2.x:submenu#llantas": {
+        "props": {
+          "width": "100%",
+          "blockClass": "Submenu"
+        },
+        "children": [
+          "flex-layout.row#llantas"
+        ]
+    },
+    // contenedor padre del menu
+    "flex-layout.row#llantas": {
+        "props": {
+          "blockClass": "Submenu"
+        },
+        "children": [
+          "flex-layout.col#llantas"
+        ]
+    },
+    "flex-layout.col#llantas": {
+        "props": {
+          "blockClass": "Submenu"
+        },
+        "children": [
+          "vtex.menu@2.x:menu#llantas",
+          "image#deskMenuBanner-llantas"
+        ]
+    },
+    "image#deskMenuBanner-llantas": {
+        "props": {
+          "src": "https://coexitob2b.vteximg.com.br/arquivos/banner-desk1.png",
+          "link":{
+            "url":""
+          },
+          "blockClass": "bannerMenuDesk"
+        }
+    },
+    // menu contenedor hijo
+    "vtex.menu@2.x:menu#llantas": {
+        "props": {
+          "orientation": "vertical",
+          "blockClass": "Submenu"
+        },
+        "children": [
+            "flex-layout.row#menullantasFila1"
+        ]
+    },
+    // items del menu
+    "flex-layout.row#menullantasFila1": {
+        "props": {
+          "blockClass": ["Submenu","lv2"]
+        },
+        "children": [
+            "flex-layout.col#llantas-llantas-marcas",
+            "flex-layout.col#llantas-tipo-llantas",
+            "flex-layout.col#llantas-autonomia-llanta"
+        ]
+    },
+
+    // Sub menu llantas-marcas ----------------------------------
+    "flex-layout.col#llantas-llantas-marcas": {
+        "props": {
+            "width":"50%",
+            "blockClass": "Submenu-item"
+        },
+        "children": [
+            "disclosure-layout#llantas-marcas-submenu-lvl2"
+        ]
+    },
+    // trigger para activar el menu
+    "disclosure-layout#llantas-marcas-submenu-lvl2": {
+        "children": ["disclosure-trigger#menu-llantas-marcas-lvl2","disclosure-content#menu-llantas-marcas-lvl2"],
+        "props": {
+          "blockClass": "subMneusM"
+        }
+    },
+    // sub Menu trigger principal
+    "disclosure-trigger#menu-llantas-marcas-lvl2": {
+        "children": ["menu-item#category-pricipal-llantas-marcas"],
+        "props": {
+          "blockClass": "subMneusMTrigger"
+        }
+    },
+    // trigger dentro del sub Menu
+    "disclosure-trigger#menu-llantas-marcas-lvl2-2": {
+        "children": ["menu-item#category-pricipal-llantas-marcas-2"],
+        "props": {
+          "blockClass": "subMneusMTrigger"
+        }
+    },
+    "disclosure-content#menu-llantas-marcas-lvl2": {
+        "children": ["disclosure-trigger#menu-llantas-marcas-lvl2-2","flex-layout.col#llantas-marcas-container-lvl2"],
+        "props": {
+          "blockClass": "subMneusMContent"
+        }
+    },
+
+    // trigger sub menu llantas-marcas ---------------------------
+    "menu-item#category-pricipal-llantas-marcas": {
+        "props": {
+            "id": "menu-item-category--pricipal-zapatos",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["menu-lv2"],
+            "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "tagTitle": "Auto o Camioneta",
+            "text": "Auto o camioneta"
+            }
+        }
+    },
+    // trigger numero 2 ----------------------------------
+    "menu-item#category-pricipal-llantas-marcas-2": {
+        "props": {
+            "id": "menu-item-category--pricipal-zapatos",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["cierreSubMneu"],
+            "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "tagTitle": "Auto o camioneta",
+            "text": "Auto o camioneta"
+            }
+        }
+    },
+    // sub menu llantas-marcas ----------------
+    "flex-layout.col#llantas-marcas-container-lvl2":{
+        "props":{
+            "blockClass":"subMenu-container"
+        },
+        "children":[
+            "menu-item#category-pricipal-llantas-marcas-llanta-hancock",
+            "menu-item#category-pricipal-llantas-marcas-lauffen",
+            "menu-item#category-pricipal-llantas-chaouyang",
+            "menu-item#category-pricipal-llantas-marca-Llantas Tracmax",
+            "menu-item#category-pricipal-llantas-marca-Llantas Lanvigator"
+        ]
+    },
+    "menu-item#category-pricipal-llantas-marcas-llanta-hancock": {
+        "props": {
+            "id": "menu-item-category--cgampion",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["menu-item-levl2"],
+            "itemProps": {
+            "type": "internal",
+            "href": "/",
+            "noFollow": false,
+            "tagTitle": "Llantas Hankook",
+            "text": "Llantas Hankook"
+            }
+        }
+    },
+    "menu-item#category-pricipal-llantas-marcas-lauffen": {
+        "props": {
+            "id": "menu-item-category--coexito",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["menu-item-levl2"],
+            "itemProps": {
+            "type": "internal",
+            "href": "/",
+            "noFollow": false,
+            "tagTitle": "Llantas Laufenn",
+            "text": "Llantas Laufenn"
+            }
+        }
+    },
+    "menu-item#category-pricipal-llantas-chaouyang": {
+        "props": {
+            "id": "menu-item-category--mac",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["menu-item-levl2"],
+            "itemProps": {
+            "type": "internal",
+            "href": "/",
+            "noFollow": false,
+            "tagTitle": "Llantas Chaoyang",
+            "text": "Llantas Chaoyang"
+            }
+        }
+    },
+    "menu-item#category-pricipal-llantas-marca-Llantas Tracmax": {
+        "props": {
+            "id": "menu-item-category--mac",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["menu-item-levl2"],
+            "itemProps": {
+            "type": "internal",
+            "href": "/",
+            "noFollow": false,
+            "tagTitle": "Llantas Tracmax",
+            "text": "Llantas Tracmax"
+            }
+        }
+    },
+    "menu-item#category-pricipal-llantas-marca-Llantas Lanvigator": {
+        "props": {
+            "id": "menu-item-category--mac",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["menu-item-levl2"],
+            "itemProps": {
+            "type": "internal",
+            "href": "/",
+            "noFollow": false,
+            "tagTitle": "Llantas Lanvigator",
+            "text": "Llantas Lanvigator"
+            }
+        }
+    },
+    // Submenu tipo de llantas ---------------------------
+    "flex-layout.col#llantas-tipo-llantas": {
+        "props": {
+            "width":"50%",
+            "blockClass": "Submenu-item"
+        },
+        "children": [
+            "disclosure-layout#tipo-llantas-submenu-lvl2"
+        ]
+    },
+    // trigger para activar el menu
+    "disclosure-layout#tipo-llantas-submenu-lvl2": {
+        "children": ["disclosure-trigger#menu-tipo-llantas-lvl2","disclosure-content#menu-tipo-llantas-lvl2"],
+        "props": {
+            "blockClass": ["subMneusM"]
+        }
+    },
+    // sub Menu trigger principal
+    "disclosure-trigger#menu-tipo-llantas-lvl2": {
+        "children": ["menu-item#category-pricipal-tipo-llantas"],
+        "props": {
+            "blockClass": "subMneusMTrigger"
+        }
+    },
+    // trigger dentro del sub Menu
+    "disclosure-trigger#menu-tipo-llantas-lvl2-2": {
+        "children": ["menu-item#category-pricipal-tipo-llantas-2"],
+        "props": {
+        "blockClass": "subMneusMTrigger"
+        }
+    },
+    "disclosure-content#menu-tipo-llantas-lvl2": {
+        "children": ["disclosure-trigger#menu-tipo-llantas-lvl2-2","flex-layout.col#tipo-llantas-container-lvl2"],
+        "props": {
+        "blockClass": "subMneusMContent"
+        }
+    },
+    // trigger sub menu tipo de llantas ---------------------------
+    "menu-item#category-pricipal-tipo-llantas": {
+        "props": {
+            "id": "menu-item-category--pricipal-llantas-tipo",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["menu-lv2","menu-lv2-v2"],
+            "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "tagTitle": "Vehículos pesados",
+            "text": "Vehículos pesados"
+            }
+        }
+    },
+    // trigger numero 2 ----------------------------------
+    "menu-item#category-pricipal-tipo-llantas-2": {
+        "props": {
+            "id": "menu-item-category--pricipal-llantas",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["cierreSubMneu"],
+            "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "tagTitle": "Vehículos pesados",
+            "text": "Vehículos pesados"
+            }
+        }
+    },
+    // sub menu tipo-llantas ----------------
+    "flex-layout.col#tipo-llantas-container-lvl2":{
+        "props":{
+            "blockClass":["subMenu-container","menu-columan-2"]
+        },
+        "children":[
+            "menu-item#category-pricipal-tipoLLanta-1",
+            "menu-item#category-pricipal-tipoLLanta-2"
+        ]
+    },
+    "menu-item#category-pricipal-tipoLLanta-1": {
+        "props": {
+            "id": "menu-item-category--cgampion",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["menu-item-levl2"],
+            "itemProps": {
+            "type": "internal",
+            "href": "/Llantas?initialMap=c&initialQuery=llantas&map=category-1,brand,tipo-de-vehiculo&query=/llantas/hankook/pesados&searchState",
+            "noFollow": false,
+            "tagTitle": "Llantas Hankook",
+            "text": "Llantas Hankook"
+            }
+        }
+    },
+    "menu-item#category-pricipal-tipoLLanta-2": {
+        "props": {
+            "id": "menu-item-category--cgampion",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["menu-item-levl2"],
+            "itemProps": {
+            "type": "internal",
+            "href": "/",
+            "noFollow": false,
+            "tagTitle": "Llantas Chaoyang",
+            "text": "Llantas Chaoyang"
+            }
+        }
+    },
+    // sub menu de autonomia-llanta 
+    "flex-layout.col#llantas-autonomia-llanta": {
+        "props": {
+            "width":"50%",
+            "blockClass": "Submenu-item"
+        },
+        "children": [
+            "disclosure-layout#autonomia-llanta-submenu-lvl2"
+        ]
+    },
+    // trigger para activar el menu
+    "disclosure-layout#autonomia-llanta-submenu-lvl2": {
+        "children": ["disclosure-trigger#menu-autonomia-llanta-lvl2","disclosure-content#menu-autonomia-llanta-lvl2"],
+        "props": {
+          "blockClass": "subMneusM"
+        }
+    },
+    // sub Menu trigger principal
+    "disclosure-trigger#menu-autonomia-llanta-lvl2": {
+        "children": ["menu-item#category-pricipal-autonomia-llanta"],
+        "props": {
+          "blockClass": "subMneusMTrigger"
+        }
+    },
+    // trigger dentro del sub Menu
+    "disclosure-trigger#menu-autonomia-llanta-lvl2-2": {
+        "children": ["menu-item#category-pricipal-autonomia-llanta-2"],
+        "props": {
+          "blockClass": "subMneusMTrigger"
+        }
+    },
+    "disclosure-content#menu-autonomia-llanta-lvl2": {
+        "children": ["disclosure-trigger#menu-autonomia-llanta-lvl2-2","flex-layout.col#autonomia-llanta-container-lvl2"],
+        "props": {
+          "blockClass": "subMneusMContent"
+        }
+    },
+    
+    // trigger sub menu autonomia-llanta ---------------------------
+    "menu-item#category-pricipal-autonomia-llanta": {
+        "props": {
+            "id": "menu-item-category--pricipal-autonomia-llanta",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["menu-lv2"],
+            "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "tagTitle": "Moto",
+            "text": "Moto"
+            }
+        }
+    },
+    // trigger numero 2 ----------------------------------
+    "menu-item#category-pricipal-autonomia-llanta-2": {
+        "props": {
+            "id": "menu-item-category--pricipal-autonomia-llanta",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["cierreSubMneu"],
+            "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "tagTitle": "Moto",
+            "text": "Moto"
+            }
+        }
+    },
+    // sub menu autonomia-llanta ----------------
+    "flex-layout.col#autonomia-llanta-container-lvl2":{
+        "props":{
+            "blockClass":"subMenu-container"
+        },
+        "children":[
+            "menu-item#category-pricipal-autonomia-llanta-1",
+            "menu-item#category-pricipal-autonomia-llanta-2-1"
+        ]
+    },
+    "menu-item#category-pricipal-autonomia-llanta-1": {
+        "props": {
+            "id": "menu-item-category--cgampion",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["menu-item-levl2"],
+            "itemProps": {
+            "type": "internal",
+            "href": "/",
+            "noFollow": false,
+            "tagTitle": "Tvs",
+            "text": "Tvs"
+            }
+        }
+    },
+    "menu-item#category-pricipal-autonomia-llanta-2-1": {
+        "props": {
+            "id": "menu-item-category--cgampion",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["menu-item-levl2"],
+            "itemProps": {
+            "type": "internal",
+            "href": "/",
+            "noFollow": false,
+            "tagTitle": "Ralco",
+            "text": "Ralco"
+            }
+        }
+    }
+}

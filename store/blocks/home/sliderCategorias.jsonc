@@ -1,0 +1,311 @@
+{
+  "rich-text#shelf-categorias": {
+    "props": {
+      "text": "## CATEGORÍAS DESTACADAS",
+      "blockClass": ["shelfTitle","tituloSliderCategoria"]
+    }
+  },
+  "flex-layout.row#sliderCategorias": {
+      "props": {
+          "blockClass": "sliderRowCategorias"
+      },
+      "children": ["flex-layout.col#sliderCategorias"]
+  },
+  "flex-layout.col#sliderCategorias": {
+    "props": {
+        "blockClass": "sliderColCategorias"
+    },
+    "children": ["slider-layout#marcas-images","rich-text#verAll"]
+  },
+  "slider-layout#marcas-images": {
+      "props": {
+          "itemsPerPage": {
+          "desktop": 4,
+          "tablet": 3,
+          "phone": 2
+          },
+          "infinite": true,
+          "showNavigationArrows": "desktopOnly",
+          "showPaginationDots": "never",
+          "blockClass": "categorias-carousel",
+          "navigationStep":"1"
+      },
+      "children":["flex-layout.col#categoriaLlantas","flex-layout.col#categoriaBaterias","flex-layout.col#categorialubricantes","flex-layout.col#categoriaautopartes","flex-layout.col#categoria1","flex-layout.col#categoria2","flex-layout.col#categoria3"]
+  },
+  "responsive-layout.mobile#categorias-mobile": {
+    "children": ["slider-layout#marcas-images-bRow2"]
+  },
+  "slider-layout#marcas-images-bRow2": {
+    "props": {
+        "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 2
+        },
+        "infinite": true,
+        "showNavigationArrows": "desktopOnly",
+        "showPaginationDots": "mobileOnly",
+        "blockClass": "categorias-carousel",
+        "navigationStep":"1"
+    },
+    "children":["flex-layout.col#categorialubricantes","flex-layout.col#categoriaautopartes","flex-layout.col#categoria1","flex-layout.col#categoria2","flex-layout.col#categoria3","flex-layout.col#categoriaLlantas","flex-layout.col#categoriaBaterias"]
+  },
+  "rich-text#verAll": {
+      "props": {
+        "text": "[Ver todas las categorías](/Baterías)",
+        "blockClass": "categoriasTittle"
+      }
+  },
+  // imagenes de cateogiras por columna imagen-texto
+  "flex-layout.col#categoriaLlantas":{
+      "props":{
+          "blockClass":["imagenesCategorias"]
+      },
+      "children":[
+          "image#llantas",
+          "rich-text#llantas-tittle",
+          "image#llantas-hover"
+      ]
+  },
+  "image#llantas": {
+      "props": {
+          "blockClass":["img-category-salider-item"],
+          "src": "https://coexitob2b.vteximg.com.br/arquivos/llaantas.png",
+          "link":{
+              "url":"/llantas"
+          }
+      }
+  },
+  "rich-text#llantas-tittle": {
+      "props": {
+        "text": "[LLANTAS](/llantas)",
+        "blockClass": "categoria-titulo"
+      }
+  },
+    // imagen hover icono
+    "image#llantas-hover": {
+      "props": {
+        "blockClass":["img-slider-category-hover"],
+          "src": "https://coexitob2b.vteximg.com.br/arquivos/llantasicon2.png",
+          "link":{
+              "url":"/llantas"
+          }
+      }
+    },
+  // categoria baterias
+  "flex-layout.col#categoriaBaterias":{
+      "props":{
+          "blockClass":["imagenesCategorias"]
+      },
+      "children":[
+          "image#baterias",
+          "rich-text#baterias-tittle",
+          "image#baterias-hover2"
+      ]
+  },
+  "image#baterias": {
+      "props": {
+          "blockClass":["img-category-salider-item"],
+          "src": "https://coexitob2b.vteximg.com.br/arquivos/bateria-categ.png",
+          "link":{
+              "url":"/baterías"
+          }
+      }
+  },
+  "rich-text#baterias-tittle": {
+    "props": {
+      "text": "[BATERÍAS](/Baterías)",
+      "blockClass": "categoria-titulo"
+    }
+  },
+  // imagen hover icono
+  "image#baterias-hover2": {
+    "props": {
+      "blockClass":["img-slider-category-hover"],
+        "src": "https://coexitob2b.vteximg.com.br/arquivos/icono-bateria.png",
+        "link":{
+            "url":"/baterías"
+        }
+    }
+  },
+  // categoria lubricantes
+  "flex-layout.col#categorialubricantes":{
+      "props":{
+          "blockClass":["imagenesCategorias"]
+      },
+      "children":[
+          "image#lubricantes",
+          "rich-text#lubricantes-tittle",
+          "image#lubricantes-hover3"
+      ]
+  },
+  "image#lubricantes": {
+      "props": {
+          "blockClass":["img-category-salider-item"],
+          "src": "https://coexitob2b.vteximg.com.br/arquivos/lubricantes.png",
+          "link":{
+              "url":"/lubricantes"
+          }
+      }
+  },
+  "rich-text#lubricantes-tittle": {
+      "props": {
+        "text": "[LUBRICANTES](/Lubricantes)",
+        "blockClass": "categoria-titulo"
+      }
+  },
+  // imagen hover icono
+  "image#lubricantes-hover3": {
+    "props": {
+        "blockClass":["img-slider-category-hover"],
+        "src": "https://coexitob2b.vteximg.com.br/arquivos/lubricantesicon2.png",
+        "link":{
+            "url":"/Lubricantes"
+        }
+    }
+  },
+  // categoria autopartes --------------------------
+  "flex-layout.col#categoriaautopartes":{
+      "props":{
+          "blockClass":["imagenesCategorias"]
+      },
+      "children":[
+          "image#autopartes",
+          "rich-text#autopartes-tittle",
+          "image#autopartes-hover4"
+      ]
+  },
+  "image#autopartes": {
+      "props": {
+          "blockClass":["img-category-salider-item"],
+          "src": "https://coexitob2b.vteximg.com.br/arquivos/autopartes.png",
+          "link":{
+              "url":"/Autopartes"
+          }
+      }
+  },
+  "rich-text#autopartes-tittle": {
+      "props": {
+        "text": "[AUTOPARTES](/Autopartes)",
+        "blockClass": ["categoria-titulo"]
+      }
+  },
+  // imagen hover icono
+  "image#autopartes-hover4": {
+    "props": {
+        "blockClass":["img-slider-category-hover"],
+        "src": "https://coexitob2b.vteximg.com.br/arquivos/motopartes.png",
+        "link":{
+            "url":"/Autopartes"
+        }
+    }
+  },
+  // categoria 1 --------------------------
+  "flex-layout.col#categoria1":{
+      "props":{
+          "blockClass":["imagenesCategorias"]
+      },
+      "children":[
+          "image#1",
+          "rich-text#1-tittle",
+          "image#1-hover"
+      ]
+  },
+  "image#1": {
+      "props": {
+          "blockClass":["img-category-salider-item"],
+          "src": "https://coexitob2b.vteximg.com.br/arquivos/llaantas.png",
+          "link":{
+              "url":"/"
+          }
+      }
+  },
+  "rich-text#1-tittle": {
+      "props": {
+        "text": "[LUBRICANTES](/Lubricantes)",
+        "blockClass": "categoria-titulo"
+      }
+  },
+  // imagen hover icono
+  "image#1-hover": {
+    "props": {
+        "blockClass":["img-slider-category-hover"],
+        "src": "https://coexitob2b.vteximg.com.br/arquivos/icono-bateria.png",
+        "link":{
+            "url":"/"
+        }
+    }
+  },
+  // categoria 2--------------------------
+  "flex-layout.col#categoria2":{
+      "props":{
+          "blockClass":["imagenesCategorias"]
+      },
+      "children":[
+          "image#2",
+          "rich-text#2-tittle",
+          "image#2-hover2"
+      ]
+  },
+  "image#2": {
+      "props": {
+          "blockClass":["img-category-salider-item"],
+          "src": "https://coexitob2b.vteximg.com.br/arquivos/autopartes.png",
+          "link":{
+              "url":"/"
+          }
+      }
+  },
+  "rich-text#2-tittle": {
+      "props": {
+        "text": "[LLANTAS](/)",
+        "blockClass": "categoria-titulo"
+      }
+  },
+  // imagen hover icono
+  "image#2-hover2": {
+    "props": {
+        "blockClass":["img-slider-category-hover"],
+        "src": "https://coexitob2b.vteximg.com.br/arquivos/icono-bateria.png",
+        "link":{
+            "url":"/"
+        }
+    }
+  },
+  // categoria 3--------------------------
+  "flex-layout.col#categoria3":{
+      "props":{
+          "blockClass":["imagenesCategorias"]
+      },
+      "children":[
+          "image#3",
+          "rich-text#3-tittle",
+          "image#3-hover3"
+      ]
+  },
+  "image#3": {
+      "props": {
+          "blockClass":["img-category-salider-item"],
+          "src": "https://coexitob2b.vteximg.com.br/arquivos/lubricantes.png",
+          "link":{
+              "url":"/"
+          }
+      }
+  },
+  "rich-text#3-tittle": {
+      "props": {
+        "text": "[LLANTAS](/)",
+        "blockClass": "categoria-titulo"
+      }
+  },
+  // imagen hover icono
+  "image#3-hover3": {
+    "props": {
+        "blockClass":["img-slider-category-hover"],
+        "src": "https://coexitob2b.vteximg.com.br/arquivos/icono-bateria.png",
+        "link":{
+            "url":"/"
+        }
+    }
+  }
+}

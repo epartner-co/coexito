@@ -1,0 +1,33 @@
+.listContainer.listContainer--tabList :global(.vtex-button__label){
+    font-size: 14px;
+    justify-content: center;
+    text-transform: capitalize;
+    padding: 15px 0;
+}
+.listItemActive :global(.vtex-button__label){
+    color: white;
+    font-weight: bold;
+}
+.listItemActive :global(.vtex-button){
+    background: #004D9D;
+}
+.listItem :global(.vtex-button){
+    border: 0;
+}
+.listItem :global(.vtex-button){
+    border: 1px solid #D3D3D3;
+    border-radius: 5px;
+    color: #808080;
+    font-weight: 300;
+    transition: 400ms all;
+    padding: 12px 0;
+}
+.listItem :global(.vtex-button):hover{
+    background: #004D9D;
+
+}
+.listItem :global(.vtex-button):hover :global(.vtex-button__label){
+    color: white;
+    font-weight: 600;
+    
+}

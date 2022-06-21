@@ -1,0 +1,32 @@
+
+{
+  "store.custom#usuario": {
+      "blocks": [
+      "responsive-layout.desktop#iframe1",
+      "responsive-layout.phone#iframe2"
+      ]
+  },
+
+  "responsive-layout.desktop#iframe1":{
+    "children":["iframe#deskt"]
+  },
+  "responsive-layout.phone#iframe2":{
+    "children":["iframe#Mob"]
+  },
+
+  "iframe#deskt": {
+      "props": {
+          "width":"1900px",
+          "height":"1200px",
+          "src": "https://digitalepartner.com/coexitoB2B/cambiar.php"
+      }
+  },
+  "iframe#Mob": {
+    "props": {
+        "width":"1900px",
+        "height":"800px",
+        "src": "https://digitalepartner.com/coexitoB2B/cambiar.php"
+    }
+  }
+}
+

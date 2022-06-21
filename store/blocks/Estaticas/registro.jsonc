@@ -1,0 +1,122 @@
+{
+    // "challenge.trade-policy-condition": {
+    //     "props": {
+    //       "redirectPath"  : "/loginb2b-1",
+    //       "forbiddenRedirectPath":"/accessdenied"
+    //     }
+    // },
+
+    "flex-layout.row#form": {
+        "children": [
+            "flex-layout.col#inicio",
+            "flex-layout.col#form"
+        ],
+        "props":{
+            "blockClass":"contenedorForm"
+        }
+    },
+    "login-content#b2b":{
+        "props":{
+            "defaultOption": 1,
+            "blockClass":"loginB2b"
+        }
+    },
+    // inicio de sesion
+    "flex-layout.col#inicio": {
+        "children": [
+            "rich-text#shelf-titleInicio",
+            "login-content#b2b"
+        ],
+        "props":{
+            "blockClass":["formRegistro","cajainicial"]
+        }
+    },
+    // formulario de registro
+    "flex-layout.col#form": {
+        "children": [
+            "rich-text#shelf-title2-1",
+            "form#registro"
+        ],
+        "props":{
+            "blockClass":"formRegistro"
+        }
+    },
+    "form#registro": {
+        "props": {
+            "entity": "Cl",
+            "schema": "Person",
+            "blockClass":"formRegistro"
+        },
+        "children": [
+            "flex-layout.row#formInputs"
+        ],
+        "blocks": ["form-success"]
+    },
+    "form-success": {
+        "children": [
+            "rich-text#successSubmit"
+        ]
+    },
+    "flex-layout.row#formInputs": {
+        "children": [
+            "form-input.text#firstNameB",
+            "form-input.text#lastName",
+            "form-input.text#corporateName",
+            "form-input.text#corporateDocument",
+            "form-input.text#phone",
+            "form-input.text#email-1",
+            "form-submit"
+        ],
+        "props":{
+            "blockClass":"formRegistroInputs"
+        }
+    },
+    "rich-text#successSubmit": {
+        "props": {
+            "text": "Succesfully submitted the data!",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "form-input.text#firstNameB": {
+        "props": {
+            "label":"Nombre",
+            "pointer": "#/properties/firstName"
+        }
+    },
+    "form-input.text#lastName": {
+        "props": {
+            "label":"Apellido",
+            "pointer": "#/properties/lastName"
+        }
+    },
+    "form-input.text#email-1": {
+        "props": {
+            "label":"Correo electronico",
+            "pointer": "#/properties/email"
+        }
+    },
+    "form-input.text#corporateName": {
+        "props": {
+            "label":"Razón social",
+            "pointer": "#/properties/corporateName"
+        }
+    },
+    "form-input.text#corporateDocument": {
+        "props": {
+            "label":"NIT",
+            "pointer": "#/properties/corporateDocument"
+        }
+    },
+    "form-input.text#phone": {
+        "props": {
+            "label":"Teléfono",
+            "pointer": "#/properties/phone"
+        }
+    },
+    "form-submit": {
+        "props": {
+            "label": "Solicita registro"
+        }
+    }
+}

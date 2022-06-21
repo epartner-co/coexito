@@ -14,13 +14,172 @@
   margin-bottom: 5px;
   color: black;
 }
-
+.menuItem--vertical {
+  padding: 19px 0rem 0 0rem;
+}
+.menuItem--vertical {
+  padding: 19px 1rem 0 1rem;
+}
+.menuItem--vertical--isOpen {
+  transition: 400ms all;
+}
+.menuItem--vertical--isOpen:hover {
+  background: #ED6B10;
+}
+.menuItem--vertical--isOpen:hover .styledLinkContent--vertical {
+  color: white;
+}
 .menuContainer {
   display: block;
+  background: white;
 }
-
+.menuContainer--vertical-menu {
+  background: #182841;
+  height: 100%;
+  width: 100%;
+}
+.menuContainer--vertical-menu .styledLinkContent--vertical{
+  justify-content: center;
+  color: #8f8e8e;
+  font-size: 9px;
+  margin-top: 0;
+}
+.menuContainerNav--vertical-menu{
+  width: 90%;
+}
+.styledLink--vertical::before {
+  content: "";
+  background-size: 90% !important;
+  background-position: center;
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 5px auto;
+  margin-left: -7px;
+}
+.styledLink--vertical.styledLink--inicio::before {
+  background: url(/arquivos/casaIcon.png) no-repeat;
+}
+.styledLink--vertical.styledLink--baterias::before {
+  background: url(/arquivos/bateriasIcon.png) no-repeat;
+}
+.styledLink--vertical.styledLink--llantas::before {
+  background: url(https://coexitob2b.vtexassets.com/arquivos/llantasicon2.png) no-repeat;
+  background-size: 107% !important;
+}
+.styledLink--vertical.styledLink--lubricantes::before {
+  background: url(/arquivos/lubricantesIcon.png) no-repeat;
+}
+.styledLink--vertical.styledLink--autopartes::before {
+  background: url(https://coexitob2b.vtexassets.com/arquivos/motopartes.png) no-repeat;
+  background-size: 104% !important;
+}
+.styledLink--vertical.styledLink--motopartes::before {
+  background: url(/arquivos/MotopartesIcon.png) no-repeat;
+}
 .menuItem--vertical {
-  border-bottom: 2px solid #7e7e7e;
+  border-bottom: 1.5px solid #8f8e8e;
 }
 /*>>>>>Cierre Menú vertical para aside izq*/
+/* Estilos para el footer menu items */
+.menuItem--footer-item .styledLinkContent{
+  font-size: 15px;
+  font-weight: 100;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  white-space: initial;
+  line-height: 20px;
+}
+.menuItem--footer-item .styledLinkContent.styledLinkContent--footer-tittle{
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+.menuContainer--menuItems {
+  background: transparent;
+}
+.styledLinkContent--footer-item {
+  color: white;
+}
+/*  */
 
+@media (max-width: 600px) {
+  .menuItem--footer-item .styledLinkContent.styledLinkContent--footer-tittle{
+    padding: 14px 10px;
+    margin-bottom: 18px;
+    border: 2px solid white;
+  }
+  .styledLinkContainer--footer-tittle{
+    margin: 0 10px;
+  }
+  .accordionIcon--footer-item {
+    font-size: 17px;
+    margin-right: 17px;
+    color: #ED6B10;
+    display: block;
+    width: 23px;
+    border-radius: 50%;
+    padding: 2px 6.6px;
+    height: 23px;
+    background: white;
+    text-align: center;
+  }
+  .openIconContainer--headerItem :global(.vtex-button )::after{
+    font-size: 0 !important;
+  }
+  .menuContainerNav--menuM {
+    width: 100%;
+  }
+  :global(.vtex-store-drawer-0-x-drawer){
+    width: 100% !important;
+  }
+  .menuContainerNav.menuContainerNav--filtercont {width: 100%;padding-right: 5px;padding-left: 10px;padding-top: 0;}
+  .menuItem--footer-item .styledLinkContent{
+    font-weight: 300;
+  }
+}
+
+
+/* estilos del despliegue del menu */
+.submenuContainer--Submenu .submenuWrapper--isOpen {
+  position: fixed;
+  left: 103px;
+  width: 100%;
+  height: 92%;
+  padding: 0;
+  top: 83px;
+  background: rgba(0,0,0,0.5);
+}
+.submenuWrapper--Submenu--isOpen {
+  height: 100%;
+  background: #E7E7E7;
+}
+.submenuWrapper--isOpen .submenu--Submenu {
+  width: 25%;
+  background: white;
+  z-index: 99;
+}
+
+.styledLinkContent--menu-lv2 {
+  justify-content: center;
+  font-size: 11px;
+  text-transform: uppercase;
+  margin: 0;
+  white-space: initial;
+  min-height: 97px;
+  display: flex;
+  align-items: center;
+}
+.styledLinkContent--menu-item-levl2 {
+  margin: 10px 0;
+  font-size: 13px;
+  color: #D3D3D3;
+}
+.styledLinkContent--cierreSubMneu {
+  margin: 20px 0;
+  font-size: 18px;
+}
+.menuContainer--Submenu {
+  background: transparent;
+}

@@ -1,16 +1,68 @@
 {
   "store.home": {
     "blocks": [
-      "list-context.image-list#demo",
-      /* You can make references to blocks defined in other files.
-       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
-      "__fold__.experimentalLazyAssets",
-      "flex-layout.row#deals",
+      "flex-layout.row#homeContainer"
+    ],
+    "props":{
+      "blockClass":"home"
+    },
+    "parent": {
+        "challenge": "challenge.trade-policy-condition"
+    }
+  },
+  "flex-layout.row#homeContainer": {
+    "children": ["flex-layout.col#homeContainer"],
+    "props":{
+      "blockClass":"containerHome"
+    }
+  },
+  "flex-layout.col#homeContainer": {
+    "children": [
+      "slider-layout#demo-images-prin",
+      "responsive-layout.desktop#FiltoD",
+      "responsive-layout.phone#FiltoDM",
+      "responsive-layout.desktop#info",
+      "responsive-layout.phone#info",
+      "rich-text#shelf-categorias",
+      "flex-layout.row#sliderCategorias",
+      "responsive-layout.mobile#categorias-mobile",
       "rich-text#shelf-title",
-      "flex-layout.row#shelf",
-      "info-card#home",
-      "rich-text#question",
-      "rich-text#link"
+      "tab-layout#tabsCatego",
+      "slider-layout#bannersDos",
+      "rich-text#shelf-title2",
+      "list-context.product-list#vitrina2",
+      "responsive-layout.desktop#segmentar",
+      "responsive-layout.phone",
+      "rich-text#shelf-combosVtirine",
+      "responsive-layout.desktop#vitrinaTres",
+      "slider-layout#demo-images-cuaternario",
+      "rich-text#TituloVitrinaDoble",
+      "list-context.product-list#vitrinadoble-1"
+    ],
+    "props": {
+      "blockClass": "homeContainer"
+    }
+  },
+
+  //Filtro master Desktop
+  "responsive-layout.desktop#FiltoD":{
+    "children":[
+      "flex-layout.row#filtroM",
+      "flex-layout.row#filtroMpaso1",
+      "flex-layout.row#filtroMpaso2",
+      "flex-layout.row#filtroMpaso3",
+      "flex-layout.row#filtroMpaso4",
+      "flex-layout.row#filtroMpaso5"
+    ]
+  },
+  "responsive-layout.phone#FiltoDM":{
+    "children":[
+      "flex-layout.row#filtroMob",
+      "flex-layout.row#filtroMpaso1Mob",
+      "flex-layout.row#filtroMpaso2Mob",
+      "flex-layout.row#filtroMpaso3Mob",
+      "flex-layout.row#filtroMpaso4Mob",
+      "flex-layout.row#filtroMpaso5Mob"
     ]
   },
 
@@ -20,12 +72,89 @@
       "height": 720,
       "images": [
         {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+          "image": "https://coexitob2b.vteximg.com.br/arquivos/banner-principal-deskv1.png",
+          "mobileImage": "https://coexitob2b.vteximg.com.br/arquivos/banner-principal-mobilev1.png"
         },
         {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner.jpg",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+          "image": "https://coexitob2b.vteximg.com.br/arquivos/banner-principal-deskv1.png",
+          "mobileImage": "https://coexitob2b.vteximg.com.br/arquivos/banner-principal-mobilev1.png"
+        }
+      ]
+    }
+  },
+  "slider-layout#demo-images-prin": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    },
+    "children":[
+      "info-card#principal-1",
+      "info-card#principal-2",
+      "info-card#principal-3"
+    ]
+  },
+  // banners definitivos
+  "info-card#principal-1": {
+    "props": {
+      "id": "info-card-example",
+      "isFullModeStyle": true,
+      "textPosition": "left",
+      "imageUrl": "https://coexitob2b.vteximg.com.br/arquivos/banner-principal-desk-new.png",
+      "mobileImageUrl":"https://coexitob2b.vteximg.com.br/arquivos/banner-principal-mobile-new.png",
+      "headline": "Clearance Sale",
+      "callToActionText": "SABER MÁS",
+      "callToActionUrl": "/",
+      "blockClass": ["info-card-principal","info-card-CUATERNARIO"],
+      "textAlignment": "center"
+    }
+  },
+  "info-card#principal-2": {
+    "props": {
+      "id": "info-card-example",
+      "isFullModeStyle": true,
+      "textPosition": "left",
+      "imageUrl": "https://coexitob2b.vteximg.com.br/arquivos/banner-principal-desk-new.png",
+      "mobileImageUrl":"https://coexitob2b.vteximg.com.br/arquivos/banner-principal-mobile-new.png",
+      "headline": "Clearance Sale",
+      "callToActionText": "SABER MÁS",
+      "callToActionUrl": "/",
+      "blockClass": ["info-card-principal","info-card-CUATERNARIO"],
+      "textAlignment": "center"
+    }
+  },
+  "info-card#principal-3": {
+    "props": {
+      "id": "info-card-example",
+      "isFullModeStyle": true,
+      "textPosition": "left",
+      "imageUrl": "https://coexitob2b.vteximg.com.br/arquivos/banner-principal-desk-new.png",
+      "mobileImageUrl":"https://coexitob2b.vteximg.com.br/arquivos/banner-principal-mobile-new.png",
+      "headline": "Clearance Sale",
+      "callToActionText": "SABER MÁS",
+      "callToActionUrl": "/",
+      "blockClass": ["info-card-principal","info-card-CUATERNARIO"],
+      "textAlignment": "center"
+    }
+  },
+  "list-context.image-list#bannercuaternario": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "height": 720,
+      "blockClass":"bannerinfe",
+      "images": [
+        {
+          "image": "https://coexitob2b.vteximg.com.br/arquivos/banner-cuarto-deskv1.png",
+          "mobileImage": "https://coexitob2b.vteximg.com.br/arquivos/banner-cuarto-mobile.png"
+        },
+        {
+          "image": "https://coexitob2b.vteximg.com.br/arquivos/banner-cuarto-deskv1.png",
+          "mobileImage": "https://coexitob2b.vteximg.com.br/arquivos/banner-cuarto-mobile.png"
         }
       ]
     }
@@ -42,61 +171,97 @@
       "blockClass": "carousel"
     }
   },
-
-  "rich-text#shelf-title": {
-    "props": {
-      "text": "## Summer",
-      "blockClass": "shelfTitle"
-    }
-  },
-  "flex-layout.row#shelf": {
-    "children": ["list-context.product-list#demo1"]
-  },
-  "list-context.product-list#demo1": {
-    "blocks": ["product-summary.shelf"],
-    "children": ["slider-layout#demo-products"],
-    "props": {
-      "orderBy": "OrderByTopSaleDESC"
-    }
-  },
-  "slider-layout#demo-products": {
+  "slider-layout#demo-images-cuaternario": {
     "props": {
       "itemsPerPage": {
-        "desktop": 5,
-        "tablet": 3,
+        "desktop": 1,
+        "tablet": 1,
         "phone": 1
       },
       "infinite": true,
-      "fullWidth": false,
-      "blockClass": "shelf"
-    }
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    },
+    "children":[
+      "info-card#cuaternario",
+      "info-card#cuaternario"
+    ]
   },
-
-  "info-card#home": {
+  "info-card#cuaternario": {
     "props": {
-      "id": "info-card-home",
-      "isFullModeStyle": false,
+      "id": "info-card-example",
+      "isFullModeStyle": true,
       "textPosition": "left",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "imageUrl": "https://coexitob2b.vteximg.com.br/arquivos/banner-cuaternario-desk-nnew.png",
+      "mobileImageUrl":"https://coexitob2b.vteximg.com.br/arquivos/banner-cuaternario-mobile-new.png",
       "headline": "Clearance Sale",
-      "callToActionText": "DISCOVER",
-      "callToActionUrl": "/sale/d",
-      "blockClass": "info-card-home",
+      "callToActionText": "SABER MÁS",
+      "callToActionUrl": "/",
+      "blockClass": "info-card-CUATERNARIO",
       "textAlignment": "center"
     }
   },
-
-  "rich-text#question": {
+  "rich-text#shelf-title2": {
     "props": {
-      "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
-      "blockClass": "question"
+      "text": "## DESTACADO DE MARCAS",
+      "blockClass": "shelfTitle"
     }
   },
-
-  "rich-text#link": {
+  "list-context.product-list#vitrina2": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-vitrina2"]
+  },
+  "slider-layout#demo-vitrina2": {
     "props": {
-      "text": "\n**Reach us at**\nwww.vtex.com.br",
-      "blockClass": "link"
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf",
+      "showPaginationDots":"false",
+      "showNavigationArrows": "desktopOnly"
+    }
+  },
+  "rich-text#TituloVitrinaDoble": {
+    "props": {
+      "text": "## MÁS RESPUESTOS INFALTABLES",
+      "blockClass": ["shelfTitle", "EspacioS"]
+    }
+  },
+  "list-context.product-list#vitrinadoble-1": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#demo-vitrinadoble-1","slider-layout#demo-vitrinadoble-2"]
+  },
+  "slider-layout#demo-vitrinadoble-1": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 2,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf",
+      "showPaginationDots":"false",
+      "showNavigationArrows": "desktopOnly"
+    }
+  },
+  "slider-layout#demo-vitrinadoble-2": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 2,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf",
+      "showPaginationDots":"false",
+      "showNavigationArrows": "desktopOnly"
     }
   }
+
 }

@@ -1,0 +1,411 @@
+
+/*Tarjetas Home*/
+.strong.strong--textosC {color: #ED6B10;font-size: 15px;}
+
+.paragraph.paragraph--textosC {color: #808080;font-size: 10px;line-height: 25px;}
+
+.link.link--textosC {font-size: 13px;
+  color: #004D9D;
+}
+/*Tabs*/
+.container.container--botonirmas {margin: 0;width: 100%;}
+
+.link.link--botonirmas {color: black;text-decoration: none;border: 1px solid;padding: 11px 75px;text-transform: uppercase;font-family: 'Inter'; border-radius: 5px;font-size: 13px; display: flex;align-items: center;}
+.link.link--botonirmas::after{
+  content: "";
+  background: url(https://coexitob2b.vteximg.com.br/arquivos/bi_arrow-down.png) no-repeat;
+  background-size: 100%;
+  width: 16px;
+  height: 16px;
+  display: block;
+  margin-left: 10px;
+}
+
+.link.link--botonirmas:hover::after{
+  content: "";
+  background: url(https://coexitob2b.vteximg.com.br/arquivos/flecha-imagen-hover.png) no-repeat;
+  background-size: 100%;
+  width: 16px;
+  height: 16px;
+  display: block;
+  margin-left: 10px;
+}
+
+.link.link--botonirmas:hover {background: black;color: white;}
+
+.strong.strong--textoFiltro {font-size: 20px;}
+
+.paragraph.paragraph--botonF {font-size: 19px; background: #ED6B10;padding: 11px 35px 11px 10px;color: white;    position: relative;cursor: pointer;border-radius: 5px;}
+@media (max-width: 1550px) {
+  .paragraph.paragraph--botonF {font-size: 13px; background: #ED6B10;padding: 11px 35px 11px 10px;color: white;    position: relative;cursor: pointer;border-radius: 5px;}
+}
+.paragraph.paragraph--botonF::after {cursor: pointer;content: "";width: 18px;height: 18px;background: url(https://coexitob2b.vteximg.com.br/arquivos/flecha1.png);background-size: 100%;position: absolute;right: 4%;top: 29%;}
+
+.paragraph.paragraph--botonFC {border-radius: 5px;cursor: pointer;background: #ED6B10;padding: 11px 35px 11px 10px;color: white;    position: relative;}
+.paragraph.paragraph--botonFC::after {cursor: pointer;content: "";width: 18px;height: 18px;background: url(https://coexitob2b.vteximg.com.br/arquivos/flecha1.png);background-size: 100%;position: absolute;right: 4%;top: 29%;}
+
+
+.paragraph--botonbuscarF2 {    margin: 4px 0 4px 0;cursor: pointer;font-size: 12px;padding: 5px 9px;background: #D3D3D3;border-radius: 5px;position: relative;}
+
+.paragraph--selectedF {color: white;background: #ED6B10;padding-right: 35px;}
+
+.paragraph--selectedF::after {content: "";width: 15px;height: 15px;background: url(https://coexitob2b.vteximg.com.br/arquivos/check2.png);background-size: 100%;display: block;position: absolute;right: 6%;top: 22%;}
+
+.strong--tituloP {color: #ED6B10;}
+
+.container--tituloP {margin: 0;width: 100%;font-size: 18px;}
+
+.paragraph.paragraph--botonF2.paragraph--botonantes4 {cursor: pointer;font-size: 19px;text-transform: uppercase;position: relative;padding: 5px 14px 5px 30px;border: 1px solid;}
+
+.paragraph.paragraph--botonF2.paragraph--botonantes4::before {cursor: pointer;content: "";background: url(https://coexitob2b.vteximg.com.br/arquivos/arrow.png);width: 25px;height: 25px;display: block;background-size: 100%;position: absolute;left: 0;top: 15%;}
+
+.paragraph.paragraph--botonF2.paragraph--botonantes5 {cursor: pointer;font-size: 15px;text-transform: uppercase;position: relative;padding: 5px 14px 5px 30px;border: 1px solid;}
+
+.paragraph.paragraph--botonF2.paragraph--botonantes5::before {cursor: pointer;content: "";background: url(https://coexitob2b.vteximg.com.br/arquivos/arrow.png);width: 25px;height: 25px;display: block;background-size: 100%;position: absolute;left: 0;top: 15%;}
+
+.paragraph.paragraph--cerradoF {background: black;color: white;padding-right: 35px;}
+
+.paragraph.paragraph--cerradoF::after {content: "";background: url(https://coexitob2b.vteximg.com.br/arquivos/close.png);background-size: 100%;width: 15px;height: 15px;display: block;position: absolute;right: 6%;top: 20%;}
+
+.paragraph--botonbuscar {cursor:pointer; border: 1px solid;position: relative;padding: 10px 16px;border-radius: 5px;padding-right: 35px;}
+
+.paragraph--botonbuscar::after {content: "";background: url(https://coexitob2b.vteximg.com.br/arquivos/buscar.png);background-size: 100%;display: block;position: absolute;width: 25px;height: 25px;top: 19%;right: 1px;}
+
+
+.paragraph--botonF2.paragraph--botonbuscar:hover {background: #ED6B10;color: white;    position: relative;cursor: pointer;}
+
+.paragraph.paragraph--botonF2.paragraph--botonbuscar:hover::after {background: url(https://coexitob2b.vteximg.com.br/arquivos/buscar-hover.png);background-size: 100%;}
+
+.paragraph.paragraph--botonFC.paragraph--boton4paso:hover {background: transparent;color: black;border: 1px solid;padding: 10px 35px 10px 10px;}
+
+.paragraph.paragraph--botonFC:hover::after {background: url(https://coexitob2b.vteximg.com.br/arquivos/buscar-hover.png);background-size: 100%;}
+
+.paragraph.paragraph--botonF2.paragraph--botonantes4:hover {background: #ed6b10;}
+
+@media (max-width: 600px) {
+  .wrapper.wrapper--categoriasTittle {
+    width: 100%;
+}
+
+.heading.heading--shelfTitle.headingLevel2.headingLevel2--shelfTitle.heading-level-2 {
+  padding: 0 0 0 9px;
+  width: 59%;
+  text-align: initial;
+  font-size: 18px;
+  margin-top: 50px;}
+
+.wrapper.wrapper--categoriasTittle {width: 100%;}
+
+
+}
+.paragraph.paragraph--titulosForm {position:relative;font-size: 20px;text-transform: uppercase;font-weight: 700;}
+
+.container.container--tituloRightProductF {margin: 0;font-size: 13px;}
+
+.paragraph.paragraph--tituloRightProductF {padding: 0;margin: 12px 0 0 0;}
+
+.strong.strong--tituloRightProductF {padding: 0;}
+
+.container.container--tituloRightProductFc {margin: 0 0 0 20px;padding: 0;}
+
+.paragraph.paragraph--tituloRightProductFc {padding: 0;margin: 0 0 10px 0;font-size: 13px;}
+
+.paragraph.paragraph--tituloRightProductFc::before {    content: "";
+  background: url(https://coexitob2b.vteximg.com.br/arquivos/promocionespagproduct.png);
+  background-size: 100%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  top: 0px;
+  position: absolute;
+  left: 0;}
+
+  .link.link--cotizarButton {
+    color: #004d9d;
+    text-decoration: none;
+}
+
+.container.container--tituloRightProductF {
+  border-top: 1px solid #d8d5d5;
+  margin: 15px 0 0 0;
+}
+.paragraph.paragraph--tituloC {color: #182841;font-weight: 700;width: 100%; margin-bottom: 0px;  margin-top: 7px;}
+
+.container.container--tituloC {margin: 0;padding: 0;}
+
+.wrapper.wrapper--tituloC {width: 100%;}
+
+.paragraph--tituloC {padding: 0;margin: 12px 0;font-size: 14px;text-transform: uppercase;}
+
+.paragraph.paragraph--tituloCD {margin: 0;padding: 11px 0 4px 0;font-size: 12px;}
+
+.container.container--tituloCD {margin: 0;}
+
+.wrapper.wrapper--categoriaC {
+  border: 1px solid #015B98;
+  border-radius: 5px;
+}
+.wrapper.wrapper--MarcaD {
+  border: 1px solid #015B98;
+  border-radius: 5px;
+}
+.wrapper.wrapper--AnoF {
+  border: 1px solid #015B98;
+  border-radius: 5px;
+}
+.wrapper.wrapper--ModeloL {
+  border: 1px solid #015B98;
+  border-radius: 5px;
+}
+
+.paragraph.paragraph--categoriaC {
+    margin: 10px 0;
+    padding: 0 6%;
+}
+.paragraph.paragraph--MarcaD {
+  margin: 10px 0;
+  padding: 0 6%;
+}
+.paragraph.paragraph--AnoF {
+  margin: 10px 0;
+  padding: 0 6%;
+}
+.paragraph.paragraph--ModeloL {
+  margin: 10px 0;
+  padding: 0 6%;
+}
+
+.container.container--AnoF {margin: 0;}
+
+.container.container--ModeloL {margin: 0;}
+
+.wrapper.wrapper--ModeloL {width: 100%;}
+
+.wrapper.wrapper--AnoF {width: 100%;}
+
+.wrapper.wrapper--MarcaD {width: 100%;}
+
+.wrapper.wrapper--tituloCD {width: 100%;}
+
+.wrapper.wrapper--categoriaC {width: 100%;}
+
+.paragraph.paragraph--categoriaC {margin: 10px 0;padding: 0 6%;position: relative;}
+
+.paragraph.paragraph--categoriaC::before {content: "";width: 15px;height: 15px;display: block;position: absolute;background: url(https://coexitob2b.vteximg.com.br/arquivos/flecha-hacia-abajo.png);background-size: 100%;right: 10%;top: 4px;}
+
+.paragraph.paragraph--MarcaD {margin: 10px 0;padding: 0 6%;position: relative;}
+
+.paragraph.paragraph--MarcaD::before {content: "";width: 15px;height: 15px;display: block;position: absolute;background: url(https://coexitob2b.vteximg.com.br/arquivos/flecha-hacia-abajo.png);background-size: 100%;right: 10%;top: 4px;}
+
+.paragraph.paragraph--AnoF {margin: 10px 0;padding: 0 6%;position: relative;}
+
+.paragraph.paragraph--AnoF::before {content: "";width: 15px;height: 15px;display: block;position: absolute;background: url(https://coexitob2b.vteximg.com.br/arquivos/flecha-hacia-abajo.png);background-size: 100%;right: 10%;top: 4px;}
+
+.paragraph.paragraph--ModeloL {margin: 10px 0;padding: 0 6%;position: relative;}
+
+.paragraph.paragraph--ModeloL::before {content: "";width: 15px;height: 15px;display: block;position: absolute;background: url(https://coexitob2b.vteximg.com.br/arquivos/flecha-hacia-abajo.png);background-size: 100%;right: 10%;top: 4px;}
+
+.wrapper.wrapper--butomFil {width: 100%;margin: 0;padding: 0;}
+
+.wrapper.wrapper--butomFil {cursor:pointer;text-align: center;border: 1px solid #5f97bd;border-radius: 5px;}
+
+.paragraph.paragraph--butomFil {padding: 0;margin: 10px 0;}
+
+.wrapper.wrapper--butomFil:hover {background: #5f97bd;color: white;}
+
+.container.container--butomFil {
+  margin: 21px 0 26px 0;
+  display: none;
+}
+
+.paragraph.paragraph--botonbuscar.paragraph--NuevaBusqueda {font-size: 14px;color: white;background: #ed6b10;}
+
+.paragraph.paragraph--botonbuscar.paragraph--NuevaBusqueda:hover {background: white;color: black;}
+
+.paragraph.paragraph--contenedorFiltros {padding: 0;margin: 0;}
+
+
+.paragraph.paragraph--titulosForm::before {content: "";width: 30%;border-bottom: 3px solid #ed6b10;position: absolute;bottom: 0;}
+
+
+@media (max-width: 600px) {
+
+  .container.container--titulosForm {justify-content: center;margin: 0 0 15px 0;}
+
+
+  .container.container--titulosForm {margin: 0;width: 100%;}
+
+  .paragraph.paragraph--titulosForm {font-size: 15px;margin: 34px auto 0 auto;position: relative;}
+
+
+
+ .heading--titlePreguntasfreq.headingLevel2.headingLevel2--titlePreguntasfreq.heading-level-2 {margin: 34px 0 0 0 !important;text-align: center;}
+.container.container--contenedorFiltros {width: 100%;height: 100%;margin: 0px;}
+
+.wrapper.wrapper--contenedorFiltros {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border: 1px solid #015B98;
+  border-radius: 5px;
+  padding: 6% 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  position: relative;
+}
+
+.strong.strong--textoFiltro {
+    font-size: 15px;
+    text-align: initial;
+    justify-content: initial;
+    display: flex;
+}
+
+.paragraph.paragraph--botonF {font-size: 10px;border-radius: 5px;padding: 7px 24px 7px 3px;}
+
+.paragraph.paragraph--botonF::after {width: 12px;height: 12px;right: 2px;}
+
+
+.wrapper .paragraph--botonbuscarF2 {font-size: 8px!important;
+  padding: 4px 16px 4px 6px !important;}
+
+.paragraph--selectedF::after {width: 10px;height: 10px;right: 3%;}
+
+.paragraph.paragraph--cerradoF::after {width: 10px;height: 10px;}
+
+.wrapper.wrapper--contenedorFiltros::after {content: "";background: url(https://coexitob2b.vteximg.com.br/arquivos/icono-filtrar.png);background-size: 100%;position: absolute;width: 25px;height: 25px;right: 9%;display: block;}
+
+.menuContainerNav {width: 100%;padding: 0 17% 0 0;}
+
+.paragraph.paragraph--botonFC.paragraph--boton3paso {min-height: 33px;padding: 7px 0 0 7px !important;align-items: initial;display: flex;}
+
+.container.container--botonFC.container--boton3paso {display: flex;align-items: center;justify-content: center;}
+
+.paragraph.paragraph--botonFC.paragraph--boton2paso {min-height: 33px;padding: 7px 0 0 7px !important;align-items: initial;display: flex;}
+
+.container.container--botonFC.container--boton2paso {display: flex;align-items: center;justify-content: center;}
+
+
+.paragraph.paragraph--botonF2.paragraph--botonbuscar {min-height: 33px;}
+
+.paragraph.paragraph--botonFC::after {top: 20%;}
+
+.paragraph.paragraph--botonF2.paragraph--botonbuscar {justify-content: initial;display: flex;padding: 4px 0 0 6px !important;}
+
+.paragraph--botonbuscar::after {top: 8%;}
+
+.paragraph.paragraph--botonF2 {border-radius: 5px;}
+.paragraph.paragraph--botonFC.paragraph--boton4paso {min-height: 33px;
+  padding: 7px 0 0 7px!important;
+  align-items: initial;display: flex;}
+
+.heading.heading--TitleEstatics.headingLevel2.headingLevel2--TitleEstatics.heading-level-2 {margin: 0;}
+
+.heading.heading--titlePreguntasfreq.headingLevel2.headingLevel2--titlePreguntasfreq.heading-level-2 {margin-top: 22px;}
+
+.container--titlePreguntasfreq {justify-content: center;}
+
+}
+.paragraph.paragraph--tituloP.paragraph--paso6Title {font-size: 20px;font-weight: 700;letter-spacing: 1px;margin: 15px 0 12px 0;}
+
+
+
+.paragraph.paragraph--botonF3.paragraph--botonbuscarF2 {margin: 0;    font-size: 14px;}
+
+.paragraph--botonbuscarF2 {margin: 4px 0 4px 0;}
+
+.paragraph.paragraph--botonbuscarFiltro {margin: 3px 0 0 0;font-size: 11px;}
+
+.paragraph.paragraph--tituloP {margin: 5px 0 0 0;}
+
+.paragraph.paragraph--categoriaC {
+    font-size: 14px;
+}
+
+.paragraph.paragraph--MarcaD {
+    font-size: 14px;
+}
+
+.paragraph.paragraph--AnoF {
+    font-size: 14px;
+}
+
+.paragraph.paragraph--ModeloL {
+    font-size: 14px;
+}
+
+.paragraph--boton3paso{margin: 0 0 0 0;    font-size: 13px;    padding: 5px 0 5px 0 !important;}
+.paragraph--boton4paso{margin: 0 0 0 0;    font-size: 13px;    padding: 5px 0 5px 0 !important;}
+
+.paragraph.paragraph--botonFC.paragraph--boton2paso {margin: 0 0 0 0;    font-size: 13px;    padding: 5px 0 5px 0;}
+
+.paragraph.paragraph--botonF2.paragraph--botonbuscar {margin: 0 0 0 0;    font-size: 13px;    padding: 5px 0 5px 0;}
+
+.wrapper--boton2paso{ width: 90%;}
+.wrapper--boton3paso{ width: 90%;}
+.wrapper--boton4paso{ width: 90%;}
+.wrapper--botonbuscar{
+  width: 90%;
+}
+
+.paragraph--botonbuscarF2 {
+    font-size: 11px !important;
+}
+
+.paragraph.paragraph--botonF2.paragraph--botonantes3 {
+    cursor: pointer;
+    font-size: 19px;
+    text-transform: uppercase;
+    position: relative;
+    padding: 5px 14px 5px 30px;
+    border: 1px solid;
+}
+.paragraph.paragraph--botonF2.paragraph--botonantes3::before{
+    cursor: pointer;
+    content: "";
+    background: url(https://coexitob2b.vteximg.com.br/arquivos/arrow.png);
+    width: 25px;
+    height: 25px;
+    display: block;
+    background-size: 100%;
+    position: absolute;
+    left: 0;
+    top: 15%;
+}
+.paragraph.paragraph--botonF2.paragraph--botonantes3:hover {
+  background: #ed6b10;
+}
+.paragraph--botonbuscarFiltro{font-weight: 700;text-transform: uppercase;}
+.paragraph.paragraph--botonF2 {
+  font-size: 14px !important;
+}
+
+.paragraph--botonF2.paragraph--botonantes3{
+  font-size: 14px;
+}
+
+.link.link--links-paginas-estaticas.link--selected {color: #ED6B10;text-transform: uppercase;}
+
+.container.container--TitleEstatics {margin: 35px auto !important;justify-content: center;}
+
+.strong.strong--TitleEstatics {font-size: 25px;position: relative;letter-spacing: 1px;}
+
+.strong.strong--TitleEstatics::before {content: "";width: 50%;border-bottom: 3px solid #ED6B10;position: absolute;bottom: 0;}
+
+.container.container--links-paginas-estaticas {color: #808080;}
+
+.link.link--links-paginas-estaticas {color: #808080;text-decoration: none;}
+
+.heading.heading--titlePreguntasfreq.headingLevel2.headingLevel2--titlePreguntasfreq.heading-level-2 {margin: 0;color: #ED6B10;}
+
+.container.container--titlePreguntasfreq {margin: 1% 2%;}
+
+.paragraph.paragraph--titlePreguntasfreqContenido {color: #808080;}
+
+.wrapper.wrapper--titlePreguntasfreqContenido {font-size: 15px;text-align: justify;}
+
+.container.container--titlePreguntasfreqContenido {margin: 0 2%;}
+
+.container.container--shelfTitle.container--EspacioS {
+  margin-top: 30px;
+}

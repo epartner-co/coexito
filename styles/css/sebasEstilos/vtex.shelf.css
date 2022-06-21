@@ -1,0 +1,59 @@
+.title--shelf {
+    display: none;
+}
+.sliderContainer :global(.vtex-slider-0-x-dotsContainer){
+    display: none;
+}
+.relatedProducts--shelf{
+    margin-bottom: 30px;
+}
+.arrowLeft.arrowLeft--shelf {position: absolute;top: -30px;left: inherit;right: 100px;}
+
+.arrowRight.arrowRight--shelf {position: absolute;top: -30px;}
+
+.arrow.arrowLeft.arrowLeft--shelf::before {content: "";
+  background: url(https://coexitob2b.vteximg.com.br/arquivos/eva_arrow-ios-back-outline.png) no-repeat;
+  background-size: 100%!important;
+  display: block;
+  width: 39px;
+  height: 39px;
+  transition: 400ms all;}
+
+.arrow.arrowRight.arrowRight--shelf::before {content: "";
+  background: url(https://coexitob2b.vteximg.com.br/arquivos/eva_arrow-ios-back-outline-derecha.png) no-repeat;
+  background-size: 100%!important;
+  display: block;
+  width: 39px;
+  height: 39px;
+  margin-top: 0;
+  transition: all 40ms;
+  margin-right: 5px;
+  transition: 400ms all;}
+
+.caretIcon--shelf {display: none;}
+
+.arrow.arrowRight.arrowRight--shelf:hover::before {background: url(https://coexitob2b.vteximg.com.br/arquivos/eva_arrow-ios-back-outline-nohover.png) no-repeat;}
+
+.arrow.arrowLeft.arrowLeft--shelf:hover::before {background: url(https://coexitob2b.vteximg.com.br/arquivos/eva_arrow-ios-back-outline-nohover-izq.png) no-repeat;}
+
+
+@media (max-width: 600px) {
+.arrow.arrowLeft.arrowLeft--shelf {
+  right: 60px;
+}
+.sliderContainer--shelf :global(.vtex-slider-0-x-dotsContainer ){
+  display: block !important;
+}
+.dot.dot--isActive.dot--isActive--shelf{
+  background: #004D9D;
+  width: 50px!important;
+  border-radius: 0;
+}
+.sliderContainer.sliderContainer--shelf {
+  margin: 0 0 20px 0;
+}
+
+.sliderContainer.sliderContainer--shelf {margin: 0 0 20px 0;}
+
+
+}

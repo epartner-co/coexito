@@ -1,0 +1,262 @@
+  {
+  "store.custom#quien": {
+    "children": [
+      "flex-layout.row#quien"
+    ]
+  },
+  "flex-layout.row#quien":{
+    "props": {
+      "blockClass": ["faq", "estaticas"]
+    },
+    "children": [
+      "flex-layout.col#estaticasS"
+    ]
+  },
+  "flex-layout.col#estaticasS": {
+    "children": [
+      "list-context.image-list#estatics1",
+      "rich-text#titleF1",
+      "rich-text#titleFConte",
+      "flex-layout.row#tercerpara",
+      "flex-layout.row#content-3",
+      "flex-layout.row#content-4",
+      "rich-text#historia-title",
+      "list-context.image-list#storytime",
+      "rich-text#CENTRO",
+      "rich-text#quienes-LOREM",
+      "flex-layout.row#quinta",
+      "flex-layout.row#quintam",
+      "rich-text#nuestrosproductos"
+    ]
+  },
+  "list-context.image-list#estatics1": {
+    "children": ["slider-layout#demo-images#1"],
+    "props": {
+      "height": 720,
+      "images": [
+        {
+          "image": "https://coexitob2b.vteximg.com.br/arquivos/banner-principal-deskfaqs.png",
+          "mobileImage": "https://coexitob2b.vteximg.com.br/arquivos/banner-principal-mobilefaqs.png"
+        },
+        {
+          "image": "https://coexitob2b.vteximg.com.br/arquivos/banner-principal-deskfaqs.png",
+          "mobileImage": "https://coexitob2b.vteximg.com.br/arquivos/banner-principal-mobilefaqs.png"
+        }
+      ]
+    }
+  },
+  "slider-layout#demo-images#1": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots":"never",
+      "blockClass": "carousel"
+    }
+  },
+  "rich-text#titleF1": {
+    "props": {
+      "text": "## **Sobre nosotros**",
+      "blockClass": "TitleEstatics"
+    }
+  },
+  "rich-text#titleFConte": {
+    "props": {
+      "text": "Coéxito, la red más grande de distribución de baterías y autopartes \n\n Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.",
+      "blockClass": "contenido"
+    }
+  },
+  "image#prueba": {
+    "props": {
+      "src": "https://coexitob2b.vteximg.com.br/arquivos/video-mas.png",
+      "blockClass":"imagen-video"
+    }
+  },
+  "flex-layout.row#tercerpara":{
+    "props": {
+      "blockClass": ["faq", "estaticas"]
+    },
+    "children": [
+      "image#prueba"
+    ]
+  },
+  "flex-layout.row#content-3":{
+    "props": {
+      "blockClass": ["imagnees-content"]
+    },
+    "children": [
+      "flex-layout.col#lateralQ",
+      "flex-layout.col#lateralQ-3"
+    ]
+  },
+  "flex-layout.col#lateralQ":{
+    "children":[
+      "image#lateral-imagen"
+    ]
+  },
+  "image#lateral-imagen": {
+    "props": {
+      "src": "https://coexitob2b.vteximg.com.br/arquivos/Banner-quienessomos.png",
+      "maxHeight": 500,
+      "blockClass":"quienes-somos-imagen"
+    }
+  },
+  "flex-layout.col#lateralQ-3":{
+    "children":[
+      "rich-text#quienes-somos-coexito",
+      "image#lateral-quienessomos-2",
+      "rich-text#quienes-certificaciones",
+      "image#lateral-certficaciones-2"
+    ]
+  },
+  "rich-text#quienes-somos-coexito": {
+    "props": {
+      "text": "# CONOCE MÁS DE COEXITO \n # COEXITO S.A.S Cuenta con dos certificaciones.\n  Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500.",
+      "blockClass": "titulos-quienes-somos"
+    }
+  },
+  "image#lateral-quienessomos-2": {
+    "props": {
+      "src": "https://coexitob2b.vteximg.com.br/arquivos/quines-somos-2.png",
+      "maxHeight": 500
+    }
+  },
+  "rich-text#quienes-certificaciones": {
+    "props": {
+      "text": "# Certificaciones",
+      "blockClass": "titulos-quienes-somos"
+    }
+  },
+  "image#lateral-certficaciones-2": {
+    "props": {
+      "src": "https://coexitob2b.vteximg.com.br/arquivos/certtificaciones-1.png",
+      "maxHeight": 500,
+      "blockClass":"certificaciones"
+    }
+  },
+  "flex-layout.row#content-4":{
+    "props": {
+      "blockClass": ["vision-mision"]
+    },
+    "children": [
+      "info-card#mision",
+      "info-card#vision"
+    ]
+  },
+  "info-card#mision":{
+    "props":{
+      "id":"texting",
+      "imageUrl":"https://coexitob2b.vteximg.com.br/arquivos/mision-banners.png",
+      "mobileImageUrl":"https://coexitob2b.vteximg.com.br/arquivos/mision-mobile.png",
+      "callToActionUrl": "#",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER",
+      "blockClass":"mision-vision",
+      "headline": "Misión",
+      "subhead":"Somos la mejor experiencia para la operación continua, creciente y rentable de nuestros clientes y socios comerciales, sirviendo con pasión para generar confianza.",
+      "isFullModeStyle": true
+    }
+  },
+  "info-card#vision":{
+    "props":{
+      "id":"texting",
+      "imageUrl":"https://coexitob2b.vteximg.com.br/arquivos/vision-banners.png",
+      "mobileImageUrl":"https://coexitob2b.vteximg.com.br/arquivos/vision-mobile.png",
+      "callToActionUrl": "#",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER",
+      "blockClass":"mision-vision",
+      "headline": "Visión",
+      "subhead":"Consolidar el liderazgo en Colombia e incursionar rentablemente en al menos 2 países de la región andina y Centroamérica en el sector de autorpartes y sistema de respaldo de energía, convirtiéndonos en la mejor opción de comercialización para las marcas más reconocidas.",
+      "isFullModeStyle": true
+    }
+  },
+  "rich-text#historia-title": {
+    "props": {
+      "text": "## NUESTRA HISTORIA",
+      "blockClass": ["shelfTitle","historiatittle"]
+    }
+  },
+  "list-context.image-list#storytime": {
+    "children": ["slider-layout#demo-stroyTime"],
+    "props": {
+      "images": [
+        {
+          "image": "https://coexitob2b.vteximg.com.br/arquivos/storytime-2new.png",
+          "mobileImage": "https://coexitob2b.vteximg.com.br/arquivos/story-1mobile.png"
+        },
+        {
+          "image": "https://coexitob2b.vteximg.com.br/arquivos/storytime-1-new.png",
+          "mobileImage": "https://coexitob2b.vteximg.com.br/arquivos/story-1mobile.png"
+        },
+        {
+          "image": "https://coexitob2b.vteximg.com.br/arquivos/storytime-2new.png",
+          "mobileImage": "https://coexitob2b.vteximg.com.br/arquivos/story-1mobile.png"
+        }
+      ]
+    }
+  },
+  "slider-layout#demo-stroyTime": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 2,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "showPaginationDots":"never",
+      "blockClass": ["carousel","historia-carousel"]
+    }
+  },
+  "rich-text#CENTRO": {
+    "props": {
+      "text": "## **CENTRO DE VALOR**",
+      "blockClass": ["TitleEstatics","valor"]
+    }
+  },
+  "rich-text#quienes-LOREM": {
+    "props": {
+      "text": "# Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500.",
+      "blockClass": "content-quienes-somos"
+    }
+  },
+  "flex-layout.row#quinta":{
+    "props": {
+      "blockClass": ["imagenes-valor"]
+    },
+    "children": [
+      "image#lateral-valor"
+    ]
+  },
+  "image#lateral-valor": {
+    "props": {
+      "src": "https://coexitob2b.vteximg.com.br/arquivos/valor.png",
+      "blockClass":"valor"
+    }
+  },
+  "flex-layout.row#quintam":{
+    "props": {
+      "blockClass": ["imagenes-valorm"]
+    },
+    "children": [
+      "image#lateral-valorM"
+    ]
+  },
+  "image#lateral-valorM": {
+    "props": {
+      "src": "https://coexitob2b.vteximg.com.br/arquivos/VALOR-M.png",
+      "blockClass":"valorM"
+    }
+  },
+  "rich-text#nuestrosproductos": {
+    "props": {
+      "text": "[CONOCE NUESTROS PRODUCTOS](/)",
+      "blockClass": "boton-nuestros-productos"
+    }
+  }
+} 

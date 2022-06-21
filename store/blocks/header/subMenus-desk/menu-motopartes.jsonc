@@ -1,0 +1,535 @@
+{
+    "vtex.menu@2.x:submenu#motopartes": {
+        "props": {
+          "width": "100%",
+          "blockClass": "Submenu"
+        },
+        "children": [
+          "flex-layout.row#motopartes"
+        ]
+    },
+    // contenedor padre del menu
+    "flex-layout.row#motopartes": {
+        "props": {
+          "blockClass": "Submenu"
+        },
+        "children": [
+          "flex-layout.col#motopartes"
+        ]
+    },
+    "flex-layout.col#motopartes": {
+        "props": {
+          "blockClass": ["Submenu"]
+        },
+        "children": [
+          "vtex.menu@2.x:menu#motopartes",
+          "image#deskMenuBanner-motopartes"
+        ]
+    },
+    "image#deskMenuBanner-motopartes": {
+        "props": {
+          "src": "https://coexitob2b.vteximg.com.br/arquivos/banner-desk1.png",
+          "link":{
+            "url":""
+          },
+          "blockClass": "bannerMenuDesk"
+        }
+    },
+    // menu contenedor hijo
+    "vtex.menu@2.x:menu#motopartes": {
+        "props": {
+          "orientation": "vertical",
+          "blockClass": "Submenu"
+        },
+        "children": [
+            "flex-layout.row#menumotopartesFila1"
+        ]
+    },
+    // items del menu
+    "flex-layout.row#menumotopartesFila1": {
+        "props": {
+          "blockClass": ["Submenu","lvl2"]
+        },
+        "children": [
+            "flex-layout.col#motopartes-motopartes-baterias",
+            "flex-layout.col#motopartes-tipo-motopartes",
+            "flex-layout.col#motopartes-lubricantes-motopartes",
+            "flex-layout.col#bujias-motopartes",
+            "flex-layout.col#balineras-motopartes"
+        ]
+    },
+
+    // Sub menu motopartes-baterias ----------------------------------
+    "flex-layout.col#motopartes-motopartes-baterias": {
+        "props": {
+            "width":"50%",
+            "blockClass": "Submenu-item"
+        },
+        "children": [
+            "disclosure-layout#motopartes-baterias-submenu-lvl2"
+        ]
+    },
+    // trigger para activar el menu
+    "disclosure-layout#motopartes-baterias-submenu-lvl2": {
+        "children": ["disclosure-trigger#motopartes-baterias-lvl2","disclosure-content#motopartes-baterias-lvl2"],
+        "props": {
+          "blockClass": "subMneusM"
+        }
+    },
+    // sub Menu trigger principal
+    "disclosure-trigger#motopartes-baterias-lvl2": {
+        "children": ["menu-item#category-pricipal-motopartes-baterias"],
+        "props": {
+          "blockClass": "subMneusMTrigger"
+        }
+    },
+    // trigger dentro del sub Menu
+    "disclosure-trigger#motopartes-baterias-lvl2-2": {
+        "children": ["menu-item#category-pricipal-motopartes-baterias-2"],
+        "props": {
+          "blockClass": "subMneusMTrigger"
+        }
+    },
+    "disclosure-content#motopartes-baterias-lvl2": {
+        "children": ["disclosure-trigger#motopartes-baterias-lvl2-2","flex-layout.col#motopartes-baterias-container-lvl2"],
+        "props": {
+          "blockClass": "subMneusMContent"
+        }
+    },
+
+    // trigger sub menu auto camioneta ---------------------------
+    "menu-item#category-pricipal-motopartes-baterias": {
+        "props": {
+            "id": "menu-item-category--pricipal-motopartes-baterias",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["menu-lv2"],
+            "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "tagTitle": "Baterias",
+            "text": "Baterías"
+            }
+        }
+    },
+    // trigger numero 2 ----------------------------------
+    "menu-item#category-pricipal-motopartes-baterias-2": {
+        "props": {
+            "id": "menu-item-category--pricipal-zapatos",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["cierreSubMneu"],
+            "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "tagTitle": "Baterias",
+            "text": "Baterías"
+            }
+        }
+    },
+    // sub menu motopartes-baterias ----------------
+    "flex-layout.col#motopartes-baterias-container-lvl2":{
+        "props":{
+            "blockClass":"subMenu-container"
+        },
+        "children":[
+            "menu-item#category-pricipal-baterias-motopartes"
+        ]
+    },
+    "menu-item#category-pricipal-baterias-motopartes": {
+        "props": {
+            "id": "menu-item-category--mac",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["menu-item-levl2"],
+            "itemProps": {
+            "type": "internal",
+            "href": "/apparel---accessories/eyeglasses/",
+            "noFollow": false,
+            "tagTitle": "Baterias",
+            "text": "Baterías"
+            }
+        }
+    },
+
+    // Submenu tipo de motopartes ---------------------------
+    "flex-layout.col#motopartes-tipo-motopartes": {
+        "props": {
+            "width":"50%",
+            "blockClass": "Submenu-item"
+        },
+        "children": [
+            "disclosure-layout#tipo-motopartes-submenu-lvl2"
+        ]
+    },
+    // trigger para activar el menu
+    "disclosure-layout#tipo-motopartes-submenu-lvl2": {
+        "children": ["disclosure-trigger#menu-tipo-motopartes-lvl2","disclosure-content#menu-tipo-motopartes-lvl2"],
+        "props": {
+            "blockClass": ["subMneusM"]
+        }
+    },
+    // sub Menu trigger principal
+    "disclosure-trigger#menu-tipo-motopartes-lvl2": {
+        "children": ["menu-item#category-pricipal-tipo-motopartes"],
+        "props": {
+            "blockClass": "subMneusMTrigger"
+        }
+    },
+    // trigger dentro del sub Menu
+    "disclosure-trigger#menu-tipo-motopartes-lvl2-2": {
+        "children": ["menu-item#category-pricipal-tipo-motopartes-2"],
+        "props": {
+        "blockClass": "subMneusMTrigger"
+        }
+    },
+    "disclosure-content#menu-tipo-motopartes-lvl2": {
+        "children": ["disclosure-trigger#menu-tipo-motopartes-lvl2-2","flex-layout.col#tipo-motopartes-container-lvl2"],
+        "props": {
+        "blockClass": "subMneusMContent"
+        }
+    },
+    // trigger sub menu tipo de motopartes ---------------------------
+    "menu-item#category-pricipal-tipo-motopartes": {
+        "props": {
+            "id": "menu-item-category--pricipal-motopartes-tipo",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["menu-lv2","menu-lv2-v2"],
+            "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "tagTitle": "Llantas",
+            "text": "Llantas"
+            }
+        }
+    },
+    // trigger numero 2 ----------------------------------
+    "menu-item#category-pricipal-tipo-motopartes-2": {
+        "props": {
+            "id": "menu-item-category--pricipal-motopartes",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["cierreSubMneu"],
+            "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "tagTitle": "Llantas",
+            "text": "Llantas"
+            }
+        }
+    },
+    // sub menu tipo-motopartes ----------------
+    "flex-layout.col#tipo-motopartes-container-lvl2":{
+        "props":{
+            "blockClass":["subMenu-container","menu-columan-2"]
+        },
+        "children":[
+            "menu-item#category-pricipal-llantas-neomaticos"
+        ]
+    },
+    "menu-item#category-pricipal-llantas-neomaticos": {
+        "props": {
+            "id": "menu-item-category--cgampion",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["menu-item-levl2"],
+            "itemProps": {
+            "type": "internal",
+            "href": "/apparel---accessories/eyeglasses/",
+            "noFollow": false,
+            "tagTitle": "Llantas y neomáticos",
+            "text": "Llantas y neomáticos"
+            }
+        }
+    },
+    // sub menu de lubricantes-motopartes 
+    "flex-layout.col#motopartes-lubricantes-motopartes": {
+        "props": {
+            "width":"50%",
+            "blockClass": "Submenu-item"
+        },
+        "children": [
+            "disclosure-layout#lubricantes-motopartes-submenu-lvl2"
+        ]
+    },
+    // trigger para activar el menu
+    "disclosure-layout#lubricantes-motopartes-submenu-lvl2": {
+        "children": ["disclosure-trigger#menu-lubricantes-motopartes-lvl2","disclosure-content#menu-lubricantes-motopartes-lvl2"],
+        "props": {
+          "blockClass": "subMneusM"
+        }
+    },
+    // sub Menu trigger principal
+    "disclosure-trigger#menu-lubricantes-motopartes-lvl2": {
+        "children": ["menu-item#category-pricipal-lubricantes-motopartes"],
+        "props": {
+          "blockClass": "subMneusMTrigger"
+        }
+    },
+    // trigger dentro del sub Menu
+    "disclosure-trigger#menu-lubricantes-motopartes-lvl2-2": {
+        "children": ["menu-item#category-pricipal-lubricantes-motopartes-2"],
+        "props": {
+          "blockClass": "subMneusMTrigger"
+        }
+    },
+    "disclosure-content#menu-lubricantes-motopartes-lvl2": {
+        "children": ["disclosure-trigger#menu-lubricantes-motopartes-lvl2-2","flex-layout.col#lubricantes-motopartes-container-lvl2"],
+        "props": {
+          "blockClass": "subMneusMContent"
+        }
+    },
+    
+    // trigger sub menu lubricantes-motopartes ---------------------------
+    "menu-item#category-pricipal-lubricantes-motopartes": {
+        "props": {
+            "id": "menu-item-category--pricipal-lubricantes-motopartes",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["menu-lv2"],
+            "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "tagTitle": "Lubricantes",
+            "text": "Lubricantes"
+            }
+        }
+    },
+    // trigger numero 2 ----------------------------------
+    "menu-item#category-pricipal-lubricantes-motopartes-2": {
+        "props": {
+            "id": "menu-item-category--pricipal-lubricantes-motopartes",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["cierreSubMneu"],
+            "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "tagTitle": "Lubricantes",
+            "text": "Lubricantes"
+            }
+        }
+    },
+    // sub menu lubricantes-motopartes ----------------
+    "flex-layout.col#lubricantes-motopartes-container-lvl2":{
+        "props":{
+            "blockClass":"subMenu-container"
+        },
+        "children":[
+            "menu-item#category-pricipal-lubricantes-motopartes-1"
+        ]
+    },
+    "menu-item#category-pricipal-lubricantes-motopartes-1": {
+        "props": {
+            "id": "menu-item-category--cgampion",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["menu-item-levl2"],
+            "itemProps": {
+            "type": "internal",
+            "href": "/apparel---accessories/eyeglasses/",
+            "noFollow": false,
+            "tagTitle": "Lubricantes",
+            "text": "Lubricantes"
+            }
+        }
+    },
+    // sub menu bujias
+    "flex-layout.col#bujias-motopartes": {
+        "props": {
+            "width":"50%",
+            "blockClass": "Submenu-item"
+        },
+        "children": [
+            "disclosure-layout#filtros-bujias-motoparte-lvl2"
+        ]
+    },
+    // trigger para activar el menu
+    "disclosure-layout#filtros-bujias-motoparte-lvl2": {
+        "children": ["disclosure-trigger#menu-bujias-motopartes-lvl2","disclosure-content#menu-bujias-motopartes-lvl2"],
+        "props": {
+          "blockClass": "subMneusM"
+        }
+    },
+    // sub Menu trigger principal
+    "disclosure-trigger#menu-bujias-motopartes-lvl2": {
+        "children": ["menu-item#category-pricipal-bujias-motopartes"],
+        "props": {
+          "blockClass": "subMneusMTrigger"
+        }
+    },
+    // trigger dentro del sub Menu
+    "disclosure-trigger#menu-bujias-motopartes-lvl2-2": {
+        "children": ["menu-item#category-pricipal-bujias-motopartes-2"],
+        "props": {
+          "blockClass": "subMneusMTrigger"
+        }
+    },
+    "disclosure-content#menu-bujias-motopartes-lvl2": {
+        "children": ["disclosure-trigger#menu-bujias-motopartes-lvl2-2","flex-layout.col#bujias-motopartes-container-lvl2"],
+        "props": {
+          "blockClass": "subMneusMContent"
+        }
+    },
+    // trigger sub menu bujias-motopartes ---------------------------
+    "menu-item#category-pricipal-bujias-motopartes": {
+        "props": {
+            "id": "menu-item-category--pricipal-filtros-motopartes",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["menu-lv2"],
+            "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "tagTitle": "Bujias",
+            "text": "Bujías"
+            }
+        }
+    },
+    // trigger numero 2 ----------------------------------
+    "menu-item#category-pricipal-bujias-motopartes-2": {
+        "props": {
+            "id": "menu-item-category--pricipal-filtros-motopartes",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["cierreSubMneu"],
+            "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "tagTitle": "Bujias",
+            "text": "Bujías"
+            }
+        }
+    },
+    // sub menu bujias-motopartes ----------------
+    "flex-layout.col#bujias-motopartes-container-lvl2":{
+        "props":{
+            "blockClass":"subMenu-container"
+        },
+        "children":[
+            "menu-item#category-pricipal-bujias-motopartes-1"
+        ]
+    },
+    "menu-item#category-pricipal-bujias-motopartes-1": {
+        "props": {
+            "id": "menu-item-category--cgampion",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["menu-item-levl2"],
+            "itemProps": {
+            "type": "internal",
+            "href": "/apparel---accessories/eyeglasses/",
+            "noFollow": false,
+            "tagTitle": "Bujias",
+            "text": "Bujías"
+            }
+        }
+    },
+    // sub menu burnes
+    "flex-layout.col#balineras-motopartes": {
+        "props": {
+            "width":"50%",
+            "blockClass": "Submenu-item"
+        },
+        "children": [
+            "disclosure-layout#filtros-balineras-submenu-lvl2"
+        ]
+    },
+    // trigger para activar el menu
+    "disclosure-layout#filtros-balineras-submenu-lvl2": {
+        "children": ["disclosure-trigger#menu-balineras-motopartes-lvl2","disclosure-content#menu-balineras-motopartes-lvl2"],
+        "props": {
+          "blockClass": "subMneusM"
+        }
+    },
+    // sub Menu trigger principal
+    "disclosure-trigger#menu-balineras-motopartes-lvl2": {
+        "children": ["menu-item#category-pricipal-balineras-motopartes"],
+        "props": {
+          "blockClass": "subMneusMTrigger"
+        }
+    },
+    // trigger dentro del sub Menu
+    "disclosure-trigger#menu-balineras-motopartes-lvl2-2": {
+        "children": ["menu-item#category-pricipal-balineras-motopartes-2"],
+        "props": {
+          "blockClass": "subMneusMTrigger"
+        }
+    },
+    "disclosure-content#menu-balineras-motopartes-lvl2": {
+        "children": ["disclosure-trigger#menu-balineras-motopartes-lvl2-2","flex-layout.col#balineras-motopartes-container-lvl2"],
+        "props": {
+          "blockClass": "subMneusMContent"
+        }
+    },
+    // trigger sub menu bujias-motopartes ---------------------------
+    "menu-item#category-pricipal-balineras-motopartes": {
+        "props": {
+            "id": "menu-item-category--pricipal-filtros-motopartes",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["menu-lv2"],
+            "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "tagTitle": "Balineras",
+            "text": "Balineras"
+            }
+        }
+    },
+    // trigger numero 2 ----------------------------------
+    "menu-item#category-pricipal-balineras-motopartes-2": {
+        "props": {
+            "id": "menu-item-category--pricipal-filtros-motopartes",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["cierreSubMneu"],
+            "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "tagTitle": "Balineras",
+            "text": "Balineras"
+            }
+        }
+    },
+    // sub menu balineras-motopartes ----------------
+    "flex-layout.col#balineras-motopartes-container-lvl2":{
+        "props":{
+            "blockClass":"subMenu-container"
+        },
+        "children":[
+            "menu-item#category-pricipal-balineras-motopartes-1"
+        ]
+    },
+    "menu-item#category-pricipal-balineras-motopartes-1": {
+        "props": {
+            "id": "menu-item-category--cgampion",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["menu-item-levl2"],
+            "itemProps": {
+            "type": "internal",
+            "href": "/apparel---accessories/eyeglasses/",
+            "noFollow": false,
+            "tagTitle": "balineras",
+            "text": "balineras"
+            }
+        }
+    }
+}

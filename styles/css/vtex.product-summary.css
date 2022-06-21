@@ -2,15 +2,6 @@
   border-radius: 50%;
 }
 
-.container :global(.vtex-modal-layout-0-x-triggerContainer) {
-  opacity: 0;
-  transition: opacity 200ms ease-in-out;
-}
-
-.container:hover :global(.vtex-modal-layout-0-x-triggerContainer) {
-  opacity: 1;
-}
-
 @media screen and (max-width: 40em) {
   .container :global(.vtex-modal-layout-0-x-triggerContainer) {
     display: none;
@@ -21,6 +12,12 @@
   justify-content: start;
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+.element {
+  padding-top: 0;
+}
+.containerNormal {
+  background: white;
 }
 
 .brandName {
@@ -39,4 +36,109 @@
 
 .image {
   border-radius: 0.25rem;
+}
+.nameContainer {
+  justify-content: center;
+}
+.productBrandName{
+  font-size: 10px;
+}
+.productBrandName::before{
+  content: "Marca: ";
+  font-weight: bold;
+  font-size: 11px;
+  color:#004D9D;
+}
+:global(.vtex-product-identifier-0-x-product-identifier--productReference){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+:global(.vtex-product-identifier-0-x-product-identifier__value){
+  font-size: 10px;
+  color: black;
+}
+.productBrandContainer{
+  display: flex;
+  justify-content: center;
+}
+.containerNormal {
+  border: 1px solid #EAEAEA;
+  padding: 5px 10px;
+  margin: 0 0 0 10px;
+}
+.containerNormal:hover {
+  border: 1px solid #015B98;
+}
+.containerNormal :global(.vtex-button){
+  background: white;
+  transition: 400ms;
+}
+/* hover boton de comprar */
+.containerNormal :global(.vtex-button__label)::after{
+  content: "";
+  background: url(/arquivos/carritoVtirnaNormal.png);
+  background-size: 100%;
+  width: 16px;
+  height: 16px;
+  display: block;
+  margin-left: 10px;
+}
+.containerNormal :global(.vtex-button__label):hover::after{
+  background: url(/arquivos/carritoVtrina.png);
+  background-size: 100%;
+}
+/* estilos del boton de comprar en vitrina */
+.containerNormal :global(.vtex-button__label){
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+}
+:global(.vtex-add-to-cart-button-0-x-buttonText){
+  color: #015B98;
+  transition: 400ms;
+  font-size: 11px;
+}
+.containerNormal :global(.vtex-button):hover{
+  background: #015B98;
+  border: 0;
+}
+.containerNormal :global(.vtex-button):hover :global(.vtex-add-to-cart-button-0-x-buttonText){
+  color: white;
+}
+/* estilos del input de cantidad */
+:global(.vtex-product-quantity-1-x-quantitySelectorTitle){
+  color: #D3D3D3;
+  font-size: 12px;
+}
+:global(.vtex-numeric-stepper__minus-button){
+  background: white;
+}
+:global(.vtex-numeric-stepper__minus-button){
+  background: white;
+}
+:global(.vtex-numeric-stepper__input){
+  border-left: 0;
+  border-right: 0;
+  width: 24px;
+}
+:global(.vtex-numeric-stepper-container){
+  justify-content: center;
+}
+:global(.vtex-numeric-stepper__plus-button__text){
+  color: black;
+}
+:global(.vtex-numeric-stepper__minus-button__text){
+  color: #d3d3d3;
+}
+:global(.vtex-store-components-3-x-discountInsideContainer){
+  background: #ED6B10;
+  left: 0;
+  width: 53px;
+  bottom: 13px;
+  font-weight: 700;
+  padding: 4px 9px;
+  border-radius: 4px;
+}
+:global(.vtex-slider-layout-0-x-sliderTrack--vitrinaGigante) .nameWrapper {
+  text-align: center;
 }

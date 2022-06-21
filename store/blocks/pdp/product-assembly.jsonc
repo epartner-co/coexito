@@ -1,9 +1,73 @@
 {
   "sticky-layout#buy-button": {
     "props": {
-      "position": "bottom"
+      "position": "bottom",
+      "blockClass":"sticky-product"
     },
-    "children": ["flex-layout.row#buy-button"]
+    "children": ["flex-layout.row#fichaProducto"]
+  },
+  "flex-layout.row#fichaProducto": {
+    "props": {
+      "blockClass":"fichaProducto"
+    },
+    "children": [
+      "flex-layout.col#imagenficha",
+      "flex-layout.col#infoProduct",
+      "flex-layout.col#buy-button-ficha"
+    ]
+  },
+  "flex-layout.col#imagenficha": {
+    "children": [
+      "stack-layout"
+    ],
+    "props": {
+      "width": "10%",
+      "blockClass":"imagenFicha"
+    }
+  },
+  "flex-layout.col#infoProduct": {
+    "children": [
+      "flex-layout.row#product-name",
+      "flex-layout.row#list-price-savings",
+      "flex-layout.row#selling-price"
+    ],
+    "props": {
+      "width": "60%",
+      "blockClass":"preciosFixed"
+    }
+  },
+  "flex-layout.col#buy-button-ficha": {
+    "props": {
+      "blockClass":"rowButtonsProduct-1"
+    },
+    "children": ["add-to-cart-button","flex-layout.row#accesossecundarios"]
+  },
+  "flex-layout.row#accesossecundarios": {
+    "props": {
+      "blockClass":"accesossecundarios"
+    },
+    "children": [
+      "flex-layout.col#cotizarButton-ficha",
+      "image#WhatsApp"
+    ]
+  },
+  "image#WhatsApp": {
+    "props": {
+      "src": "https://orbeim.vteximg.com.br/arquivos/whastappIconCoexito.png",
+      "link":{
+        "url":""
+      },
+      "blockClass":"whatsAppFicha"
+    }
+  },
+  "flex-layout.col#cotizarButton-ficha": {
+    "props": {
+      "width":"90%",
+      "blockClass": "cotizarButton-ficha"
+    },
+    "children": [
+      "rich-text#cotizarButton"
+    ]
   },
   "product-assembly-options": {
     "children": [

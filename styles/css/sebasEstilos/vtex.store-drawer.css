@@ -1,0 +1,36 @@
+.drawer--menu {
+    width: 100%!important;
+    height: 93%;
+    top: 47px;
+}
+.drawer--menu .closeIconContainer--menu{
+    position: absolute;
+    top: -50px;
+    right: 10px;
+}
+.drawerContent--menu {
+    margin-top: 20px;
+}
+.openIconContainer--menu::before{
+    content: "";
+    background: url(https://coexitob2b.myvtex.com/arquivos/menu-mobile-coexito.png) no-repeat;
+    background-size: 100%;
+    display: block;
+    width: 30px;
+    height: 26px;
+}
+.menuIcon--menu{
+    display: none;
+}
+@media (max-width: 600px) {
+
+.drawer.drawer--filtros.opened.opened--filtros {width: 85% !important;}
+
+.closeIconContainer.closeIconContainer--filtros {justify-content: end;}
+
+.openIconContainer--menu{
+    padding: 4px 5px;
+    display: flex;
+    align-items: center;
+}
+}

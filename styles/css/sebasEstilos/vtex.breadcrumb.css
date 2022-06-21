@@ -1,0 +1,59 @@
+/* ajustes breadcrumb */
+.homeIcon{
+    display: none;
+}
+.homeLink::before{
+    content: "";
+    background: url(https://coexitob2b.myvtex.com/arquivos/homeBreadCrumb.png);
+    background-size: 100%;
+    display: block;
+    width: 15px;
+    height: 20px;
+    text-decoration: underline;
+    color: #808080;
+}
+:global(.vtex-flex-layout-0-x-flexRow--bateria) .homeLink::before{
+    background: url(https://coexitob2b.myvtex.com/arquivos/baterias-breadcrumb.png) no-repeat;
+    background-size: 100%;
+}
+:global(.vtex-flex-layout-0-x-flexRow--autopartes) .homeLink::before{
+    background: url(https://coexitob2b.myvtex.com/arquivos/autopartes-breadcrumb.png) no-repeat;
+    background-size: 100%;
+}
+:global(.vtex-flex-layout-0-x-flexRow--llantas) .homeLink::before{
+    background: url(https://coexitob2b.myvtex.com/arquivos/llantas-breadcrumb.png) no-repeat;
+    background-size: 100%;
+}
+:global(.vtex-flex-layout-0-x-flexRow--lubricante) .homeLink::before{
+    background: url(https://coexitob2b.myvtex.com/arquivos/lubricantes-breadcrumb.png) no-repeat;
+    background-size: 100%;
+}
+.arrow .caretIcon{
+    display: none;
+}
+.arrow{
+    display: flex;
+    padding: 0;
+    align-items: center;
+    margin: 0 1px;
+}
+.arrow::before{
+    content: "";
+    background: #868686;
+    width: 3px;
+    height:3px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.link {
+    font-size: 14px;
+}
+.term {
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
+}
+.container {
+    display: flex;
+    align-items: center;
+}

@@ -3,7 +3,10 @@
     "children": [
       "menu-item#shop",
       "menu-item#about-us"
-    ]
+    ],
+    "props":{
+      "blockClass":"vertical-menu"
+    }
   },
   "menu-item#shop": {
     "props": {
@@ -22,232 +25,126 @@
   },
   "vtex.menu@2.x:menu#institutional": {
     "children": [
-      "image#icon-battery",
       "menu-item#vtex-website",
-      "image#icon-battery1",
-      "menu-item#vtex-website1",
-      "image#icon-battery2",
       "menu-item#vtex-website2",
-      "image#icon-battery3",
       "menu-item#vtex-website3",
-      "image#icon-battery4",
       "menu-item#vtex-website4",
-      "image#icon-battery5",
       "menu-item#vtex-website5",
-      "image#icon-battery6",
-      "menu-item#vtex-website6",
-      "image#icon-battery7",
-      "menu-item#vtex-website7",
-      "menu-item#vtex-website8"
-
-    ]
-  },
-  "image#icon-battery": {
-    "props": {
-      "src": "https://coexitob2b.vteximg.com.br/arquivos/batery12345.png",
-      "maxHeight": "15px",
-      "maxWidth": "15px",
-      "blockClass": "storePrint"
+      "menu-item#vtex-website6"
+    ],
+    "props":{
+      "blockClass":"vertical-menu"
     }
   },
   "menu-item#vtex-website": {
     "props": {
-      "blockClass": "vertical",
+      "blockClass": ["vertical","inicio"],
       "id": "menu-item-vtex-website",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
-        "type": "external",
-        "href": "http://vtex.com",
+        "type": "internal",
+        "href": "/",
         "noFollow": false,
-        "tagTitle": "visit vtex.com",
+        "tagTitle": "Inicio",
         "text": "INICIO"
       }
     }
   },
-  "image#icon-battery1": {
-    "props": {
-      "src": "https://coexitob2b.vteximg.com.br/arquivos/batery12345.png",
-      "maxHeight": "15px",
-      "maxWidth": "15px",
-      "blockClass": "storePrint"
-    }
-  },
-  "menu-item#vtex-website1": {
-    "props": {
-      "blockClass": "vertical",
-      "id": "menu-item-vtex-website",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "external",
-        "href": "http://vtex.com",
-        "noFollow": false,
-        "tagTitle": "visit vtex.com",
-        "text": "FILTRO M"
-      }
-    }
-  },
-  "image#icon-battery2": {
-    "props": {
-      "src": "https://coexitob2b.vteximg.com.br/arquivos/batery12345.png",
-      "maxHeight": "15px",
-      "maxWidth": "15px",
-      "blockClass": "storePrint"
-    }
-  },
   "menu-item#vtex-website2": {
     "props": {
-      "blockClass": "vertical",
+      "blockClass": ["vertical","baterias"],
       "id": "menu-item-vtex-website",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
-        "type": "external",
-        "href": "http://vtex.com",
+        "type": "internal",
+        "href": "/Baterías",
         "noFollow": false,
-        "tagTitle": "visit vtex.com",
-        "text": "DPT 1"
+        "tagTitle": "Baterías",
+        "text": "BATERÍAS"
       }
-    }
-  },
-  "image#icon-battery3": {
-    "props": {
-      "src": "https://coexitob2b.vteximg.com.br/arquivos/batery12345.png",
-      "maxHeight": "15px",
-      "maxWidth": "15px",
-      "blockClass": "storePrint"
-    }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#baterias"
+    ]
   },
   "menu-item#vtex-website3": {
     "props": {
-      "blockClass": "vertical",
+      "blockClass": ["vertical","llantas"],
       "id": "menu-item-vtex-website",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
-        "type": "external",
-        "href": "http://vtex.com",
+        "type": "internal",
+        "href": "/Llantas",
         "noFollow": false,
-        "tagTitle": "visit vtex.com",
-        "text": "DPT 2"
+        "tagTitle": "Llantas",
+        "text": "LLANTAS"
       }
-    }
-  },
-  "image#icon-battery4": {
-    "props": {
-      "src": "https://coexitob2b.vteximg.com.br/arquivos/batery12345.png",
-      "maxHeight": "15px",
-      "maxWidth": "15px",
-      "blockClass": "storePrint"
-    }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#llantas"
+    ]
   },
   "menu-item#vtex-website4": {
     "props": {
-      "blockClass": "vertical",
+      "blockClass": ["vertical","lubricantes"],
       "id": "menu-item-vtex-website",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
-        "type": "external",
-        "href": "http://vtex.com",
+        "type": "internal",
+        "href": "/lubricantes",
         "noFollow": false,
-        "tagTitle": "visit vtex.com",
-        "text": "DPT 3"
+        "tagTitle": "Lubricantes",
+        "text": "LUBRICANTES"
       }
-    }
-  },
-  "image#icon-battery5": {
-    "props": {
-      "src": "https://coexitob2b.vteximg.com.br/arquivos/batery12345.png",
-      "maxHeight": "15px",
-      "maxWidth": "15px",
-      "blockClass": "storePrint"
-    }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#lubricantes"
+    ]
   },
   "menu-item#vtex-website5": {
     "props": {
-      "blockClass": "vertical",
+      "blockClass":[ "vertical","autopartes"],
       "id": "menu-item-vtex-website",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
-        "type": "external",
-        "href": "http://vtex.com",
+        "type": "internal",
+        "href": "/autopartes",
         "noFollow": false,
-        "tagTitle": "visit vtex.com",
-        "text": "DPT 4"
+        "tagTitle": "Autopartes",
+        "text": "AUTOPARTES"
       }
-    }
-  },
-  "image#icon-battery6": {
-    "props": {
-      "src": "https://coexitob2b.vteximg.com.br/arquivos/batery12345.png",
-      "maxHeight": "15px",
-      "maxWidth": "15px",
-      "blockClass": "storePrint"
-    }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#autopartes"
+    ]
   },
   "menu-item#vtex-website6": {
     "props": {
-      "blockClass": "vertical",
+      "blockClass": ["vertical","motopartes"],
       "id": "menu-item-vtex-website",
       "type": "custom",
       "iconId": null,
       "highlight": false,
       "itemProps": {
-        "type": "external",
-        "href": "http://vtex.com",
+        "type": "internal",
+        "href": "/Motopartes",
         "noFollow": false,
-        "tagTitle": "visit vtex.com",
-        "text": "DPT 5"
+        "tagTitle": "Motopartes",
+        "text": "MOTOPARTES"
       }
-    }
-  },
-  "image#icon-battery7": {
-    "props": {
-      "src": "https://coexitob2b.vteximg.com.br/arquivos/batery12345.png",
-      "maxHeight": "15px",
-      "maxWidth": "15px",
-      "blockClass": "storePrint"
-    }
-  },
-  "menu-item#vtex-website7": {
-    "props": {
-      "blockClass": "vertical",
-      "id": "menu-item-vtex-website",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "external",
-        "href": "http://vtex.com",
-        "noFollow": false,
-        "tagTitle": "visit vtex.com",
-        "text": "DPT 6"
-      }
-    }
-  },
-  "menu-item#vtex-website8": {
-    "props": {
-      "blockClass": "vertical",
-      "id": "menu-item-vtex-website",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "external",
-        "href": "http://vtex.com",
-        "noFollow": false,
-        "tagTitle": "visit vtex.com",
-        "text": "MÁS"
-      }
-    }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#motopartes"
+    ]
   }
 }

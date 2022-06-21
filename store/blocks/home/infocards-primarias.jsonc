@@ -1,0 +1,128 @@
+{
+"responsive-layout.desktop#info":{
+  "children":[
+    "flex-layout.row#contenedorinfo"
+  ]
+},
+"responsive-layout.phone#info":{
+  "children":[
+    "flex-layout.row#contenedorinfoM"
+  ]
+},
+"flex-layout.row#contenedorinfo": {
+  "children": ["flex-layout.col#contenedorIN", "flex-layout.col#contenedorIN2", "flex-layout.col#contenedorIN3", "flex-layout.col#contenedorIN4"],
+  "props":{
+    "blockClass":"fichas"
+  }
+},
+"flex-layout.row#contenedorinfoM": {
+ // "children": ["flex-layout.col#contenedorINM"],
+  "props":{
+    "blockClass":"fichas"
+  }
+},
+//Apertura contenedor de fichas
+"flex-layout.col#contenedorIN":{
+  "children":[
+    "image#uno",
+    "rich-text#uno"
+  ],
+  "props":{
+    "blockClass":"fichas"
+  }
+},
+"flex-layout.col#contenedorIN2":{
+  "children":[
+    "image#dos",
+    "rich-text#dos"
+  ],
+  "props":{
+    "blockClass":"fichas"
+  }
+},
+"flex-layout.col#contenedorIN3":{
+  "children":[
+    "image#tres",
+    "rich-text#tres"
+  ],
+  "props":{
+    "blockClass":"fichas"
+  }
+},
+"flex-layout.col#contenedorIN4":{
+  "children":[
+    "image#cuatro",
+    "rich-text#cuatro"
+  ],
+  "props":{
+    "blockClass":"fichas"
+  }
+},
+//Imagenes de los botones
+"image#uno": {
+  "props": {
+    "src": "https://coexitob2b.vteximg.com.br/arquivos/cotizar-desk.png",
+    "maxHeight": 500
+  }
+},
+"image#dos": {
+  "props": {
+    "src": "https://coexitob2b.vteximg.com.br/arquivos/promociones-desk.png",
+    "maxHeight": 500
+  }
+},
+"image#tres": {
+  "props": {
+    "src": "https://coexitob2b.vteximg.com.br/arquivos/estrategias-desk.png",
+    "maxHeight": 500
+  }
+},
+"image#cuatro": {
+  "props": {
+    "src": "https://coexitob2b.vteximg.com.br/arquivos/credito-desk.png",
+    "maxHeight": 500
+  }
+},
+// Texto y botones
+"rich-text#uno": {
+  "props": {
+    "textAlignment": "CENTER",
+    "textPosition": "CENTER",
+    "text": "\n**Cotizar**\nEmpieza tu orden ahora\n[Cotizar](/orderquote)",
+    "textColor": "c-on-emphasis",
+    "font": "t-heading-5",
+    "blockClass": "textosC"
+  }
+},
+"rich-text#dos": {
+  "props": {
+    "textAlignment": "CENTER",
+    "textPosition": "CENTER",
+    "text": "\n**Ver promociones**\nActualízate con nuestras ultimas campañas\n[Ver promociones](/140?map=productClusterIds&order=OrderByBestDiscountDESC)",
+    "textColor": "c-on-emphasis",
+    "font": "t-heading-5",
+    "blockClass": "textosC"
+  }
+},
+"rich-text#tres": {
+  "props": {
+    "textAlignment": "CENTER",
+    "textPosition": "CENTER",
+    "text": "\n**Estrategias del mes**\nRealizamos envios a 600 municipios del país\n[Conoce más](/politica-datos)",
+    "textColor": "c-on-emphasis",
+    "font": "t-heading-5",
+    "blockClass": "textosC"
+  }
+},
+"rich-text#cuatro": {
+  "props": {
+    "textAlignment": "CENTER",
+    "textPosition": "CENTER",
+    "text": "\n**Aumenta tu crédito**\nRevisa nuestras condiciones\n[Ver más información](https://sicoexito.web.app/auth/login)",
+    "textColor": "c-on-emphasis",
+    "font": "t-heading-5",
+    "blockClass": "textosC"
+  }
+}
+
+}

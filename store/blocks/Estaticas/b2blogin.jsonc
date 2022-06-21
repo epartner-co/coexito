@@ -1,0 +1,61 @@
+{
+    "store.custom#loginb2b-1": {
+        "blocks": [
+            "list-context.image-list#login",
+            "flex-layout.row#form"
+        ],
+        "props": {
+          "blockClass": "contenedorCF"
+        }
+    },
+
+    "list-context.image-list#login": {
+      "children": ["slider-layout#demo-imagesC"],
+      "props": {
+        "height": 720,
+        "blockClass":"bannerinfeFl",
+        "images": [
+          {
+            "image": "https://coexitob2b.vteximg.com.br/arquivos/banner-desk-new-login-32.png",
+            "mobileImage": "https://coexitob2b.vteximg.com.br/arquivos/banner-mobile-new-login.png"
+          },
+          {
+            "image": "https://coexitob2b.vteximg.com.br/arquivos/banner-desk-new-login-32.png",
+            "mobileImage": "https://coexitob2b.vteximg.com.br/arquivos/banner-mobile-new-login.png"
+          }
+        ]
+      }
+    },
+    "slider-layout#demo-imagesC": {
+      "props": {
+        "itemsPerPage": {
+          "desktop": 1,
+          "tablet": 1,
+          "phone": 1
+        },
+        "infinite": true,
+        "showNavigationArrows": "never",
+        "showPaginationDots":"never",
+        "blockClass": ["carousel", "borderc"]
+      }
+    },
+
+    "rich-text#shelf-title2-1": {
+        "props": {
+          "text": "Solicita tu registro y disfruta de nuestro portafolio de producto",
+          "blockClass": "titulosForm"
+        }
+    },
+    "rich-text#shelf-titleInicio": {
+        "props": {
+          "text": "Bienvenido a coexito mayorista",
+          "blockClass": "titulosForm"
+        }
+    },
+    "login-content":{
+        "props":{
+            "defaultOption": 1
+        }
+    }
+
+}

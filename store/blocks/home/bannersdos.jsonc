@@ -1,0 +1,53 @@
+{
+    "slider-layout#bannersDos": {
+        "props": {
+          "itemsPerPage": {
+            "desktop": 2,
+            "tablet": 1,
+            "phone": 1
+          },
+          "infinite": true,
+          "blockClass": ["sliderBanners", "bannerconexion"],
+          "showPaginationDots":"always",
+          "showNavigationArrows": "always"
+        },
+        "children": [
+          "flex-layout.col#image-1",
+          "flex-layout.col#image-2",
+          "flex-layout.col#image-1"
+        ]
+    },
+    "flex-layout.col#image-1": {
+      "children": ["image#bannerdos-1"]
+    },
+    "image#bannerdos-1": {
+        "props": {
+          "src": "https://coexitob2b.vtexassets.com/arquivos/banner2-1.png",
+          "blockClass": "imgCategoriaSlider",
+          "link":{
+              "url":"/"
+          }
+        }
+    },
+    "flex-layout.col#image-2": {
+      "children": ["image#bannerdos-2","rich-text#saber-mas-banner-2"],
+      "props":{
+        "blockClass":"calltoaction-banner"
+      }
+    },
+    "image#bannerdos-2": {
+        "props": {
+          "src": "https://coexitob2b.vtexassets.com/arquivos/banner-secundario2-desk-new.png",
+          "blockClass": "imgCategoriaSlider",
+          "link":{
+              "url":"/"
+          }
+        }
+    },
+    "rich-text#saber-mas-banner-2": {
+      "props": {
+        "text": "[SABER MÁS](/)",
+        "blockClass": "saber-mas-button-2"
+      }
+    }
+}

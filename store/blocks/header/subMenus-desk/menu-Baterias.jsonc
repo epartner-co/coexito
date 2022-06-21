@@ -1,0 +1,508 @@
+{
+    "vtex.menu@2.x:submenu#baterias": {
+        "props": {
+          "width": "100%",
+          "blockClass": "Submenu"
+        },
+        "children": [
+          "flex-layout.row#baterias"
+        ]
+    },
+    // contenedor padre del menu
+    "flex-layout.row#baterias": {
+        "props": {
+          "blockClass": "Submenu"
+        },
+        "children": [
+          "flex-layout.col#baterias"
+        ]
+    },
+    "flex-layout.col#baterias": {
+        "props": {
+          "blockClass": "Submenu"
+        },
+        "children": [
+          "vtex.menu@2.x:menu#baterias",
+          "image#deskMenuBanner-baterias"
+        ]
+    },
+    "image#deskMenuBanner-baterias": {
+        "props": {
+          "src": "https://coexitob2b.vteximg.com.br/arquivos/banner-desk1.png",
+          "link":{
+            "url":""
+          },
+          "blockClass": "bannerMenuDesk"
+        }
+    },
+    // menu contenedor hijo
+    "vtex.menu@2.x:menu#baterias": {
+        "props": {
+          "orientation": "vertical",
+          "blockClass": "Submenu"
+        },
+        "children": [
+            "flex-layout.row#menuBateriasFila1"
+        ]
+    },
+    // items del menu
+    "flex-layout.row#menuBateriasFila1": {
+        "props": {
+            "blockClass": ["Submenu","lv2"]
+        },
+        "children": [
+            "flex-layout.col#baterias-marcas",
+            "flex-layout.col#baterias-tipo-baterias",
+            "flex-layout.col#baterias-autonomia",
+            "flex-layout.col#tipo-terminal"
+        ]
+    },
+
+    // Sub menu MARCAS ----------------------------------
+    "flex-layout.col#baterias-marcas": {
+        "props": {
+            "width":"50%",
+            "blockClass": "Submenu-item"
+        },
+        "children": [
+            "disclosure-layout#marcas-submenu-lvl2"
+        ]
+    },
+    // trigger para activar el menu
+    "disclosure-layout#marcas-submenu-lvl2": {
+        "children": ["disclosure-trigger#menu-marcas-lvl2","disclosure-content#menu-marcas-lvl2"],
+        "props": {
+          "blockClass": "subMneusM"
+        }
+    },
+    // sub Menu trigger principal
+    "disclosure-trigger#menu-marcas-lvl2": {
+        "children": ["menu-item#category-pricipal-marcas"],
+        "props": {
+          "blockClass": "subMneusMTrigger"
+        }
+    },
+    // trigger dentro del sub Menu
+    "disclosure-trigger#menu-marcas-lvl2-2": {
+        "children": ["menu-item#category-pricipal-marcas-2"],
+        "props": {
+          "blockClass": "subMneusMTrigger"
+        }
+    },
+    "disclosure-content#menu-marcas-lvl2": {
+        "children": ["disclosure-trigger#menu-marcas-lvl2-2","flex-layout.col#marcas-container-lvl2"],
+        "props": {
+          "blockClass": "subMneusMContent"
+        }
+    },
+
+    // trigger sub menu auto camioneta ---------------------------
+    "menu-item#category-pricipal-marcas": {
+        "props": {
+            "id": "menu-item-category--pricipal-marcas",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["menu-lv2"],
+            "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "tagTitle": "Auto o Camioneta",
+            "text": "Auto o Camioneta"
+            }
+        }
+    },
+    // trigger numero 2 ----------------------------------
+    "menu-item#category-pricipal-marcas-2": {
+        "props": {
+            "id": "menu-item-category--pricipal-zapatos",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["cierreSubMneu"],
+            "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "tagTitle": "Auto o Camioneta",
+            "text": "Auto o Camioneta"
+            }
+        }
+    },
+    // sub menu marcas ----------------
+    "flex-layout.col#marcas-container-lvl2":{
+        "props":{
+            "blockClass":"subMenu-container"
+        },
+        "children":[
+            "menu-item#category-pricipal-marca-max",
+            "menu-item#category-pricipal-marcas-coexito",
+            "menu-item#category-pricipal-marca-optima",
+            "menu-item#category-pricipal-marca-power-taxi"
+        ]
+    },
+    "menu-item#category-pricipal-marca-max": {
+        "props": {
+            "id": "menu-item-category--mac",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["menu-item-levl2"],
+            "itemProps": {
+            "type": "internal",
+            "href": "/Baterías/Pesados?initialMap=c&initialQuery=Baterias/Pesados&map=category-1,brand,tipo-de-vehiculo&query=/baterias/mac-gold/livianos&searchState",
+            "noFollow": false,
+            "tagTitle": "MAC",
+            "text": "MAC"
+            }
+        }
+    },
+    "menu-item#category-pricipal-marcas-coexito": {
+        "props": {
+            "id": "menu-item-category--coexito",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["menu-item-levl2"],
+            "itemProps": {
+            "type": "internal",
+            "href": "/",
+            "noFollow": false,
+            "tagTitle": "Coéxito",
+            "text": "Coéxito"
+            }
+        }
+    },
+    "menu-item#category-pricipal-marca-optima": {
+        "props": {
+            "id": "menu-item-category--Optima",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["menu-item-levl2"],
+            "itemProps": {
+            "type": "internal",
+            "href": "/",
+            "noFollow": false,
+            "tagTitle": "Optima",
+            "text": "Optima"
+            }
+        }
+    },
+    "menu-item#category-pricipal-marca-power-taxi": {
+        "props": {
+            "id": "menu-item-category--power-taxi",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["menu-item-levl2"],
+            "itemProps": {
+            "type": "internal",
+            "href": "/",
+            "noFollow": false,
+            "tagTitle": "Power Taxi",
+            "text": "Power Taxi"
+            }
+        }
+    },
+
+    // Submenu tipo de baterias ---------------------------
+    "flex-layout.col#baterias-tipo-baterias": {
+        "props": {
+            "width":"50%",
+            "blockClass": "Submenu-item"
+        },
+        "children": [
+            "disclosure-layout#tipo-baterias-submenu-lvl2"
+        ]
+    },
+    // trigger para activar el menu
+    "disclosure-layout#tipo-baterias-submenu-lvl2": {
+        "children": ["disclosure-trigger#menu-tipo-baterias-lvl2","disclosure-content#menu-tipo-baterias-lvl2"],
+        "props": {
+            "blockClass": ["subMneusM"]
+        }
+    },
+    // sub Menu trigger principal
+    "disclosure-trigger#menu-tipo-baterias-lvl2": {
+        "children": ["menu-item#category-pricipal-tipo-baterias"],
+        "props": {
+            "blockClass": "subMneusMTrigger"
+        }
+    },
+    // trigger dentro del sub Menu
+    "disclosure-trigger#menu-tipo-baterias-lvl2-2": {
+        "children": ["menu-item#category-pricipal-tipo-baterias-2"],
+        "props": {
+        "blockClass": "subMneusMTrigger"
+        }
+    },
+    "disclosure-content#menu-tipo-baterias-lvl2": {
+        "children": ["disclosure-trigger#menu-tipo-baterias-lvl2-2","flex-layout.col#tipo-baterias-container-lvl2"],
+        "props": {
+        "blockClass": "subMneusMContent"
+        }
+    },
+    // trigger sub menu tipo de baterias ---------------------------
+    "menu-item#category-pricipal-tipo-baterias": {
+        "props": {
+            "id": "menu-item-category--pricipal-baterias-tipo",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["menu-lv2","menu-lv2-v2"],
+            "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "tagTitle": "Vehículos pesados",
+            "text": "Vehículos pesados"
+            }
+        }
+    },
+    // trigger numero 2 ----------------------------------
+    "menu-item#category-pricipal-tipo-baterias-2": {
+        "props": {
+            "id": "menu-item-category--pricipal-baterias",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["cierreSubMneu"],
+            "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "tagTitle": "Vehículos pesados",
+            "text": "Vehículos pesados"
+            }
+        }
+    },
+    // sub menu tipo-baterias ----------------
+    "flex-layout.col#tipo-baterias-container-lvl2":{
+        "props":{
+            "blockClass":["subMenu-container","menu-columan-2"]
+        },
+        "children":[
+            "menu-item#category-pricipal-tipoBateria-1",
+            "menu-item#category-pricipal-tipoBateria-2"
+        ]
+    },
+    "menu-item#category-pricipal-tipoBateria-1": {
+        "props": {
+            "id": "menu-item-category--cgampion",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["menu-item-levl2"],
+            "itemProps": {
+            "type": "internal",
+            "href": "/Baterías/Pesados?initialMap=c&initialQuery=Baterias/Pesados&map=category-1,brand,tipo-de-vehiculo&query=/baterias/mac-gold/pesados&searchState",
+            "noFollow": false,
+            "tagTitle": "Baterias MAC",
+            "text": "BaterÍas MAC"
+            }
+        }
+    },
+    "menu-item#category-pricipal-tipoBateria-2": {
+        "props": {
+            "id": "menu-item-category--cgampion",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["menu-item-levl2"],
+            "itemProps": {
+            "type": "internal",
+            "href": "/",
+            "noFollow": false,
+            "tagTitle": "Baterias coexito",
+            "text": "Baterías coexito"
+            }
+        }
+    },
+    // sub menu de autonomia 
+    "flex-layout.col#baterias-autonomia": {
+        "props": {
+            "width":"50%",
+            "blockClass": "Submenu-item"
+        },
+        "children": [
+            "disclosure-layout#autonomia-submenu-lvl2"
+        ]
+    },
+    // trigger para activar el menu
+    "disclosure-layout#autonomia-submenu-lvl2": {
+        "children": ["disclosure-trigger#menu-autonomia-lvl2","disclosure-content#menu-autonomia-lvl2"],
+        "props": {
+          "blockClass": "subMneusM"
+        }
+    },
+    // sub Menu trigger principal
+    "disclosure-trigger#menu-autonomia-lvl2": {
+        "children": ["menu-item#category-pricipal-autonomia"],
+        "props": {
+          "blockClass": "subMneusMTrigger"
+        }
+    },
+    // trigger dentro del sub Menu
+    "disclosure-trigger#menu-autonomia-lvl2-2": {
+        "children": ["menu-item#category-pricipal-autonomia-2"],
+        "props": {
+          "blockClass": "subMneusMTrigger"
+        }
+    },
+    "disclosure-content#menu-autonomia-lvl2": {
+        "children": ["disclosure-trigger#menu-autonomia-lvl2-2","flex-layout.col#autonomia-container-lvl2"],
+        "props": {
+          "blockClass": "subMneusMContent"
+        }
+    },
+    
+    // trigger sub menu autonomia ---------------------------
+    "menu-item#category-pricipal-autonomia": {
+        "props": {
+            "id": "menu-item-category--pricipal-Autonomia",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["menu-lv2"],
+            "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "tagTitle": "Motos",
+            "text": "Motos"
+            }
+        }
+    },
+    // trigger numero 2 ----------------------------------
+    "menu-item#category-pricipal-autonomia-2": {
+        "props": {
+            "id": "menu-item-category--pricipal-Autonomia",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["cierreSubMneu"],
+            "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "tagTitle": "Motos",
+            "text": "Motos"
+            }
+        }
+    },
+    // sub menu autonomia ----------------
+    "flex-layout.col#autonomia-container-lvl2":{
+        "props":{
+            "blockClass":"subMenu-container"
+        },
+        "children":[
+            "menu-item#category-pricipal-autonomia-1"
+        ]
+    },
+    "menu-item#category-pricipal-autonomia-1": {
+        "props": {
+            "id": "menu-item-category--cgampion",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["menu-item-levl2"],
+            "itemProps": {
+            "type": "internal",
+            "href": "/Baterías/Motos?initialMap=c&initialQuery=Baterias/Motos&map=category-1,brand,tipo-de-vehiculo&query=/baterias/mac-gold/motos&searchState",
+            "noFollow": false,
+            "tagTitle": "Batterias magna",
+            "text": "Batterias magna"
+            }
+        }
+    },
+    // sub menu tipoo de temrinal
+    "flex-layout.col#tipo-terminal": {
+        "props": {
+            "width":"50%",
+            "blockClass": "Submenu-item"
+        },
+        "children": [
+            "disclosure-layout#tipo-terminal-submenu-lvl2"
+        ]
+    },
+    // trigger para activar el menu
+    "disclosure-layout#tipo-terminal-submenu-lvl2": {
+        "children": ["disclosure-trigger#menu-tipo-terminal-lvl2","disclosure-content#menu-tipo-terminal-lvl2"],
+        "props": {
+          "blockClass": "subMneusM"
+        }
+    },
+    // sub Menu trigger principal
+    "disclosure-trigger#menu-tipo-terminal-lvl2": {
+        "children": ["menu-item#category-pricipal-tipo-terminal"],
+        "props": {
+          "blockClass": "subMneusMTrigger"
+        }
+    },
+    // trigger dentro del sub Menu
+    "disclosure-trigger#menu-tipo-terminal-lvl2-2": {
+        "children": ["menu-item#category-pricipal-tipo-terminal-2"],
+        "props": {
+          "blockClass": "subMneusMTrigger"
+        }
+    },
+    "disclosure-content#menu-tipo-terminal-lvl2": {
+        "children": ["disclosure-trigger#menu-tipo-terminal-lvl2-2","flex-layout.col#tipo-terminal-container-lvl2"],
+        "props": {
+          "blockClass": "subMneusMContent"
+        }
+    },
+    // trigger sub menu tipo-terminal ---------------------------
+    "menu-item#category-pricipal-tipo-terminal": {
+        "props": {
+            "id": "menu-item-category--pricipal-tipo-terminal",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["menu-lv2"],
+            "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "tagTitle": "Estacionarias",
+            "text": "Estacionarias"
+            }
+        }
+    },
+    // trigger numero 2 ----------------------------------
+    "menu-item#category-pricipal-tipo-terminal-2": {
+        "props": {
+            "id": "menu-item-category--pricipal-tipo-terminal",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["cierreSubMneu"],
+            "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "tagTitle": "Estacionarias",
+            "text": "Estacionarias"
+            }
+        }
+    },
+    // sub menu tipo-terminal ----------------
+    "flex-layout.col#tipo-terminal-container-lvl2":{
+        "props":{
+            "blockClass":"subMenu-container"
+        },
+        "children":[
+            "menu-item#category-pricipal-tipo-terminal-1"
+        ]
+    },
+    "menu-item#category-pricipal-tipo-terminal-1": {
+        "props": {
+            "id": "menu-item-category--cgampion",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["menu-item-levl2"],
+            "itemProps": {
+            "type": "internal",
+            "href": "/",
+            "noFollow": false,
+            "tagTitle": "Estacionarias",
+            "text": "Estacionarias"
+            }
+        }
+    }
+}

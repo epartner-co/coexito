@@ -1,0 +1,192 @@
+:global(.vtex-modal-layout-0-x-triggerContainer--Trigger-Zoom-list){
+    display: flex;
+    justify-content: flex-end;
+}
+.trigger--subMneusMTrigger--hidden{
+    border: 1px solid #D3D3D3;
+    border-radius: 5px;
+    transition: 400ms all;
+    cursor: pointer;
+}
+.content--answer--visible :global(.vtex-rich-text-0-x-paragraph){
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+
+    /* gray */
+
+    color: #808080;
+}
+.trigger--subMneusMTrigger--hidden:hover{
+    background:#004D9D;
+}
+.trigger--subMneusMTrigger--hidden:hover :global(.vtex-menu-2-x-styledLinkContent--menu-lv2){
+    color: white !important;
+    font-weight: bold;
+}
+.content--subMneusMContent--visible{
+    background: white;
+}
+.trigger--titleCategoryF {
+    background: #182841;
+    width: 148px;
+    height: 38px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    cursor: pointer;
+}
+.content--contCategoryF {
+    background: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.trigger--titleCategoryF--hidden::before{
+    background: url(https://coexitob2b.vteximg.com.br/arquivos/imagen-background-biscador.png) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    right: 5%;
+    display: block;
+    width: 13px;
+    content: "";
+    height: 10px;
+    top: 40%;
+}
+@media (max-width: 600px) {
+
+.trigger.trigger--apertura.trigger--hidden.trigger--apertura--hidden::before {top: 17% !important;right: 5.5% !important;}
+   /* especificaciones M */
+    .trigger--especificaciones{
+        margin: 10px 0px !important;
+        width: 100% !important;
+        position: relative;
+    }
+    .trigger--especificaciones :global(.vtex-rich-text-0-x-paragraph--productMOBILE1){
+        text-transform: uppercase;
+    }
+    .trigger--especificaciones--hidden::after{
+        content: "";
+        background: url(/arquivos/aperturaEspe.png) no-repeat;
+        background-size: 100%;
+        width: 16px;
+        height: 16px;
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+    .trigger--especificaciones {
+        background: transparent;
+        border: 1px solid #D3D3D3;
+
+    }
+    .trigger--especificaciones--visible{
+        background: #004D9D;
+        margin-bottom: 0 !important;
+    }
+    .trigger--especificaciones--visible :global(.vtex-rich-text-0-x-paragraph--productMOBILE1){
+        color: white;
+        font-weight: bold;
+    }
+    .trigger--especificaciones--visible::after{
+        content: "";
+        background: url(/arquivos/cierreEspe.png) no-repeat;
+        background-size: 100%;
+        width: 16px;
+        height: 16px;
+        display: block;
+        position: absolute;
+        right: 25px;
+        top: 18px;
+        background-position: center;
+    }
+    .content--visible{
+        background: #F9F9F9;
+        border: 1px solid #D3D3D3;
+        padding: 0 10px;
+    }
+    .content--hidden {
+        display: none;
+    }
+    /* menu  */
+    .trigger.trigger--subMneusMTrigger{
+        background: white;
+        border: 1px solid #D3D3D3;
+        height: 77px;
+    }
+    .content--subMneusMContent--visible .trigger--subMneusMTrigger{
+        background: transparent;
+        border: 0;
+        padding: 10px 0;
+        height: auto;
+        /* border-bottom: 1px solid #D3D3D3; */
+    }
+    .content--subMneusMContent {
+        padding: 0;
+    }
+    .content--lvl2--visible .trigger--lvl2--visible{
+        border-bottom: 1px solid #D3D3D3;
+        height: auto;
+    }
+    .content--subMneusMContent--visible{
+        position: fixed;
+        z-index: 999;
+        width: 100%;
+    }
+    .content--subMneusMContenwt--visible{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: white;
+        z-index: 99;
+    }
+    .trigger--docs--visible :global(.vtex-store-components-3-x-specificationsTableContainer--especsapli) {
+      border: 0px !important;
+    }
+    .content--Informacioncaracteristicas--visible{
+      padding: 18px 10px;
+    }
+    .content--product1MMM--visible{
+      padding: 18px 10px;
+    }
+    .content--Informacionadicional--visible :global(.vtex-store-components-3-x-specificationItemSpecifications--especsapli) {font-size: 12px;color: gray;letter-spacing: 1px;}
+    .content--ContenidoS--visible {background: white;
+      border: none;
+      margin-bottom: 49px !important;
+    }
+}
+
+.trigger.trigger--apertura {width: 100%;background: transparent;border: none;padding: 0;position: relative;}
+
+
+.trigger.trigger--apertura {border-top: 1px solid #e0dede; cursor:pointer}
+
+.trigger.trigger--apertura.trigger--hidden.trigger--apertura--hidden::before {
+  content: "";
+  background: url(/arquivos/abrirMenufiltros.png) no-repeat;
+  background-size: 100%;
+  display: block;
+  width: 13px;
+  position: absolute;height: 13px;
+  background-position: center;top: 30%;right: 5%;
+}
+.trigger.trigger--apertura.trigger--visible.trigger--apertura--visible::before {
+  content: "";
+  background: url(/arquivos/cerraMenufiltros.png) no-repeat;
+  background-size: 100%;
+  display: block;
+  width: 13px;
+  position: absolute;height: 13px;
+  background-position: center;top: 30%;right: 5%;
+}
+
+.content--ContenidoS {margin-bottom: 20px;}
+
+.trigger--apertura--hidden{
+  margin-bottom: 8px;
+}
+
+.trigger.trigger--question {position: relative;}
+
+.trigger.trigger--question.trigger--hidden.trigger--question--hidden {background: #FBFBFB;}

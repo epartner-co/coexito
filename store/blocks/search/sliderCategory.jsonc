@@ -1,0 +1,51 @@
+{
+    "list-context.image-list#categorysSearch": {
+        "children": ["slider-layout#categorysSearch"],
+        "props": {
+            "height": 720,
+            "images": [
+                {
+                    "image": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
+                    "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+                },
+                {
+                    "image": "https://storecomponents.vteximg.com.br/arquivos/banner.jpg",
+                    "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+                },
+                {
+                    "image": "https://storecomponents.vteximg.com.br/arquivos/banner.jpg",
+                    "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+                },
+                {
+                    "image": "https://storecomponents.vteximg.com.br/arquivos/banner.jpg",
+                    "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+                },
+                {
+                    "image": "https://storecomponents.vteximg.com.br/arquivos/banner.jpg",
+                    "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+                },
+                {
+                    "image": "https://storecomponents.vteximg.com.br/arquivos/banner.jpg",
+                    "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+                },
+                {
+                    "image": "https://storecomponents.vteximg.com.br/arquivos/banner.jpg",
+                    "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+                }
+            ]
+        }
+    },
+    "slider-layout#categorysSearch": {
+        "props": {
+            "itemsPerPage": {
+            "desktop": 6,
+            "tablet": 5,
+            "phone": 3
+            },
+            "infinite": true,
+            "showNavigationArrows": "never",
+            "showPaginationDots": "never",
+            "blockClass": "category-carousel"
+        }
+    }
+}

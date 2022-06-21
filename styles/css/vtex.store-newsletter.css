@@ -1,0 +1,45 @@
+.emailInputContainer :global(.vtex-input-prefix__group){
+    border: 0;
+    height: 40px !important;
+}
+.formSubmitContainer{
+    position: relative;
+}
+.formSubmitContainer :global(.vtex-button){
+    padding: 0!important;
+    width: 40px;
+    height: 40px;
+    border-radius: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: #ED6B10;
+    border: 0;
+    position: absolute;
+    top: -40px;
+    right: 0;
+}
+.formSubmitContainer :global(.vtex-button__label){
+    font-size: 0;
+    padding: 0;
+}
+.formSubmitContainer :global(.vtex-button__label)::before{
+    content: "";
+    background: url(https://coexitob2b.vteximg.com.br/arquivos/flechaEnviar.png)no-repeat;
+    background-size: 100%;
+    width: 16px;
+    height: 14px;
+}
+@media (max-width: 600px) {
+    .emailInputContainer{
+        padding: 0px;
+    }
+    .emailInputContainer :global(.vtex-input-prefix__group){
+        height: 50px !important;
+    }
+    .formSubmitContainer :global(.vtex-button){
+        width: 50px;
+        height: 50px;
+        top: -50px;
+        right: 0;
+    }
+}

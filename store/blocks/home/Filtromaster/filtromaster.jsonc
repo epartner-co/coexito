@@ -1,0 +1,54 @@
+{
+  "flex-layout.row#filtroM":{
+    "children":[
+      "flex-layout.col#imageFiltro",
+      "flex-layout.col#TextoFiltro",
+      "flex-layout.col#BotonFiltro"
+    ],
+    "props":{
+      "blockClass":"contenedorFL"
+    }
+  },
+  "flex-layout.col#imageFiltro":{
+    "children":["image#filtroM"],
+    "props":{
+      "blockClass":["contenedorFL", "centrarFil"]
+    }
+  },
+  "flex-layout.col#TextoFiltro":{
+    "children":["rich-text#textoFiltro"],
+    "props":{
+      "blockClass":["contenedorFC", "centrarFil"]
+    }
+  },
+  "flex-layout.col#BotonFiltro":{
+    "children":["rich-text#botonFiltro"],
+    "props":{
+      "blockClass":["contenedorFL", "centrarFil"]
+    }
+  },
+
+  "image#filtroM": {
+    "props": {
+      "src": "https://coexitob2b.vteximg.com.br/arquivos/todo.png",
+      "maxHeight": 240,
+      "blockClass":"imageFiltro"
+    }
+  },
+  "rich-text#textoFiltro": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "**¡Inicia filtrando tu búsqueda de productos!**",
+      "blockClass": "textoFiltro"
+    }
+  },
+  "rich-text#botonFiltro": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "INICIAR BÚSQUEDA",
+      "blockClass": "botonF"
+    }
+  }
+}

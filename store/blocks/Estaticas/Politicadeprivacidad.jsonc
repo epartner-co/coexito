@@ -1,0 +1,421 @@
+{
+  "store.custom#priv": {
+    "children": [
+      "flex-layout.row#princ",
+      "flex-layout.row#priv"
+    ]
+  },
+
+  "rich-text#titleF": {
+    "props": {
+      "text": "## **COEXITO MAYORISTA**",
+      "blockClass": "TitleEstatics"
+    }
+  },
+
+  "flex-layout.row#priv": {
+    "props": {
+      "blockClass": ["faq","estaticas", "segundocontainer"]
+    },
+    "children": [
+      "flex-layout.col#leftColAccesos-priv",
+      "flex-layout.col#priv"
+    ]
+  },
+  "flex-layout.col#leftColAccesos-priv": {
+    "props":{
+      "blockClass":"primeraCol",
+      "width":"20%"
+    },
+    "children": [
+      "rich-text#Politica-datos-priv",
+      "rich-text#tyc-datos-priv",
+      "rich-text#faq-datos-priv",
+      "rich-text#Nuestro-calzado-priv",
+      "rich-text#todo-sobre-pies-priv",
+      "rich-text#empleado-priv",
+      "rich-text#Nuestro-compromiso-priv",
+      "rich-text#aviso-legal-priv",
+      "rich-text#tiendas-priv"
+    ]
+  },
+    // accesos de las paginas estaticas
+    "rich-text#Politica-datos-priv": {
+      "props": {
+        "text": "[TYC](/terminos-y-condiciones)",
+        "blockClass":["links-paginas-estaticas"]
+      }
+    },
+    "rich-text#tyc-datos-priv": {
+      "props": {
+        "text": "[FAQ](/faq)",
+        "blockClass":["links-paginas-estaticas"]
+      }
+    },
+    "rich-text#faq-datos-priv": {
+      "props": {
+        "text": "[SIC](/sic)",
+        "blockClass":["links-paginas-estaticas"]
+      }
+    },
+    "rich-text#Nuestro-calzado-priv": {
+      "props": {
+        "text": "[Educate](/Educate)",
+        "blockClass":"links-paginas-estaticas"
+      }
+    },
+    "rich-text#todo-sobre-pies-priv": {
+      "props": {
+        "text": "[Politica de protección de datos](/politica-datos)",
+        "blockClass":["links-paginas-estaticas","selected"]
+      }
+    },
+    "rich-text#empleado-priv": {
+      "props": {
+        "text": "[Politica cookies](/politica-coockies)",
+        "blockClass":["links-paginas-estaticas"]
+      }
+    },
+    "rich-text#Nuestro-compromiso-priv": {
+      "props": {
+        "text": "[Politica de protección de derechos al consumidor](/nuestro-compromiso)",
+        "blockClass":["links-paginas-estaticas"]
+      }
+    },
+    "rich-text#aviso-legal-priv": {
+      "props": {
+        "text": "[Paga tu facturas](/Usuario)",
+        "blockClass":"links-paginas-estaticas"
+      }
+    },
+    "rich-text#tiendas-priv": {
+      "props": {
+        "text": "[Radicar PQRS](/pqr)",
+        "blockClass":"links-paginas-estaticas"
+      }
+    },
+
+  "flex-layout.col#priv": {
+    "children": [
+      "image#priv",
+      "rich-text#priv",
+      "disclosure-layout-group#grouP"
+
+    ],
+    "props":{
+      "blockClass":"estaticasti"
+    }
+  },
+  "image#priv": {
+    "props": {
+      "src": "https://coexitob2b.vteximg.com.br/arquivos/banner%20terminos%20y%20condiciones.png",
+      "maxHeight": 500
+    }
+  },
+  "rich-text#priv": {
+    "props": {
+      "text": "## POLÍTICAS DE POTECCIÓN DE DATOS",
+      "blockClass": "titlePreguntasfreq"
+    }
+  },
+
+  "disclosure-layout-group#grouP": {
+    "children": [
+      "disclosure-layout#firsP",
+      "disclosure-layout#secondP",
+      "disclosure-layout#thirdP",
+      "disclosure-layout#fourthP",
+      "disclosure-layout#5P",
+      "disclosure-layout#6P",
+      "disclosure-layout#7P",
+
+      "disclosure-layout#8P"
+    ]
+  },
+
+  "disclosure-layout#firsP": {
+    "props": {
+      "animated": true,
+      "blockClass": "contendorEstaticas"
+    },
+    "children": ["disclosure-trigger#firstP", "disclosure-content#firstP"]
+  },
+  "disclosure-trigger#firstP": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["disclosure-state-indicator", "rich-text#question1P"]
+  },
+  "disclosure-content#firstP": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer1P"]
+  },
+  "rich-text#question1P": {
+    "props": {
+      "text": "ASPECTOS GENERALES"
+    }
+  },
+  "rich-text#answer1P": {
+    "props": {
+      "text":" COÉXITO S.A.S. (NIT 890.300.225 – 7) elabora la presente política con el propósito de que los usuarios estén informados sobre los mecanismos incluidos en la plataforma para el ejercicio de sus derechos como consumidores. Estos mecanismos permiten que los usuarios presenten peticiones, quejas o reclamos (en adelante PQR) con el fin de que se resuelvan inconformidades por las compras efectuadas en la plataforma.  Al registrar sus PQR, los usuarios estarán informados y actualizado de su solicitud radicada a través del buzón XXXXcoexito.com.co o a la línea telefónica 601 9187900, asimismo, podrán acceder a información actualizada sobre el estado de su trámite o de distintos avisos sobre la posibilidad de acudir a las autoridades competentes en caso de sentir vulnerados sus derechos como consumidores. "
+    }
+  },
+
+  "disclosure-layout#secondP": {
+    "props": {
+      "animated": true,
+      "blockClass": "contendorEstaticas"
+    },
+    "children": ["disclosure-trigger#secondP", "disclosure-content#secondP"]
+  },
+  "disclosure-trigger#secondP": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["disclosure-state-indicator", "rich-text#question2P"]
+  },
+  "disclosure-content#secondP": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer2P"]
+  },
+  "rich-text#question2P": {
+    "props": {
+      "text": "   OPERACIONES DE CONSUMO"
+    }
+  },
+  "rich-text#answer2P": {
+    "props": {
+      "text":"De acuerdo con el objeto establecido en los términos y condiciones, COÉXITO S.A.S. exhibe y comercializa a través de la plataforma productos de consumo (llantas, baterías para vehículos, entre otros). COÉXITO S.A.S. publica en la plataforma la información sobre las características y precios de estos productos con el propósito de que los usuarios consumidores se informen y adquieran los que sean de su preferencia. \n\n De acuerdo con lo anterior, COÉXITO S.A.S.  se compromete a:  \n\n    Suministrar información clara y objetiva sobre los productos y servicios que publican a través de la plataforma. \n\n 2.    Informar a los consumidores en caso de que un producto ofertado en la plataforma no se encuentre disponible. \n\n 3.     Realizar la entrega de los productos en las condiciones en que fueron referenciados en la plataforma. \n\n     Proporcionar al consumidor la información sobre el tiempo estimado para la entrega del producto.\n\n 5.     Ofrecer productos que cumplan con las exigencias mínimas de calidad, idoneidad y seguridad establecidas en la Ley 1480 de 2011.\n\n 6.   Responder ante los usuarios por cualquier vulneración a los derechos de los consumidores, según la Ley 1480 de 2011 y demás normas concordantes.\n\n 7.   Dar respuesta en los tiempos oportunos a las reclamaciones que los usuarios radiquen a través del portal de PQR de la plataforma.\n\n COÉXITO S.A.S. pone a disposición de los usuarios los mecanismos para interponer denuncias, reclamaciones o solicitudes de reversión de compras, así como cualquiera otra petición que tenga como fin el reconocimiento de los derechos de los consumidores."
+    }
+  },
+
+
+  "disclosure-layout#thirdP": {
+    "props": {
+      "animated": true,
+      "blockClass": "contendorEstaticas"
+    },
+    "children": ["disclosure-trigger#thirdP", "disclosure-content#thirdP"]
+  },
+  "disclosure-trigger#thirdP": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["disclosure-state-indicator", "rich-text#question3P"]
+  },
+  "disclosure-content#thirdP": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer3P"]
+  },
+  "rich-text#question3P": {
+    "props": {
+      "text": " DERECHO DE RETRACTO"
+    }
+  },
+  "rich-text#answer3P": {
+    "props": {
+      "text": "El usuario deberá  comunicar su intención de ejercer el derecho de retracto a través del portal de PQR de la plataforma en un término máximo de cinco (5) días hábiles contados a partir de la entrega del bien. \n \n El producto recibido por el usuario que sea objeto de devolución a través del derecho de retracto debe encontrarse en las mismas condiciones en que fue recibido. Por lo tanto, para el ejercicio de este derecho deberá cumplirse con los siguientes requisitos:\n ·El producto NO debe presentar deterioro, desgaste o desmejora en sus condiciones estéticas o de presentación.\n ·Si son productos compuestos por dos o más piezas o que requieren armado, no pueden devolverse armados o desempacados.\n ·Si son productos electrónicos, no deben tener ningún tipo de programa instalado.\n ·El producto debe ser devuelto a COÉXITO S.A.S. por los mismos medios utilizados para la entrega y en las mismas condiciones en que fue recibido por el usuario comprador. \n·El usuario comprador asumirá los gastos de transporte y demás costos para llevar a cabo la devolución del producto. \n COÉXITO S.A.S. informará a los consumidores en diferentes secciones de la plataforma sobre el derecho a ejercer el retracto o a solicitar la reversión de las transacciones que se pretendan llevar a cabo a través de la plataforma. \n \n El usuario deberá iniciar el proceso de solicitud de devolución o retracto, teniendo en cuenta los siguientes pasos: \n 1.Verificar el cumplimiento de los requisitos señalados en el presente manual para ejercer el derecho de retracto. \n 2.Validar que la solicitud se presente dentro de los términos señalados por el presente manual para ejercer el derecho de retracto. \n 3.Ingresar al portal de PQR de la plataforma y registrar la solicitud. \n 4.Una vez iniciado el registro, COÉXITO S.A.S. gestionará la solicitud durante los tiempos establecidos en los presentes términos y condiciones. \n COÉXITO S.A.S. informará expresamente y por escrito al Usuario sobre la recepción de su PQR, para que tenga conocimiento y claridad respecto del trámite que se le dará a su petición. \n 6.Con la recepción de la solicitud, COÉXITO S.A.S. estará en la obligación de  dar inicio al proceso de devolución del producto. El COÉXITO S.A.S. le indicará al Usuario comprador la dirección a la que deberá ser enviado el producto objeto de devolución. El costo de envío correrá por cuenta del Usuario comprador. \n 7.Una vez COÉXITO S.A.S. reciba el producto devuelto, revisará que se encuentre en buen estado. En ese caso, se iniciará el trámite correspondiente para la reversión de la compra en un plazo máximo de treinta (30) días calendario, a partir de la fecha en que fue recibido el producto por parte de COÉXITO S.A.S. \n 8.En caso de que NO proceda el retracto, el producto será retornado a la dirección a la que fue entregado inicialmente, y los gastos de envío correrán por cuenta del Usuario. "
+    }
+  },
+
+
+  "disclosure-layout#fourthP": {
+    "props": {
+      "animated": true,
+      "blockClass": "contendorEstaticas"
+    },
+    "children": ["disclosure-trigger#fourthP", "disclosure-content#fourthP"]
+  },
+  "disclosure-trigger#fourthP": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["disclosure-state-indicator", "rich-text#question4P"]
+  },
+  "disclosure-content#fourthP": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer4P"]
+  },
+  "rich-text#question4P": {
+    "props": {
+      "text": " GARANTÍAS"
+    }
+  },
+  "rich-text#answer4P": {
+    "props": {
+      "text": "COÉXITO S.A.S. manifiesta que la efectividad de las garantías (legales o de cualquier otro tipo) por los productos ofrecidos a través de la plataforma será de responsabilidad de los aliados vendedores. En todo caso, COÉXITO S.A.S. establecerá los mecanismos necesarios para dar cumplimiento a las garantías señaladas por la Ley 1480 de 2011 a través de los acuerdos que suscriban entre sí. \n Los usuarios tendrán derecho a la garantía legal por los defectos de cualquier índole que puedan afectar total o parcialmente la identidad o el correcto funcionamiento del bienes adquiridos a través de la plataforma. En caso de hacer valer la garantía, el usuario deberá seguir los siguientes pasos: \n\n   Verificar el cumplimiento de los requisitos señalados en la presente política de protección de derechos del consumidor, los términos y condiciones de la plataforma y en la ley para solicitar la garantía del bien adquirido.\n 2.   Validar que la solicitud se presente dentro de los términos señalados para la garantía legal o los que particularmente sean señalados para cualquier otro tipo de garantía. \n 3.   Ingresar al portal de PQR de la plataforma y registrar la solicitud.\n 5.   COÉXITO S.A.S. confirmará expresamente y por escrito al usuario sobre la recepción e inicio de la gestión para dar respuesta oportuna a su PQR, para que tenga conocimiento y claridad respecto del trámite que se le dará a su petición  \n 6. Coéxito S.A.S. le indicará al usuario comprador la dirección a la que deberá ser enviado el producto para proceder con la referida verificación. El costo de envío correrá por cuenta del usuario. COÉXITO S.A.S. El Usuario podrá solicitar la recolección de la mercancía en garantía a través de sus canales tradicionales (Ejecutivo Comercial o Centro de Relacionamiento), COÉXITO S.A.S. se reserva el derecho aceptar o no la recolección. \n 7.   Surtido el proceso de envío, COÉXITO S.A.S. validará el estado del producto y los defectos que pueda presentar. En caso de identificar la falla o defecto, el COÉXITO S.A.S. se reservará el derecho de reemplazar el producto por otro idéntico o reembolsar al usuario comprador el precio pagado por el producto. \n 8.   Si COÉXITO S.A.S. opta por reemplazar el producto por otro idéntico, lo hará llegar a la dirección a la que fue enviado el producto inicial. En este caso, el costo de envío correrá por cuenta de COÉXITO S.A.S.. \n 9.   Si COÉXITO S.A.S.opta por el reembolso del precio pagado por el producto, este trámite se iniciará en un plazo máximo de 30 días calendario a partir del momento en que fue recibido el producto por parte de COÉXITO S.A.S..  \n 10.En caso de que la garantía NO aplique, COÉXITO S.A.S. retornará el producto a la dirección a la que fue entregado inicialmente, y los gastos de envío correrán por cuenta del usuario. \n 11.La garantía no aplicará en artículos instalados incorrectamente o que presenten daños por manipulación o uso inadecuados. En la plataforma o cualquier otro sitio web de COÉXITO S.A.S., se informará a los usuarios consumidores sobre el deber de consultar las recomendaciones que vienen en el instructivo del fabricante."
+    }
+  },
+  "disclosure-layout#5P": {
+    "props": {
+      "animated": true,
+      "blockClass": "contendorEstaticas"
+    },
+    "children": ["disclosure-trigger#5P", "disclosure-content#5P"]
+  },
+  "disclosure-trigger#5P": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["disclosure-state-indicator", "rich-text#5P"]
+  },
+  "disclosure-content#5P": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer5P"]
+  },
+  "rich-text#5P": {
+    "props": {
+      "text": "  REVERSIÓN DE LOS PAGOS EFECTUADOS POR EL USUARIO"
+    }
+  },
+  "rich-text#answer5P": {
+    "props": {
+      "text": "COÉXITO S.A.S. garantiza que las transacciones realizadas para la compra de productos a través de la plataforma podrán ser reversadas a solicitud de los usuarios en los siguientes casos: \n Cuando el consumidor sea objeto de fraude \n 2.Cuando corresponda a una operación no solicitada \n 3.Cuando el producto comprado no sea recibido por el usuario en un plazo de treinta (30) días calendario.\n 4.Cuando el producto entregado no corresponda al solicitado, no cumpla con las características inherentes o las atribuidas por la información que se suministre sobre él. \n 5.Cuando el producto entregado sea defectuoso y se cumpla con los requisitos establecidos en la ley para exigir la garantía. \n\n Para que proceda la reversión del pago o de cupo de cartera, el consumidor deberá presentar queja ante COÉXITO S.A.S. dentro los cinco (5) días hábiles siguientes a la fecha en que tuvo noticia de cualquiera de las anteriores causales. COÉXITO S.A.S. gestionará la petición del usuario comprador. Asimismo, informará si se debe devolverse el producto, cuando sea procedente, y notificará de la reclamación al emisor del instrumento de pago electrónico utilizado para realizar la compra, el cual, en conjunto con los demás participantes del proceso de pago, procederán a reversar la transacción al comprador. \n\n Una vez informada y verificada la solicitud, se establece un término de treinta (30) días hábiles para efectuar la reversión del pago. \n\n Cuando el usuario ejerza su derecho de retracto y este sea procedente, el trámite de reversión del pago o de su cupo de cartera se surtirá en un plazo máximo de treinta (30) días calendario a partir del momento en que COÉXITO S.A.S. recibió el producto y verificó que este no presenta ninguna de las irregularidades establecidas en la política de protección del consumidor de la plataforma. \n\n Cuando el usuario exija la validación de la garantía del producto defectuoso y esta sea procedente, la reversión de la compra se llevará a cabo (a solicitud del usuario o a potestad de COÉXITO S.A.S.)  en un plazo máximo de treinta (30) días calendario a partir del momento en que  COÉXITO S.A.S recibió el producto y verificó que este no presenta ninguna de las irregularidades establecidas en la política de protección del consumidor de la plataforma. \n\n Si COÉXITO S.A.S. no entrega el pedido a más tardar en el plazo de treinta (30) días calendario a partir del día siguiente a aquel en el que el usuario haya realizado su compra, deberá realizar la devolución de todas las sumas pagadas sin que haya lugar a retención o descuento alguno. \n\n En el evento que existiere controversia entre COÉXITO S.A.S. y el Usuario consumidor derivada de una queja y esta fuere resuelta por autoridad judicial o administrativa a favor del aliado, el emisor del instrumento de pago, en conjunto con los demás participantes del proceso de pago, una vez haya sido notificado de la decisión, y siempre que ello fuere posible, cargará definitivamente la transacción reclamada al depósito bancario o instrumento de pago correspondiente o la debitará de la cuenta corriente o de ahorros del consumidor, y el dinero será puesto a disposición de COÉXITO S.A.S.. \n\n De no existir fondos suficientes o no resultar posible realizar lo anterior por cualquier otro motivo, COÉXITO S.A.S.  se reserva el derecho de iniciar las acciones que considere pertinentes contra el consumidor. Si la controversia se resuelve a favor del consumidor, la reversión se entenderá como definitiva. \n\n Lo anterior, sin perjuicio del deber del proveedor de cumplir con sus obligaciones legales y contractuales frente al consumidor y de las sanciones administrativas a que haya lugar. En caso de que la autoridad judicial o administrativa determine que hubo mala fe por parte del Usuario, la Superintendencia podrá imponerle sanciones de hasta cincuenta (50) salarios mínimos legales mensuales vigentes. \n\n Se entienden por participantes en el proceso de pago, los emisores de los instrumentos de pago, las entidades administradoras de los Sistemas de Pago de Bajo Valor, los bancos que manejan las cuentas y/o depósitos bancarios del consumidor y/o del proveedor, entre otros. \n\n El consumidor tendrá derecho a reversar los pagos correspondientes a cualquier servicio u obligación de cumplimiento periódico, por cualquier motivo y aún sin que medie justificación alguna, siempre que el pago se haya realizado a través de una operación de débito automático autorizada previamente por dicho consumidor, en los términos que señale el gobierno Nacional para el efecto. \n\n De acuerdo al Decreto 587 de 2016, si como consecuencia de que un usuario presente la solicitud de reversión de Pagos, este recibe montos que exceden lo originalmente pagado, el usuario será responsable de la devolución de los mismos. Igualmente, en caso de que se demuestre que el usuario no se encuentra incurso en ninguna de las causales de reversión establecidas en la presente política y los términos y condiciones de la plataforma, COÉXITO S.A.S. y/o el emisor del instrumento con que se efectuó el pago podrá cargar definitivamente la transacción reclamada a la tarjeta o medio de pago cdel usuario, siempre y cuando medie decisión administrativa o jurisdiccional en contra del usuario. Esto de acuerdo al artículo 51 de la Ley 1480 de 2011 y del artículo 2.2.2.51.12. del Decreto 587 de 2016.  "
+    }
+  },
+
+  "disclosure-layout#6P": {
+    "props": {
+      "animated": true,
+      "blockClass": "contendorEstaticas"
+    },
+    "children": ["disclosure-trigger#6P", "disclosure-content#6P"]
+  },
+  "disclosure-trigger#6P": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["disclosure-state-indicator", "rich-text#question6P"]
+  },
+  "disclosure-content#6P": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer6P"]
+  },
+  "rich-text#question6P": {
+    "props": {
+      "text": " PORTAL DE PQR DE LA PLATAFORMA"
+    }
+  },
+  "rich-text#answer6P": {
+    "props": {
+      "text":"El usuario tendrá acceso permanente al portal de PQR de la plataforma. Este portal contará con un formulario para diligenciar la siguiente información: \n   Datos personales del usuario \n a.   Nombres \n b.   Apellidos \n c.   Tipo de documento \n d.   Número de documento \n e.   Celular \n f.    Correo electrónico \n 2.   Motivo de la PQR\n a. Detalle de la garantía \n Referencia del producto\n Uso del producto\n Descripción de la falla del producto\n Fecha de compra\n Número de factura\n Soporte de garantía\n Establecimiento de la compra\n Energiteca donde solicitó la garantía\n Información de tu vehículo (tipo, placa, marca, línea, modelo, cilindraje\n b.   Manifestación expresa de las razones que fundamentan la PQR\n Una vez llenado el formulario de PQR, el usuario finalizará el trámite de registro con el envío del mismo. Al efectuarse el envío, el usuario recibirá un correo electrónico por parte de COÉXITO S.A.S. en el que se indicará la fecha y hora de la radicación de la PQR.  "
+    }
+  },
+
+  "disclosure-layout#7P": {
+    "props": {
+      "animated": true,
+      "blockClass": "contendorEstaticas"
+    },
+    "children": ["disclosure-trigger#7P", "disclosure-content#7P"]
+  },
+  "disclosure-trigger#7P": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["disclosure-state-indicator", "rich-text#question7P"]
+  },
+  "disclosure-content#7P": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer7P"]
+  },
+  "rich-text#question7P": {
+    "props": {
+      "text": "PORTAL DE LA AUTORIDAD DE PROTECCIÓN AL CONSUMIDOR"
+    }
+  },
+  "rich-text#answer7P": {
+    "props": {
+      "text": "COÉXITO S.A.S. ha incluido en la plataforma un enlace visible, fácilmente identificable, que le permite al consumidor ingresar a la página de la SUPERINTENDENCIA DE INDUSTRIA Y COMERCIO (www.sic.gov.co). El enlace directo a este portal web tiene la finalidad de facilitar a los usuarios mecanismos electrónicos para el reconocimiento de sus derechos como consumidores."
+    }
+  },
+
+
+  "disclosure-layout#8P": {
+    "props": {
+      "animated": true,
+      "blockClass": "contendorEstaticas"
+    },
+    "children": ["disclosure-trigger#8P", "disclosure-content#8P"]
+  },
+
+  "disclosure-trigger#8P": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["disclosure-state-indicator", "rich-text#question8P"]
+  },
+  "disclosure-content#8P": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer8P"]
+  },
+  "rich-text#question8P": {
+    "props": {
+      "text": "CONTACTO"
+    }
+  },
+  "rich-text#answer8P": {
+    "props": {
+      "text": "Cualquier consumidor podrá ponerse en contacto con COÉXITO S.A.S. vía el correo electrónico notificacionescoexito@coexito.com.co . Los mensajes serán atendidos a la mayor brevedad posible."
+    }
+  },
+
+
+  "disclosure-layout#9P": {
+    "props": {
+      "animated": true,
+      "blockClass": "contendorEstaticas"
+    },
+    "children": ["disclosure-trigger#8P", "disclosure-content#8P"]
+  },
+
+  "disclosure-trigger#9P": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["disclosure-state-indicator", "rich-text#question9P"]
+  },
+  "disclosure-content#9P": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer9P"]
+  },
+  "rich-text#question9P": {
+    "props": {
+      "text": "VIGENCIA"
+    }
+  },
+  "rich-text#answer9P": {
+    "props": {
+      "text": "La presente política de tratamiento de información ha entrado en vigencia de conformidad con las exigencias contenidas en la Ley Estatutaria 1581 de 2012 y demás normas reglamentarias relacionadas. \n\n Una vez cumplida(s) la(s) finalidad(es) del tratamiento de los datos personales, COÉXITO S.A.S. realizará la supresión de los datos personales almacenados, a no ser que estos deban conservarse para el cumplimiento de una obligación legal o contractual."
+    }
+  }
+
+
+}

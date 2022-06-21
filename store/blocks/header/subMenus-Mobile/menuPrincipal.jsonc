@@ -1,0 +1,117 @@
+{
+    // Menu mobile
+  "menu#drawer": {
+    "children": [
+      "flex-layout.row#menus-items",
+      "flex-layout.row#postMenu"
+    ],
+    "props": {
+      "blockClass":"menuM",
+      "orientation": "vertical"
+    }
+  },
+  // Menus items
+  "flex-layout.row#menus-items": {
+    "children": [
+      "disclosure-layout#baterias-submenu-m-lvl2",
+      "disclosure-layout#llantas-submenu-m-lvl2",
+      "disclosure-layout#lubricantesM-submenu-m-lvl2",
+      "disclosure-layout#autopartesM-submenu-m-lvl2",
+      "disclosure-layout#motopartesM-submenu-m-lvl2"
+    ],
+    "props": {
+      "blockClass": "subMneusM"
+    }
+  },
+  // box final del menu
+  "flex-layout.row#postMenu": {
+    "children": [
+      "flex-layout.col#imagenBanner",
+      "flex-layout.col#menuItem1",
+      "flex-layout.col#menuItem2",
+      "flex-layout.col#menuItem3",
+      "flex-layout.col#menuItem4"
+    ],
+    "props": {
+      "blockClass": "post-menu"
+    }
+  },
+  "flex-layout.col#imagenBanner": {
+    "children": [
+      "image#mobile-banner"
+    ],
+    "props": {
+      "width":"100%",
+      "blockClass": "item-postMenu"
+    }
+  },
+  "image#mobile-banner": {
+    "props": {
+      "src": "https://coexitob2b.vteximg.com.br/arquivos/BannerMobile-menu.png",
+      "link":{
+        "url":""
+      },
+      "blockClass": "bannerMenuDesk"
+    }
+  },
+  "flex-layout.col#menuItem1": {
+    "children": [
+      "rich-text#boton1"
+    ],
+    "props": {
+      "width":"50%",
+      "blockClass": "item-postMenu"
+    }
+  },
+  "rich-text#boton1": {
+    "props": {
+      "text": "[Educate](/)",
+      "blockClass": ["botonMenu-post","idioma"]
+    }
+  },
+  "flex-layout.col#menuItem2": {
+    "children": [
+      "rich-text#boton2"
+    ],
+    "props": {
+      "width":"50%",
+      "blockClass": "item-postMenu"
+    }
+  },
+  "rich-text#boton2": {
+    "props": {
+      "text": "[Ubicacion](/)",
+      "blockClass": ["botonMenu-post","Ubicacion"]
+    }
+  },
+  "flex-layout.col#menuItem3": {
+    "children": [
+      "rich-text#boton3"
+    ],
+    "props": {
+      "width":"50%",
+      "blockClass": "item-postMenu"
+    }
+  },
+  "rich-text#boton3": {
+    "props": {
+      "text": "[Cotizaciones](/orderquote)",
+      "blockClass": ["botonMenu-post","coti"]
+    }
+  },
+  "flex-layout.col#menuItem4": {
+    "children": [
+      "rich-text#boton4"
+    ],
+    "props": {
+      "width":"50%",
+      "blockClass": "item-postMenu"
+    }
+  },
+  "rich-text#boton4": {
+    "props": {
+      "text": "[Iniciar sesión](/login)",
+      "blockClass": ["botonMenu-post","sesion"]
+    }
+  }
+}

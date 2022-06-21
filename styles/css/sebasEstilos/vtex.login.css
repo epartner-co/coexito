@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+/* ajuste new */
+/* :global(.vtex-flex-layout-0-x-flexColChild--Submenu):nth-child(2){
+    position: absolute;
+    bottom: 0;
+    height: auto!important;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+} */
+.profile {
+    font-size: 12px;
+}

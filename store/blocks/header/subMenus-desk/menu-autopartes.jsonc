@@ -1,0 +1,990 @@
+{
+    "vtex.menu@2.x:submenu#autopartes": {
+        "props": {
+          "width": "100%",
+          "blockClass": "Submenu"
+        },
+        "children": [
+          "flex-layout.row#autopartes"
+        ]
+    },
+    // contenedor padre del menu
+    "flex-layout.row#autopartes": {
+        "props": {
+          "blockClass": "Submenu"
+        },
+        "children": [
+          "flex-layout.col#autopartes"
+        ]
+    },
+    "flex-layout.col#autopartes": {
+        "props": {
+          "blockClass": "Submenu"
+        },
+        "children": [
+          "vtex.menu@2.x:menu#autopartes"
+        ]
+    },
+    // menu contenedor hijo
+    "vtex.menu@2.x:menu#autopartes": {
+        "props": {
+          "orientation": "vertical",
+          "blockClass": "Submenu"
+        },
+        "children": [
+            "flex-layout.row#menuautopartesFila1"
+        ]
+    },
+    // items del menu
+    "flex-layout.row#menuautopartesFila1": {
+        "props": {
+            "blockClass": ["Submenu","lv2"]
+        },
+        "children": [
+            "flex-layout.col#autopartes-autopartes-baterias",
+            "flex-layout.col#autopartes-tipo-autopartes",
+            "flex-layout.col#autopartes-lubricantes-autopartes",
+            "flex-layout.col#filtros-autopartes",
+            "flex-layout.col#frenos-autopartes",
+            "flex-layout.col#bujias-autopartes",
+            "flex-layout.col#Bornes-autopartes",
+            "flex-layout.col#refrigerantes-autopartes",
+            "flex-layout.col#agua-autopartes"
+        ]
+    },
+
+    // Sub menu autopartes-baterias ----------------------------------
+    "flex-layout.col#autopartes-autopartes-baterias": {
+        "props": {
+            "width":"50%",
+            "blockClass": "Submenu-item"
+        },
+        "children": [
+            "disclosure-layout#autopartes-baterias-submenu-lvl2"
+        ]
+    },
+    // trigger para activar el menu
+    "disclosure-layout#autopartes-baterias-submenu-lvl2": {
+        "children": ["disclosure-trigger#autopartes-baterias-lvl2","disclosure-content#autopartes-baterias-lvl2"],
+        "props": {
+          "blockClass": "subMneusM"
+        }
+    },
+    // sub Menu trigger principal
+    "disclosure-trigger#autopartes-baterias-lvl2": {
+        "children": ["menu-item#category-pricipal-autopartes-baterias"],
+        "props": {
+          "blockClass": "subMneusMTrigger"
+        }
+    },
+    // trigger dentro del sub Menu
+    "disclosure-trigger#autopartes-baterias-lvl2-2": {
+        "children": ["menu-item#category-pricipal-autopartes-baterias-2"],
+        "props": {
+          "blockClass": "subMneusMTrigger"
+        }
+    },
+    "disclosure-content#autopartes-baterias-lvl2": {
+        "children": ["disclosure-trigger#autopartes-baterias-lvl2-2","flex-layout.col#autopartes-baterias-container-lvl2"],
+        "props": {
+          "blockClass": "subMneusMContent"
+        }
+    },
+
+    // trigger sub menu auto camioneta ---------------------------
+    "menu-item#category-pricipal-autopartes-baterias": {
+        "props": {
+            "id": "menu-item-category--pricipal-autopartes-baterias",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["menu-lv2"],
+            "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "tagTitle": "Baterias",
+            "text": "BaterÍas"
+            }
+        }
+    },
+    // trigger numero 2 ----------------------------------
+    "menu-item#category-pricipal-autopartes-baterias-2": {
+        "props": {
+            "id": "menu-item-category--pricipal-zapatos",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["cierreSubMneu"],
+            "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "tagTitle": "Baterias",
+            "text": "BaterÍas"
+            }
+        }
+    },
+    // sub menu autopartes-baterias ----------------
+    "flex-layout.col#autopartes-baterias-container-lvl2":{
+        "props":{
+            "blockClass":"subMenu-container"
+        },
+        "children":[
+            "menu-item#category-pricipal-carro-camion"
+        ]
+    },
+    "menu-item#category-pricipal-carro-camion": {
+        "props": {
+            "id": "menu-item-category--mac",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["menu-item-levl2"],
+            "itemProps": {
+            "type": "internal",
+            "href": "/Baterías/Motos?initialMap=c&initialQuery=Baterias/Motos&map=category-1,brand,tipo-de-vehiculo&query=/baterias/mac-gold/livianos&searchState",
+            "noFollow": false,
+            "tagTitle": "Carro o camionetas",
+            "text": "Carro o camionetas"
+            }
+        }
+    },
+
+    // Submenu tipo de autopartes ---------------------------
+    "flex-layout.col#autopartes-tipo-autopartes": {
+        "props": {
+            "width":"50%",
+            "blockClass": "Submenu-item"
+        },
+        "children": [
+            "disclosure-layout#tipo-autopartes-submenu-lvl2"
+        ]
+    },
+    // trigger para activar el menu
+    "disclosure-layout#tipo-autopartes-submenu-lvl2": {
+        "children": ["disclosure-trigger#menu-tipo-autopartes-lvl2","disclosure-content#menu-tipo-autopartes-lvl2"],
+        "props": {
+            "blockClass": ["subMneusM"]
+        }
+    },
+    // sub Menu trigger principal
+    "disclosure-trigger#menu-tipo-autopartes-lvl2": {
+        "children": ["menu-item#category-pricipal-tipo-autopartes"],
+        "props": {
+            "blockClass": "subMneusMTrigger"
+        }
+    },
+    // trigger dentro del sub Menu
+    "disclosure-trigger#menu-tipo-autopartes-lvl2-2": {
+        "children": ["menu-item#category-pricipal-tipo-autopartes-2"],
+        "props": {
+        "blockClass": "subMneusMTrigger"
+        }
+    },
+    "disclosure-content#menu-tipo-autopartes-lvl2": {
+        "children": ["disclosure-trigger#menu-tipo-autopartes-lvl2-2","flex-layout.col#tipo-autopartes-container-lvl2"],
+        "props": {
+        "blockClass": "subMneusMContent"
+        }
+    },
+    // trigger sub menu tipo de autopartes ---------------------------
+    "menu-item#category-pricipal-tipo-autopartes": {
+        "props": {
+            "id": "menu-item-category--pricipal-autopartes-tipo",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["menu-lv2","menu-lv2-v2"],
+            "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "tagTitle": "Llantas",
+            "text": "Llantas"
+            }
+        }
+    },
+    // trigger numero 2 ----------------------------------
+    "menu-item#category-pricipal-tipo-autopartes-2": {
+        "props": {
+            "id": "menu-item-category--pricipal-autopartes",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["cierreSubMneu"],
+            "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "tagTitle": "Llantas",
+            "text": "Llantas"
+            }
+        }
+    },
+    // sub menu tipo-autopartes ----------------
+    "flex-layout.col#tipo-autopartes-container-lvl2":{
+        "props":{
+            "blockClass":["subMenu-container","menu-columan-2"]
+        },
+        "children":[
+            "menu-item#category-pricipal-camion-camioneta-1",
+            "menu-item#category-pricipal-pesados-2"
+        ]
+    },
+    "menu-item#category-pricipal-camion-camioneta-1": {
+        "props": {
+            "id": "menu-item-category--cgampion",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["menu-item-levl2"],
+            "itemProps": {
+            "type": "internal",
+            "href": "/",
+            "noFollow": false,
+            "tagTitle": "Carro camionetas",
+            "text": "Carro camionetas"
+            }
+        }
+    },
+    "menu-item#category-pricipal-pesados-2": {
+        "props": {
+            "id": "menu-item-category--cgampion",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["menu-item-levl2"],
+            "itemProps": {
+            "type": "internal",
+            "href": "/Llantas?initialMap=c&initialQuery=llantas&map=category-1,tipo-de-vehiculo&query=/llantas/pesados&searchState",
+            "noFollow": false,
+            "tagTitle": "vehiculos pesados",
+            "text": "vehiculos pesados"
+            }
+        }
+    },
+    // sub menu de lubricantes-autopartes 
+    "flex-layout.col#autopartes-lubricantes-autopartes": {
+        "props": {
+            "width":"50%",
+            "blockClass": "Submenu-item"
+        },
+        "children": [
+            "disclosure-layout#lubricantes-autopartes-submenu-lvl2"
+        ]
+    },
+    // trigger para activar el menu
+    "disclosure-layout#lubricantes-autopartes-submenu-lvl2": {
+        "children": ["disclosure-trigger#menu-lubricantes-autopartes-lvl2","disclosure-content#menu-lubricantes-autopartes-lvl2"],
+        "props": {
+          "blockClass": "subMneusM"
+        }
+    },
+    // sub Menu trigger principal
+    "disclosure-trigger#menu-lubricantes-autopartes-lvl2": {
+        "children": ["menu-item#category-pricipal-lubricantes-autopartes"],
+        "props": {
+          "blockClass": "subMneusMTrigger"
+        }
+    },
+    // trigger dentro del sub Menu
+    "disclosure-trigger#menu-lubricantes-autopartes-lvl2-2": {
+        "children": ["menu-item#category-pricipal-lubricantes-autopartes-2"],
+        "props": {
+          "blockClass": "subMneusMTrigger"
+        }
+    },
+    "disclosure-content#menu-lubricantes-autopartes-lvl2": {
+        "children": ["disclosure-trigger#menu-lubricantes-autopartes-lvl2-2","flex-layout.col#lubricantes-autopartes-container-lvl2"],
+        "props": {
+          "blockClass": "subMneusMContent"
+        }
+    },
+    
+    // trigger sub menu lubricantes-autopartes ---------------------------
+    "menu-item#category-pricipal-lubricantes-autopartes": {
+        "props": {
+            "id": "menu-item-category--pricipal-lubricantes-autopartes",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["menu-lv2"],
+            "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "tagTitle": "Lubricantes",
+            "text": "Lubricantes"
+            }
+        }
+    },
+    // trigger numero 2 ----------------------------------
+    "menu-item#category-pricipal-lubricantes-autopartes-2": {
+        "props": {
+            "id": "menu-item-category--pricipal-lubricantes-autopartes",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["cierreSubMneu"],
+            "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "tagTitle": "Lubricantes",
+            "text": "Lubricantes"
+            }
+        }
+    },
+    // sub menu lubricantes-autopartes ----------------
+    "flex-layout.col#lubricantes-autopartes-container-lvl2":{
+        "props":{
+            "blockClass":"subMenu-container"
+        },
+        "children":[
+            "menu-item#category-pricipal-lubricantes-autopartes-1"
+        ]
+    },
+    "menu-item#category-pricipal-lubricantes-autopartes-1": {
+        "props": {
+            "id": "menu-item-category--cgampion",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["menu-item-levl2"],
+            "itemProps": {
+            "type": "internal",
+            "href": "/lubricantes",
+            "noFollow": false,
+            "tagTitle": "Lubricantes",
+            "text": "Lubricantes"
+            }
+        }
+    },
+    // sub menu tipoo de temrinal
+    "flex-layout.col#filtros-autopartes": {
+        "props": {
+            "width":"50%",
+            "blockClass": "Submenu-item"
+        },
+        "children": [
+            "disclosure-layout#filtros-autopartes-submenu-lvl2"
+        ]
+    },
+    // trigger para activar el menu
+    "disclosure-layout#filtros-autopartes-submenu-lvl2": {
+        "children": ["disclosure-trigger#menu-filtros-autopartes-lvl2","disclosure-content#menu-filtros-autopartes-lvl2"],
+        "props": {
+          "blockClass": "subMneusM"
+        }
+    },
+    // sub Menu trigger principal
+    "disclosure-trigger#menu-filtros-autopartes-lvl2": {
+        "children": ["menu-item#category-pricipal-filtros-autopartes"],
+        "props": {
+          "blockClass": "subMneusMTrigger"
+        }
+    },
+    // trigger dentro del sub Menu
+    "disclosure-trigger#menu-filtros-autopartes-lvl2-2": {
+        "children": ["menu-item#category-pricipal-filtros-autopartes-2"],
+        "props": {
+          "blockClass": "subMneusMTrigger"
+        }
+    },
+    "disclosure-content#menu-filtros-autopartes-lvl2": {
+        "children": ["disclosure-trigger#menu-filtros-autopartes-lvl2-2","flex-layout.col#filtros-autopartes-container-lvl2"],
+        "props": {
+          "blockClass": "subMneusMContent"
+        }
+    },
+    // trigger sub menu filtros-autopartes ---------------------------
+    "menu-item#category-pricipal-filtros-autopartes": {
+        "props": {
+            "id": "menu-item-category--pricipal-filtros-autopartes",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["menu-lv2"],
+            "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "tagTitle": "Filtros",
+            "text": "Filtros"
+            }
+        }
+    },
+    // trigger numero 2 ----------------------------------
+    "menu-item#category-pricipal-filtros-autopartes-2": {
+        "props": {
+            "id": "menu-item-category--pricipal-filtros-autopartes",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["cierreSubMneu"],
+            "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "tagTitle": "Filtros",
+            "text": "Filtros"
+            }
+        }
+    },
+    // sub menu filtros-autopartes ----------------
+    "flex-layout.col#filtros-autopartes-container-lvl2":{
+        "props":{
+            "blockClass":"subMenu-container"
+        },
+        "children":[
+            "menu-item#category-pricipal-filtros-autopartes-1",
+            "menu-item#category-pricipal-filtros-autopartes-2-1",
+            "menu-item#category-pricipal-filtros-autopartes-3",
+            "menu-item#category-pricipal-filtros-autopartes-4"
+        ]
+    },
+    "menu-item#category-pricipal-filtros-autopartes-1": {
+        "props": {
+            "id": "menu-item-category--cgampion",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["menu-item-levl2"],
+            "itemProps": {
+            "type": "internal",
+            "href": "/filtros?_q=filtros&map=ft",
+            "noFollow": false,
+            "tagTitle": "Filtro aire",
+            "text": "Filtro aire"
+            }
+        }
+    },
+    "menu-item#category-pricipal-filtros-autopartes-2-1": {
+        "props": {
+            "id": "menu-item-category--cgampion",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["menu-item-levl2"],
+            "itemProps": {
+            "type": "internal",
+            "href": "/filtro%20de%20aceite?_q=filtro%20de%20aceite&map=ft",
+            "noFollow": false,
+            "tagTitle": "Filtro de aceite",
+            "text": "Filtro de aceite"
+            }
+        }
+    },
+    "menu-item#category-pricipal-filtros-autopartes-3": {
+        "props": {
+            "id": "menu-item-category--cgampion",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["menu-item-levl2"],
+            "itemProps": {
+            "type": "internal",
+            "href": "/filtros?_q=filtros&map=ft",
+            "noFollow": false,
+            "tagTitle": "Filtro de combustible",
+            "text": "Filtro de combustible"
+            }
+        }
+    },
+    "menu-item#category-pricipal-filtros-autopartes-4": {
+        "props": {
+            "id": "menu-item-category--cgampion",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["menu-item-levl2"],
+            "itemProps": {
+            "type": "internal",
+            "href": "/filtro%20de%20cabina?_q=filtro%20de%20cabina&map=ft",
+            "noFollow": false,
+            "tagTitle": "Filtro de cabina",
+            "text": "Filtro de cabina"
+            }
+        }
+    },
+    // sub menu frenos
+    "flex-layout.col#frenos-autopartes": {
+        "props": {
+            "width":"50%",
+            "blockClass": "Submenu-item"
+        },
+        "children": [
+            "disclosure-layout#filtros-frenos-submenu-lvl2"
+        ]
+    },
+    // trigger para activar el menu
+    "disclosure-layout#filtros-frenos-submenu-lvl2": {
+        "children": ["disclosure-trigger#menu-frenos-autopartes-lvl2","disclosure-content#menu-frenos-autopartes-lvl2"],
+        "props": {
+          "blockClass": "subMneusM"
+        }
+    },
+    // sub Menu trigger principal
+    "disclosure-trigger#menu-frenos-autopartes-lvl2": {
+        "children": ["menu-item#category-pricipal-frenos-autopartes"],
+        "props": {
+          "blockClass": "subMneusMTrigger"
+        }
+    },
+    // trigger dentro del sub Menu
+    "disclosure-trigger#menu-frenos-autopartes-lvl2-2": {
+        "children": ["menu-item#category-pricipal-frenos-autopartes-2"],
+        "props": {
+          "blockClass": "subMneusMTrigger"
+        }
+    },
+    "disclosure-content#menu-frenos-autopartes-lvl2": {
+        "children": ["disclosure-trigger#menu-frenos-autopartes-lvl2-2","flex-layout.col#frenos-autopartes-container-lvl2"],
+        "props": {
+          "blockClass": "subMneusMContent"
+        }
+    },
+    // trigger sub menu frenos-autopartes ---------------------------
+    "menu-item#category-pricipal-frenos-autopartes": {
+        "props": {
+            "id": "menu-item-category--pricipal-filtros-autopartes",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["menu-lv2"],
+            "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "tagTitle": "Frenos",
+            "text": "Frenos"
+            }
+        }
+    },
+    // trigger numero 2 ----------------------------------
+    "menu-item#category-pricipal-frenos-autopartes-2": {
+        "props": {
+            "id": "menu-item-category--pricipal-filtros-autopartes",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["cierreSubMneu"],
+            "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "tagTitle": "Sistema de frenos",
+            "text": "Sistema de frenos"
+            }
+        }
+    },
+    // sub menu frenos-autopartes ----------------
+    "flex-layout.col#frenos-autopartes-container-lvl2":{
+        "props":{
+            "blockClass":"subMenu-container"
+        },
+        "children":[
+            "menu-item#category-pricipal-frenos-autopartes-1",
+            "menu-item#category-pricipal-frenos-autopartes-2-1"
+        ]
+    },
+    "menu-item#category-pricipal-frenos-autopartes-1": {
+        "props": {
+            "id": "menu-item-category--cgampion",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["menu-item-levl2"],
+            "itemProps": {
+            "type": "internal",
+            "href": "/",
+            "noFollow": false,
+            "tagTitle": "Pastillas de  freno",
+            "text": "Pastillas de  freno"
+            }
+        }
+    },
+    "menu-item#category-pricipal-frenos-autopartes-2-1": {
+        "props": {
+            "id": "menu-item-category--cgampion",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["menu-item-levl2"],
+            "itemProps": {
+            "type": "internal",
+            "href": "/",
+            "noFollow": false,
+            "tagTitle": "Líquido de freno",
+            "text": "Líquido de freno"
+            }
+        }
+    },
+    // sub menu bujias
+    "flex-layout.col#bujias-autopartes": {
+        "props": {
+            "width":"50%",
+            "blockClass": "Submenu-item"
+        },
+        "children": [
+            "disclosure-layout#filtros-bujias-submenu-lvl2"
+        ]
+    },
+    // trigger para activar el menu
+    "disclosure-layout#filtros-bujias-submenu-lvl2": {
+        "children": ["disclosure-trigger#menu-bujias-autopartes-lvl2","disclosure-content#menu-bujias-autopartes-lvl2"],
+        "props": {
+          "blockClass": "subMneusM"
+        }
+    },
+    // sub Menu trigger principal
+    "disclosure-trigger#menu-bujias-autopartes-lvl2": {
+        "children": ["menu-item#category-pricipal-bujias-autopartes"],
+        "props": {
+          "blockClass": "subMneusMTrigger"
+        }
+    },
+    // trigger dentro del sub Menu
+    "disclosure-trigger#menu-bujias-autopartes-lvl2-2": {
+        "children": ["menu-item#category-pricipal-bujias-autopartes-2"],
+        "props": {
+          "blockClass": "subMneusMTrigger"
+        }
+    },
+    "disclosure-content#menu-bujias-autopartes-lvl2": {
+        "children": ["disclosure-trigger#menu-bujias-autopartes-lvl2-2","flex-layout.col#bujias-autopartes-container-lvl2"],
+        "props": {
+          "blockClass": "subMneusMContent"
+        }
+    },
+    // trigger sub menu bujias-autopartes ---------------------------
+    "menu-item#category-pricipal-bujias-autopartes": {
+        "props": {
+            "id": "menu-item-category--pricipal-filtros-autopartes",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["menu-lv2"],
+            "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "tagTitle": "Bujias",
+            "text": "Bujías"
+            }
+        }
+    },
+    // trigger numero 2 ----------------------------------
+    "menu-item#category-pricipal-bujias-autopartes-2": {
+        "props": {
+            "id": "menu-item-category--pricipal-filtros-autopartes",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["cierreSubMneu"],
+            "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "tagTitle": "Bujias",
+            "text": "Bujías"
+            }
+        }
+    },
+    // sub menu bujias-autopartes ----------------
+    "flex-layout.col#bujias-autopartes-container-lvl2":{
+        "props":{
+            "blockClass":"subMenu-container"
+        },
+        "children":[
+            "menu-item#category-pricipal-bujias-autopartes-1"
+        ]
+    },
+    "menu-item#category-pricipal-bujias-autopartes-1": {
+        "props": {
+            "id": "menu-item-category--cgampion",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["menu-item-levl2"],
+            "itemProps": {
+            "type": "internal",
+            "href": "/",
+            "noFollow": false,
+            "tagTitle": "Bujias",
+            "text": "Bujías"
+            }
+        }
+    },
+    // sub menu burnes
+    "flex-layout.col#Bornes-autopartes": {
+        "props": {
+            "width":"50%",
+            "blockClass": "Submenu-item"
+        },
+        "children": [
+            "disclosure-layout#filtros-bornes-submenu-lvl2"
+        ]
+    },
+    // trigger para activar el menu
+    "disclosure-layout#filtros-bornes-submenu-lvl2": {
+        "children": ["disclosure-trigger#menu-bornes-autopartes-lvl2","disclosure-content#menu-bornes-autopartes-lvl2"],
+        "props": {
+          "blockClass": "subMneusM"
+        }
+    },
+    // sub Menu trigger principal
+    "disclosure-trigger#menu-bornes-autopartes-lvl2": {
+        "children": ["menu-item#category-pricipal-bornes-autopartes"],
+        "props": {
+          "blockClass": "subMneusMTrigger"
+        }
+    },
+    // trigger dentro del sub Menu
+    "disclosure-trigger#menu-bornes-autopartes-lvl2-2": {
+        "children": ["menu-item#category-pricipal-bornes-autopartes-2"],
+        "props": {
+          "blockClass": "subMneusMTrigger"
+        }
+    },
+    "disclosure-content#menu-bornes-autopartes-lvl2": {
+        "children": ["disclosure-trigger#menu-bornes-autopartes-lvl2-2","flex-layout.col#bornes-autopartes-container-lvl2"],
+        "props": {
+          "blockClass": "subMneusMContent"
+        }
+    },
+    // trigger sub menu bujias-autopartes ---------------------------
+    "menu-item#category-pricipal-bornes-autopartes": {
+        "props": {
+            "id": "menu-item-category--pricipal-filtros-autopartes",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["menu-lv2"],
+            "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "tagTitle": "Bornes",
+            "text": "Bornes"
+            }
+        }
+    },
+    // trigger numero 2 ----------------------------------
+    "menu-item#category-pricipal-bornes-autopartes-2": {
+        "props": {
+            "id": "menu-item-category--pricipal-filtros-autopartes",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["cierreSubMneu"],
+            "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "tagTitle": "Bujias",
+            "text": "Bujías"
+            }
+        }
+    },
+    // sub menu bornes-autopartes ----------------
+    "flex-layout.col#bornes-autopartes-container-lvl2":{
+        "props":{
+            "blockClass":"subMenu-container"
+        },
+        "children":[
+            "menu-item#category-pricipal-bornes-autopartes-1"
+        ]
+    },
+    "menu-item#category-pricipal-bornes-autopartes-1": {
+        "props": {
+            "id": "menu-item-category--cgampion",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["menu-item-levl2"],
+            "itemProps": {
+            "type": "internal",
+            "href": "/",
+            "noFollow": false,
+            "tagTitle": "Bornes",
+            "text": "Bornes"
+            }
+        }
+    },
+    // sub menu refrigenrantes
+    "flex-layout.col#refrigerantes-autopartes": {
+        "props": {
+            "width":"50%",
+            "blockClass": "Submenu-item"
+        },
+        "children": [
+            "disclosure-layout#filtros-refrigerantes-submenu-lvl2"
+        ]
+    },
+    // trigger para activar el menu
+    "disclosure-layout#filtros-refrigerantes-submenu-lvl2": {
+        "children": ["disclosure-trigger#menu-refrigerantes-autopartes-lvl2","disclosure-content#menu-refrigerantes-autopartes-lvl2"],
+        "props": {
+          "blockClass": "subMneusM"
+        }
+    },
+    // sub Menu trigger principal
+    "disclosure-trigger#menu-refrigerantes-autopartes-lvl2": {
+        "children": ["menu-item#category-pricipal-refrigerantes-autopartes"],
+        "props": {
+          "blockClass": "subMneusMTrigger"
+        }
+    },
+    // trigger dentro del sub Menu
+    "disclosure-trigger#menu-refrigerantes-autopartes-lvl2-2": {
+        "children": ["menu-item#category-pricipal-refrigerantes-autopartes-2"],
+        "props": {
+          "blockClass": "subMneusMTrigger"
+        }
+    },
+    "disclosure-content#menu-refrigerantes-autopartes-lvl2": {
+        "children": ["disclosure-trigger#menu-refrigerantes-autopartes-lvl2-2","flex-layout.col#refrigerantes-autopartes-container-lvl2"],
+        "props": {
+          "blockClass": "subMneusMContent"
+        }
+    },
+    // trigger sub menu bujias-autopartes ---------------------------
+    "menu-item#category-pricipal-refrigerantes-autopartes": {
+        "props": {
+            "id": "menu-item-category--pricipal-filtros-autopartes",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["menu-lv2"],
+            "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "tagTitle": "Refrigerantes",
+            "text": "Refrigerantes"
+            }
+        }
+    },
+    // trigger numero 2 ----------------------------------
+    "menu-item#category-pricipal-refrigerantes-autopartes-2": {
+        "props": {
+            "id": "menu-item-category--pricipal-filtros-autopartes",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["cierreSubMneu"],
+            "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "tagTitle": "Refrigerantes",
+            "text": "Refrigerante"
+            }
+        }
+    },
+    // sub menu refrigerantes-autopartes ----------------
+    "flex-layout.col#refrigerantes-autopartes-container-lvl2":{
+        "props":{
+            "blockClass":"subMenu-container"
+        },
+        "children":[
+            "menu-item#category-pricipal-refrigerantes-autopartes-1"
+        ]
+    },
+    "menu-item#category-pricipal-refrigerantes-autopartes-1": {
+        "props": {
+            "id": "menu-item-category--cgampion",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["menu-item-levl2"],
+            "itemProps": {
+            "type": "internal",
+            "href": "/",
+            "noFollow": false,
+            "tagTitle": "Refrigerantes",
+            "text": "Refrigerantes"
+            }
+        }
+    },
+    // sub menu agua desmineralizada
+    "flex-layout.col#agua-autopartes": {
+        "props": {
+            "width":"50%",
+            "blockClass": "Submenu-item"
+        },
+        "children": [
+            "disclosure-layout#filtros-agua-submenu-lvl2"
+        ]
+    },
+    // trigger para activar el menu
+    "disclosure-layout#filtros-agua-submenu-lvl2": {
+        "children": ["disclosure-trigger#menu-agua-autopartes-lvl2","disclosure-content#menu-agua-autopartes-lvl2"],
+        "props": {
+          "blockClass": "subMneusM"
+        }
+    },
+    // sub Menu trigger principal
+    "disclosure-trigger#menu-agua-autopartes-lvl2": {
+        "children": ["menu-item#category-pricipal-agua-autopartes"],
+        "props": {
+          "blockClass": "subMneusMTrigger"
+        }
+    },
+    // trigger dentro del sub Menu
+    "disclosure-trigger#menu-agua-autopartes-lvl2-2": {
+        "children": ["menu-item#category-pricipal-agua-autopartes-2"],
+        "props": {
+          "blockClass": "subMneusMTrigger"
+        }
+    },
+    "disclosure-content#menu-agua-autopartes-lvl2": {
+        "children": ["disclosure-trigger#menu-agua-autopartes-lvl2-2","flex-layout.col#agua-autopartes-container-lvl2"],
+        "props": {
+          "blockClass": "subMneusMContent"
+        }
+    },
+    // trigger sub menu bujias-autopartes ---------------------------
+    "menu-item#category-pricipal-agua-autopartes": {
+        "props": {
+            "id": "menu-item-category--pricipal-filtros-autopartes",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["menu-lv2"],
+            "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "tagTitle": "Agua desmineralizada",
+            "text": "Agua desmineralizada"
+            }
+        }
+    },
+    // trigger numero 2 ----------------------------------
+    "menu-item#category-pricipal-agua-autopartes-2": {
+        "props": {
+            "id": "menu-item-category--pricipal-filtros-autopartes",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["cierreSubMneu"],
+            "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "tagTitle": "Agua desmineralizada",
+            "text": "Agua desmineralizada"
+            }
+        }
+    },
+    // sub menu agua-autopartes ----------------
+    "flex-layout.col#agua-autopartes-container-lvl2":{
+        "props":{
+            "blockClass":"subMenu-container"
+        },
+        "children":[
+            "menu-item#category-pricipal-agua-autopartes-1"
+        ]
+    },
+    "menu-item#category-pricipal-agua-autopartes-1": {
+        "props": {
+            "id": "menu-item-category--cgampion",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["menu-item-levl2"],
+            "itemProps": {
+            "type": "internal",
+            "href": "/",
+            "noFollow": false,
+            "tagTitle": "Agua desmineralizada",
+            "text": "Agua desmineralizada"
+            }
+        }
+    }
+}

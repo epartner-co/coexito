@@ -1,0 +1,47 @@
+.wrapper--sticky-product--stuck .container--sticky-product {
+  width: 94%;
+  margin: 0 0 0 6%;
+  justify-content: center;
+  background: transparent;
+  display: flex;
+}
+.container--sticky-product :global(.vtex-store-components-3-x-carouselGaleryThumbs){
+    display: none;
+}
+.container--sticky-product :global(.vtex-store-components-3-x-swiperCaret){
+    display: none;
+}
+.container--sticky-product :global(.vtex-store-components-3-x-productBrand--quickview ){
+    color: #363636;
+    font-size: 16px;
+}
+.container--sticky-product :global(.vtex-flex-layout-0-x-flexColChild--rowButtonsProduct-1){
+    margin: 5px 0 0 0;
+}
+.container--sticky-product :global(.vtex-flex-layout-0-x-flexColChild--rowButtonsProduct-1) :global(.vtex-button){
+    padding: 7px;
+}
+.container--sticky-product :global(.vtex-product-price-1-x-listPrice) {
+  margin-top: 7px;
+}
+.wrapper--sticky-product{
+    opacity: 0;
+    visibility: hidden;
+    height: 0 !important;
+}
+.wrapper--sticky-product--stuck{
+    opacity: 1;
+    visibility: visible;
+    height: 0 !important;
+}
+.container--sticky-product :global(.vtex-button__label)
+  {padding: 0 !important;}
+.container--sticky-product :global(.vtex-rich-text-0-x-wrapper--cotizarButton){
+  padding: 0;
+ }
+ .container--sticky-product :global(.vtex-flex-layout-0-x-flexRowContent){
+  margin: 0;
+}
+.container--sticky-product :global(.vtex-flex-layout-0-x-flexRowContent--PreciosDTO){
+  margin: 0;
+}

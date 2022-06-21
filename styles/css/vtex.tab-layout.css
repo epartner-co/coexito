@@ -1,0 +1,50 @@
+.listContainer--tabList {
+    display: block;
+}
+.listItem :global(.vtex-button){
+    width: 90%;
+}
+.listContainer--tabList .listItem :global(.vtex-button__label){
+    justify-content: flex-start;
+}
+.listContainer--tabbersCategory .listItem {
+    width: 20%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+
+}
+.listContainer--tabbersCategory .listItem :global(.vtex-button) {
+    border: 1px solid #808080;
+    color: #808080;
+    transition: 400ms all;
+    text-transform: initial;
+    font-size: 13px;
+}
+.listContainer--tabbersCategory .listItem :global(.vtex-button):hover {
+    background: #004D9D;
+    color: white;
+}
+.listContainer--tabbersCategory .listItemActive :global(.vtex-button__label) {
+    color: white;
+
+}
+.listContainer--tabbersCategory {
+    margin-bottom: 30px;
+}
+.listContainer--tabbersCategory {
+    padding: 0 30px;
+}
+.listContainer--tabbersCategory .listItem :global(.vtex-button__label){
+    font-family: 'Inter';
+    text-transform: uppercase;
+}
+@media (max-width: 600px) {
+    .listItem{
+        width: 100% !important;
+    }
+    .listContainer.listContainer--tabbersCategory {
+        padding: 0 0;
+    }
+}

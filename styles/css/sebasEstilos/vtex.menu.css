@@ -1,0 +1,135 @@
+.submenuWrapper--Submenu--isOpen{
+    background: white;
+}
+.styledLinkContent--menu-lv2 {
+    color: #808080 !important;
+    font-weight: 300;
+}
+.styledLinkContent--cierreSubMneu {
+    color: #004D9D;
+}
+.styledLinkContent--menu-item-levl2 {
+    color: #808080;
+    font-weight: 300;
+}
+.styledLinkContent--cierreSubMneu::before{
+    content: "";
+    display: block;
+    background: url(/arquivos/cierreMenuIcon.png);
+    background-size: 100%;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.styledLinkContent--cierreSubMneu {
+    justify-content: flex-start;
+}
+/* cotizador */
+:global(.vtex-orderquote-1-x-buttonsContainer) :global(.vtex-button){
+    background: #004D9D;
+}
+:global(.vtex-orderquote-1-x-buttonsContainer) :global(.vtex-button):hover{
+    background: #004D9D;
+}
+:global(.vtex-orderquote-1-x-containerList) :global(.vtex-button){
+    background: #004D9D;
+}
+:global(.vtex-orderquote-1-x-containerList) :global(.vtex-button):hover{
+    background: #ED6B10;
+}
+:global(.vtex-orderquote-1-x-refreshButton) :global(.vtex-button){
+    background: transparent;
+}
+:global(.vtex-orderquote-1-x-refreshButton) :global(.vtex-button):hover{
+    background: transparent;
+}
+:global(.vtex-button):hover{
+    background: transparent;
+}
+:global(.vtex-orderquote-1-x-containerList){
+    padding:0 30px 30px 120px ;
+}
+:global(.vtex-orderquote-1-x-containerList) :global(.vtex-pageHeader__title){
+    padding-left: 40px;
+    color: #182841;
+    font-size: 25px;
+    font-weight: bold!important;
+    text-transform: uppercase;
+    padding: 0;
+}
+:global(.vtex-orderquote-1-x-containerView){
+    padding: 0 0 0 8%;
+}
+:global(.vtex-orderquote-1-x-containerList) :global(.vtex-pageHeader__title)::after{
+    content: "";
+    background: #ED6B10;
+    width: 170px;
+    height: 3px;
+    display: block;
+}
+:global(.vtex-orderquote-1-x-containerCreate ){
+    padding:0 30px 0 120px ;
+}
+:global(.vtex-orderquote-1-x-containerList) :global(.vtex-pageHeader__container){
+    padding-left: 0;
+}
+:global(.vtex-orderquote-1-x-containerCreate) :global(.vtex-pageHeader__container){
+    padding-left: 0;
+}
+@media (max-width: 600px) {
+    /* cotizador */
+    :global(.vtex-orderquote-1-x-containerList){
+        padding:0 10px 0 10px ;
+    }
+    :global(.vtex-flex-layout-0-x-flexRowContent--lv2) .styledLinkContent--menu-lv2 {
+        justify-content: flex-start;
+        margin: 0px 0 0 31px !important;
+        min-height: auto;
+        font-size: 11px;
+    }
+    /* menu item */
+    .styledLinkContainer--menu-lv2 {
+        margin: 0;
+    }
+    .styledLinkContent--cierreSubMneu {
+        margin: 10px 0;
+    }
+    .styledLinkContent--menu-lv2 {
+        margin: 0 10px !important;
+        font-size: 9px;
+        padding: 10px 0 0 0;
+    }
+    /* logos */
+    .styledLinkContainer--menu-lv2::before{
+      content: "";
+      background-size: 100%!important;
+      width: 35px;
+      height: 35px;
+      display: block;
+      margin: 0 auto;
+      position: absolute;
+      right: 0;
+      top: 10%;
+      left: 0;
+    }
+    .styledLinkContainer.styledLinkContainer--menu-lv2 {
+      height: 100%;
+      position: relative;
+  }
+    .styledLinkContainer--llantas::before {
+        background: url(/arquivos/llantas-menuM.png) no-repeat;
+    }
+    .styledLinkContainer--baterias::before {
+        background: url(/arquivos/baterias-menuM.png) no-repeat;
+    }
+    .styledLinkContainer--lubricantes::before {
+        background: url(/arquivos/lubricantes-menuM.png) no-repeat;
+    }
+    .styledLinkContainer--motopartes::before {
+        background: url(/arquivos/motopartes-menuM.png) no-repeat;
+    }
+    .styledLinkContainer--autopartes::before {
+        background: url(/arquivos/autopartes-menuM.png) no-repeat;
+    }
+
+}

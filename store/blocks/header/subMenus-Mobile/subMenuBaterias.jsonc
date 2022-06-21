@@ -1,0 +1,93 @@
+{
+    // trigger para activar el menu
+    "disclosure-layout#baterias-submenu-m-lvl2": {
+        "children": ["disclosure-trigger#menu-bateriasM-lvl2","disclosure-content#menu-bateriasM-lvl2"],
+        "props": {
+            "blockClass": "subMneusM"
+        }
+    },
+    // sub Menu trigger principal
+    "disclosure-trigger#menu-bateriasM-lvl2": {
+        "children": ["menu-item#category-pricipal-bateriasM"],
+        "props": {
+            "blockClass": "subMneusMTrigger"
+        }
+    },
+    // trigger dentro del sub Menu
+    "disclosure-trigger#menu-bateriasM-lvl2-2": {
+        "children": ["menu-item#category-pricipal-bateriasM-2"],
+        "props": {
+            "blockClass": ["subMneusMTrigger","lvl2"]
+        }
+    },
+    "disclosure-content#menu-bateriasM-lvl2": {
+        "children": ["disclosure-trigger#menu-bateriasM-lvl2-2","flex-layout.row#menuBateriasFila1","flex-layout.row#postMenu-baterias"],
+        "props": {
+            "blockClass": ["subMneusMContent","lvl2"]
+        }
+    },
+
+    // trigger sub menu bateriasM ---------------------------
+    "menu-item#category-pricipal-bateriasM": {
+        "props": {
+            "id": "menu-item-category--pricipal-zapatos",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["menu-lv2","baterias"],
+            "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "tagTitle": "Baterias",
+            "text": "Baterías"
+            }
+        }
+    },
+    // trigger numero 2 ----------------------------------
+    "menu-item#category-pricipal-bateriasM-2": {
+        "props": {
+            "id": "menu-item-category--pricipal-zapatos",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["cierreSubMneu"],
+            "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "tagTitle": "Baterias",
+            "text": "Baterías"
+            }
+        }
+    },
+      // box final del menu
+  "flex-layout.row#postMenu-baterias": {
+    "children": [
+        "flex-layout.col#imagenBanner-baterias",
+        "flex-layout.col#menuItem1",
+        "flex-layout.col#menuItem2",
+        "flex-layout.col#menuItem3",
+        "flex-layout.col#menuItem4"
+    ],
+    "props": {
+      "blockClass": "post-menu"
+    }
+  },
+  "flex-layout.col#imagenBanner-baterias": {
+    "children": [
+      "image#mobile-banner-lvl2-baterias"
+    ],
+    "props": {
+      "width":"100%",
+      "blockClass": "item-postMenu"
+    }
+  },
+  "image#mobile-banner-lvl2-baterias": {
+    "props": {
+      "src": "https://coexitob2b.vteximg.com.br/arquivos/banner-mobile2.png",
+      "link":{
+        "url":""
+      },
+      "blockClass": "bannerMenuDesk"
+    }
+  }
+}

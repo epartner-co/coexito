@@ -1,15 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Mulish:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Mulish:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Mulish:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Mulish:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Mulish:wght@700&display=swap');
 .container--deals {
   color: #ffffff;
   text-align: center;
   justify-content: center;
 }
-
+.container--tituloSliderCategoria {
+  background: white;
+  margin-top: 40px !important;
+}
+.container--categoria-titulo {
+  position: absolute;
+  top: 73%;
+  transition: 400ms all;
+}
+.link--categoria-titulo{
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.link--categoria-titulo::after{
+  content: "";
+  background: white;
+  width: 45%;
+  height: 3.5px;
+  display: block;
+}
+.container.container--categoriasTittle {
+  justify-content: flex-end;
+  margin-right: 20px;
+  width: 100%;
+  margin: 0;
+  padding: 0 20px;
+}
+.paragraph--categoriasTittle{
+  margin: 5px 0;
+}
+.paragraph--categoriasTittle{
+  text-align: center;
+}
+.wrapper--categoriasTittle{
+  width: 24%;
+}
+.link--categoriasTittle{
+  color: white;
+  text-decoration: none;
+  margin: 5px 0;
+  font-family: 'Inter';
+  width: 100%;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  background: #004D9D;
+  font-size: 13px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.link--categoriasTittle::after{
+  content: "";
+  background: url(https://coexitob2b.vteximg.com.br/arquivos/ver-todad-categorias-arrow.png) no-repeat;
+  background-size: 100%;
+  width: 16px;
+  height: 16px;
+  display: block;
+  margin-left: 10px;
+}
+.container--combo-mes {
+  justify-content: center !important;
+}
 .container--shelfTitle {
   color: #727273;
   justify-content: center;
   text-align: center;
 }
-
+.heading--shelfTitle {
+  padding-left: 40px;
+  color: #182841;
+  font-size: 25px;
+  font-weight: bold !important;
+  font-family: Helvetica;
+}
+.heading--shelfTitle::after{
+  content: "";
+  background: #ED6B10;
+  width: 170px;
+  height: 3px;
+  display: block;
+}
 .headingLevel2--shelfTitle {
   font-weight: 200;
 }
@@ -66,7 +148,140 @@
   font-size: 28px;
   font-weight: 700;
 }
-
+.paragraph--tituloFiltro {
+  margin: 0;
+}
+.paragraph--cotizaciones{
+  font-size: 15px;
+  border-left: 2px solid #8fbeef;
+  border-right: 2px solid #8fbeef;
+  padding: 0 20px;
+}
+.link--cotizaciones{
+  color: #808080;
+  text-decoration: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 12px;
+}
+.link--cotizaciones:hover{
+  color: black;
+}
+.link--cotizaciones::before{
+    content: "";
+    background: url(https://coexitob2b.vtexassets.com/arquivos/cotizador.png) no-repeat;
+    background-size: 100%;
+    font-size: 10px;
+    display: block;
+    width: 18px;
+    height: 22px;
+    margin-top: 0;
+    transition: all 40ms;
+    margin-right: 5px;
+}
+.paragraph--tituloNewsletter {
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.container--tituloNewsletter {
+  margin: 0 !important;
+}
+.container--textNewsletter {
+  margin: 0 !important;
+}
+.container--footer {
+  margin: 0 !important;
+}
+.paragraph--textNewsletter{
+  margin: 0 0 30px 0;
+  font-size: 15px;
+}
+.paragraph--footer{
+  margin: 8px 0;
+}
+.container--orderplacedtitle {
+  margin-left: 6% !important;
+  padding: 0 21px;
+  width: 60% !important;
+}
+.link--saber-mas-button{
+  background: white;
+  color: #004D9D;
+  border: 1px solid #004D9D;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.link--saber-mas-button:hover{
+  background: #004D9D;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.link--saber-mas-button::after{
+  content: "";
+  background: url(https://coexitob2b.vteximg.com.br/arquivos/flecha-azul.png) no-repeat;
+  background-size: 100%;
+  display: block;
+  width: 17px;
+  height: 17px;
+  margin-left: 15px;
+}
+.link--saber-mas-button-2{
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.link--saber-mas-button-2:hover{
+  background: white;
+  color: black;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.link--saber-mas-button-2::after{
+  content: "";
+  background: url(https://coexitob2b.vteximg.com.br/arquivos/saber-mas-flecha-para-2.png) no-repeat;
+  background-size: 100%;
+  display: block;
+  width: 17px;
+  height: 17px;
+  margin-left: 15px;
+}
+.container--final-boton {
+  justify-content: center;
+  margin: 0 !important;
+  width: 100% !important;
+}
+.link--final-boton{
+  padding: 10px 30px;
+  border-radius: 5px;
+  background: #004D9D;
+  color: white;
+  text-decoration:none ;
+  text-transform: uppercase;
+  font-family: 'Inter';
+}
 @media only screen and (min-width: 640px) {
   .container--question .strong {
     font-size: 40px;
@@ -83,10 +298,6 @@
     font-weight: 700;
     max-width: 60%;
   }
-
-  .container--title .paragraph {
-    line-height: 1.3em;
-  }
 }
 
 /*------------------------------------*/
@@ -95,6 +306,205 @@
 .container {
   width: 93.3%;
   margin-left: 6.6%;
-  background-color: #d3d3d3;
 }
 /*>>>>>>>>>Cierre Flechas de slider*/
+.container--cotizarButton {
+  justify-content: center;
+  margin: 0 0 0 0 !important;
+}
+.paragraph--cotizarButton{
+  color: white;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+}
+/* log in */
+.paragraph--shelfTitle{
+  margin: 0 0 20px 0;
+  font-weight: bold;
+}
+/* estilos 404 */
+.container--category-404-item {
+  justify-content: center;
+  margin: 0;
+}
+.link--category-404-item{
+  color: black;
+  text-decoration: none;
+}
+.link--category-404-item:hover{
+  text-decoration: underline;
+}
+.container--shelfTitle {
+  margin: 0;
+  width: 100%;
+}
+.container--shelfTitle.container--categoriasTittle{
+  justify-content: center;
+}
+.container--shelfTitle{
+  justify-content: flex-start;
+}
+.paragraph--category-404-item{
+  margin: 0;
+  padding: 7px 60px;
+  border-radius: 5px;
+  border: 1px solid;
+}
+.paragraph--tituloNewsletter{
+  color: white;
+  font-size: 30px;
+}
+.paragraph--tituloFooter{
+  color: white;
+}
+.paragraph--textNewsletter{
+  color: white;
+}
+.paragraph--footer{
+  color: white;
+}
+.container--tituloFooter {
+  margin: 0;
+}
+.paragraph--contenido{
+  text-align: center;
+}
+.headingLevel1--titulos-quienes-somos {
+  font-size: 20px;
+  color: #182841;
+}
+.container.container--titulos-quienes-somos {
+  margin: 0 !important;
+}
+.heading--TitleEstatics {
+  text-transform: uppercase;
+  margin: 0;
+}
+.strong--TitleEstatics{
+  text-transform: uppercase;
+}
+.headingLevel1--titulos-quienes-somos {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+
+  /* gray */
+
+  color: #808080;
+}
+.container--content-quienes-somos {
+  justify-content: center;
+  padding: 0 130px;
+  margin: 25px auto !important;
+}
+.container--boton-nuestros-productos {
+  justify-content: center;
+  margin: 20px auto !important;
+}
+.link--boton-nuestros-productos{
+  background: #004D9D;
+  color: white;
+  border-radius: 5px;
+  padding: 15px 20px;
+  text-decoration: none;
+}
+.container.container--valor {
+  margin: 0 auto !important;
+}
+/* estilos mobile */
+@media (max-width: 600px) {
+  .link--saber-mas-button{
+    font-size: 14px;
+    padding: 12px 13px;
+  }
+  .link--saber-mas-button-2{
+    font-size: 14px;
+    padding: 6px 13px;
+  }
+  .link--categoriasTittle{
+    display: none;
+  }
+  .container--title .paragraph {
+    line-height: 1.3em;
+  }
+  .container--footerItemRow2 {
+    justify-content: center;
+    width: 100%;
+  }
+  .container--footer {
+    width: 100%;
+  }
+  .paragraph--footer{
+    text-align: center;
+  }
+  .container--tituloNewsletter {
+    justify-content: center;
+    width: 100% !important;
+  }
+  .paragraph.paragraph--textNewsletter{
+    text-align: center;
+  }
+  .container--shelfTitle {
+    width: 100%;
+    margin-left: 0;
+    display: block;
+  }
+  /* estilos tittulos footer */
+  .paragraph--tituloNewsletter{
+    margin-bottom: 3px;
+    font-size: 25px;
+  }
+  .container--textNewsletter {
+    width: 100%;
+  }
+  .paragraph--textNewsletter{
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  .wrapper--textNewsletter{
+    padding: 0 33px;
+  }
+  .container--tituloFooter {
+    margin: 0;
+    width: 100%;
+    justify-content: center;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .paragraph--category-404-item {
+    padding: 6px 12px;
+    margin-bottom: 34px;
+    border: 1px solid;
+  }
+  .paragraph.paragraph--categoriaC {font-size: 13px;}
+
+  .paragraph.paragraph--MarcaD {font-size: 13px;}
+
+  .paragraph.paragraph--AnoF {font-size: 13px;}
+
+  .wrapper.wrapper--ModeloL {font-size: 13px;}
+  .container--categoria-titulo {
+    position: absolute;
+    bottom: 0%;
+    top: initial;
+    transition: 400ms all;
+  }
+  .link--categoria-titulo {
+    font-size: 17px;
+  }
+  .container--orderplacedtitle {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}
+
+.paragraph.paragraph--titulovitrinaC {text-transform: uppercase;font-size: 14px;font-weight: 700;margin: 28px 0 8px 0;}
+
+.paragraph.paragraph--titulovitrinaC::before {content: "";width: 40%;border-top: 4px solid #ed6b10;display: block;}
+
+.container.container--titulovitrinaC {margin: 0px 3%;}
+
+.container.container--titulosForm {margin: 0;}

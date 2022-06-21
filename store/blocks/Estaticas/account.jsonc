@@ -1,0 +1,50 @@
+{
+  "flex-layout.row#myacccount":{
+    "children":[
+      "flex-layout.col#myacccount"
+    ],
+    "props":{
+      "blockClass": "myaccount"
+    }
+  },
+  "flex-layout.col#myacccount":{
+    "children":[
+      "list-context.image-list#account-1",
+      "my-account"
+    ],
+    "props":{
+      "blockClass": "myaccount"
+    }
+  },
+    //Sliders
+    "list-context.image-list#demoA": {
+      "children": ["slider-layout#demo-imagesA"],
+      "props": {
+        "height": 720,
+        "images": [
+          {
+            "image": "https://callearturop.vteximg.com.br/arquivos/bannerinternofab.png",
+            "mobileImage": "https://callearturop.vteximg.com.br/arquivos/bannerinternofabM.png"
+          },
+          {
+            "image": "https://callearturop.vteximg.com.br/arquivos/bannerinternofab.png",
+            "mobileImage": "https://callearturop.vteximg.com.br/arquivos/bannerinternofabM.png"
+          }
+        ],
+        "blockClass": "bannerprincA"
+      }
+    },
+    "slider-layout#demo-imagesA": {
+      "props": {
+        "itemsPerPage": {
+          "desktop": 1,
+          "tablet": 1,
+          "phone": 1
+        },
+        "infinite": true,
+        "showNavigationArrows": "desktopOnly",
+        "showPaginationDots":"desktopOnly",
+        "blockClass": "carouselA"
+      }
+    }
+}

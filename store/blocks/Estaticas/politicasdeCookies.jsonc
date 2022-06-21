@@ -1,0 +1,120 @@
+  {
+  "store.custom#Polit": {
+    "children": [
+      "flex-layout.row#princ",
+      "flex-layout.row#Polit"
+    ]
+  },
+
+  "rich-text#titleF": {
+    "props": {
+      "text": "## **COEXITO MAYORISTA**",
+      "blockClass": "TitleEstatics"
+    }
+  },
+
+  "flex-layout.row#Polit": {
+    "props": {
+      "blockClass": ["faq","estaticas", "segundocontainer"]
+    },
+    "children": [
+      "flex-layout.col#leftColAccesos-Polit",
+      "flex-layout.col#Polit"
+    ]
+  },
+  "flex-layout.col#leftColAccesos-Polit": {
+    "props":{
+      "blockClass":"primeraCol",
+      "width":"20%"
+    },
+    "children": [
+      "rich-text#Politica-datos-Polit",
+      "rich-text#tyc-datos-Polit",
+      "rich-text#faq-datos-Polit",
+      "rich-text#Nuestro-calzado-Polit",
+      "rich-text#todo-sobre-pies-Polit",
+      "rich-text#empleado-Polit",
+      "rich-text#Nuestro-compromiso-Polit",
+      "rich-text#aviso-legal-Polit",
+      "rich-text#tiendas-Polit"
+    ]
+  },
+    // accesos de las paginas estaticas
+
+    "rich-text#Politica-datos-Polit": {
+      "props": {
+        "text": "[TYC](/terminos-y-condiciones)",
+        "blockClass":["links-paginas-estaticas"]
+      }
+    },
+    "rich-text#tyc-datos-Polit": {
+      "props": {
+        "text": "[FAQ](/faq)",
+        "blockClass":["links-paginas-estaticas"]
+      }
+    },
+    "rich-text#faq-datos-Polit": {
+      "props": {
+        "text": "[SIC](/sic)",
+        "blockClass":["links-paginas-estaticas"]
+      }
+    },
+    "rich-text#Nuestro-calzado-Polit": {
+      "props": {
+        "text": "[Educate](/Educate)",
+        "blockClass":"links-paginas-estaticas"
+      }
+    },
+    "rich-text#todo-sobre-pies-Polit": {
+      "props": {
+        "text": "[Politica de protección de datos](/politica-datos)",
+        "blockClass":["links-paginas-estaticas"]
+      }
+    },
+    "rich-text#empleado-Polit": {
+      "props": {
+        "text": "[Politica cookies](/politica-coockies)",
+        "blockClass":["links-paginas-estaticas","selected"]
+      }
+    },
+    "rich-text#Nuestro-compromiso-Polit": {
+      "props": {
+        "text": "[Politica de protección de derechos al consumidor](/nuestro-compromiso)",
+        "blockClass":["links-paginas-estaticas"]
+      }
+    },
+    "rich-text#aviso-legal-Polit": {
+      "props": {
+        "text": "[Paga tu facturas](/Usuario)",
+        "blockClass":"links-paginas-estaticas"
+      }
+    },
+    "rich-text#tiendas-Polit": {
+      "props": {
+        "text": "[Radicar PQRS](/pqr)",
+        "blockClass":"links-paginas-estaticas"
+      }
+    },
+
+  "flex-layout.col#Polit": {
+    "children": [
+      "rich-text#Polit",
+      "rich-text#ContPolit"
+    ],
+    "props":{
+      "blockClass":"estaticasti"
+    }
+  },
+  "rich-text#Polit": {
+    "props": {
+      "text": "## Politica de Cookies",
+      "blockClass": "titlePreguntasfreq"
+    }
+  },
+  "rich-text#ContPolit": {
+    "props": {
+      "text": "La sociedad COÉXITO S.A.S. se permite divulgar mediante el presente documento su política de cookies que será utilizado en su plataforma “COÉXITO ONLINE”. COÉXITO S.A.S. manifiesta ser el responsable y directo encargado del tratamiento de los datos personales. Cualquier reclamación o comunicación sobre los aspectos que rigen esta política podrán enviarse a su domicilio principal ubicado en la Carrera 5 No. 61A – 95 de la ciudad Cali, al teléfono (601) 9187900 o al correo electrónico notificacionescoexito@coexito.com.co.  \n \n La presente política de datos personales hace uso del término 'cookies' cuando se refiere a los archivos de información que se descargan en el dispositivo de los usuarios computador, smartphone, tablet, etc. después de que estos han navegado la plataforma. Estos archivos conservan un registro de información sobre los hábitos de navegación o tendencias de consumo de los usuarios. El uso de las cookies tiene como propósito mejorar la experiencia y agilizar futuros procesos de navegación en la plataforma. Las cookies están relacionadas a todos los tipos de usuarios de la plataforma \n \n Con el propósito de mejorar el desempeño de los servicios prestados por la plataforma, COÉXITO S.A.S. podrá utilizar cookies propias y/o de terceros. Esto permitirá brindar una experiencia mejorada a los usuarios que navegan la plataforma. No obstante, la información que se recopile mediante cookies se encontrará cifrada y no será utilizada para identificar y/o revelar la información del usuario. De igual forma, no se recopilarán datos de los usuarios, tales como: número de tarjetas débito o crédito, u otra información de carácter financiero o crediticio. COÉXITO S.A.S. tiene el derecho a compartir la información obtenida a través de cookies con terceros (clientes, proveedores, empleados o empresas vinculadas a COÉXITO S.A.S.). En todo caso, la información recibida a través de cookies será utilizada por COÉXITO S.A.S. para los fines establecidos en su política de tratamiento de datos personales. Vigencia: 30 de abril de 2.022",
+      "blockClass": "titlePreguntasfreqContenido"
+    }
+  }
+}

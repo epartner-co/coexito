@@ -1,0 +1,88 @@
+.trigger--fitroTrigger{
+    width: 24% !important;
+    background: transparent;
+    border-radius: 10px;
+    border: 1px solid;
+    height: 37px;
+    cursor: pointer;
+}
+.content--filtroContent--visible{
+    position: fixed;
+    top: 0px;
+    padding: 76px 0 0 100px;
+    z-index: 99999;
+    height: 100%;
+    left: 0px;
+    background: rgba(0,0,0,0.5);
+    width: 100%!important;
+    opacity: 1;
+    transition: 1s all;
+}
+.content--filtroContent--hidden{
+    opacity: 0;
+}
+.trigger--fitroTrigger2--visible{
+    border: 0;
+    width: 100% !important;
+    border-radius: 0;
+    position: relative;
+}
+.trigger--fitroTrigger2--visible::after{
+    content: "X";
+    font-size: 22px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+
+/* estilos para los submenus */
+.trigger--subMneusMTrigger {
+    width: 100%;
+    background: transparent;
+    border: 0;
+}
+.content--subMneusMContent--visible{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #E7E7E7;
+}
+.content--Filtro-master {
+    display: block !important;
+}
+.trigger--Filtro-master::before {
+    display: none !important;
+}
+
+@media (max-width: 600px) {
+    .trigger--subMneusMTrigger {
+        background: #D3D3D3;
+    }
+    .content--subMneusMContent--visible{
+      padding-top: 0px;
+      width: 100%;
+  }
+
+  .content--BuscarMob {position: absolute;right: 0;bottom: 98%;width: 100%;}
+  .trigger.trigger--Lupa {background: transparent;border: none;}
+
+}
+.content--subMneusMContent--visible{
+  padding-top: 20px;
+  width: 25%;
+}
+
+
+.trigger.trigger--question.trigger--hidden.trigger--question--hidden {margin: 0 0 24px 0;}
+
+.trigger--question:focus :global(.vtex-rich-text-0-x-paragraph){
+  color: initial !important;
+}
+
+.trigger--question :global(.vtex-rich-text-0-x-paragraph){
+  text-transform: uppercase;
+    color: #182841;
+}

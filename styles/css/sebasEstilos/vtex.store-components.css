@@ -1,0 +1,211 @@
+/* producto estilso */
+.productNameContainer.productNameContainer--quickview  {
+    color: #004D9D;
+    font-size: 23px;
+}
+:global(.vtex-flex-layout-0-x-flexColChild--productRightColumn) .productDescriptionTitle {
+    display: none;
+}
+:global(.vtex-flex-layout-0-x-flexColChild--productRightColumn) .productDescriptionText  {
+    font-size: 12px;
+    color: #808080;
+    margin-top: 18px;
+    padding-bottom: 15px;
+    display: block;
+    border-bottom: 1px solid #E7E7E7;
+}
+.imageElement--imgCategoriaSlider{
+    height: auto;
+}
+/*Flechas*/
+.swiperCaretNext::before{
+    content: "";
+    background: url(https://coexitob2b.vteximg.com.br/arquivos/eva_arrow-ios-back-outline-nohover-product.png);
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    display: block;
+    transform: rotate(180deg);display: block;
+}
+.swiperCaretNext:hover::before{
+    content: "";
+    background: url(/arquivos/eva_arrow-ios-back-outline-hover-product.png);
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    display: block;
+    transform: rotate(0deg);
+}
+.swiperCaretNext .caretIcon{
+    display: none;
+}
+.swiperCaretPrev::before{
+    content: "";
+    background: url(https://coexitob2b.vteximg.com.br/arquivos/eva_arrow-ios-back-outline-nohover-product.png);
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    display: block;
+}
+.swiperCaretPrev:hover::before{
+    content: "";
+    background: url(/arquivos/eva_arrow-ios-back-outline-hover-product.png);
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    display: block;
+    transform: rotate(180deg);
+}
+.swiperCaretPrev .caretIcon{
+    display: none;
+}
+/* tumbs */
+.productImagesThumbActive .thumbImg {
+    border-radius: 5px;
+    border-color:#ED6B10 ;
+}
+.productImagesThumbActive {
+    border-radius: 5px;
+    border: 0;
+}
+.imageElement--whatsAppFicha{
+    width: 37px;
+}
+.thumbImg {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.imageElement--bannerMenuDesk {
+    width: 80%;
+}
+.imageElement.imageElement--imgCategoriaSlider {
+    height: 92%;
+}
+.imageElement--confirmation{
+    width: 326px;
+}
+.imageElement--confirmation-notop{
+    width: 98%;
+}
+.infoCardHeadline--info-card-CUATERNARIO {
+    display: none;
+}
+.infoCardContainer--info-card-CUATERNARIO {
+    height: 407px ;
+    width: 100%;
+    background-size: 100% !important;
+}
+.infoCardContainer--info-card-principal {
+    height: 567px;
+}
+
+.infoCardTextContainer--info-card-CUATERNARIO {
+    margin-top: 9%;
+    margin-left: 61px;
+}
+.infoCardTextContainer.infoCardTextContainer--info-card-principal {
+    margin-top: 27%;
+    margin-left: 55px;
+}
+.infoCardTextContainer--info-card-CUATERNARIO :global(.vtex-button){
+    background: white;
+    border: 1px solid #004D9D;
+    border-radius: 5px;
+}
+.infoCardTextContainer--info-card-CUATERNARIO :global(.vtex-button):hover{
+    background: #004D9D;
+}
+.infoCardTextContainer--info-card-CUATERNARIO :global(.vtex-button):hover :global(.vtex-button__label){
+    color: white;
+}
+.infoCardTextContainer--info-card-CUATERNARIO :global(.vtex-button__label){
+    color: #004D9D;
+    background: transparent;
+    padding: 19px 57px!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.infoCardTextContainer--info-card-CUATERNARIO :global(.vtex-button__label)::after{
+    content: "";
+    background: url(https://coexitob2b.vteximg.com.br/arquivos/flecha-azul.png) no-repeat;
+    background-size: 100%;
+    display: block;
+    width: 17px;
+    height: 17px;
+    margin-left: 15px;
+}
+@media (max-width: 600px) {
+    .infoCardContainer--info-card-CUATERNARIO {
+        height: 100%;
+        width: 100%;
+    }
+    .infoCardContainer--info-card-principal {
+        height: 488px;
+    }
+    .infoCardTextContainer--info-card-CUATERNARIO {
+        margin-top: 23%;
+        margin-left: 18px;
+    }
+    .infoCardTextContainer.infoCardTextContainer--info-card-principal {
+        margin-top: 97%;
+        margin-left: 34px;
+    }
+    .infoCardTextContainer--info-card-CUATERNARIO :global(.vtex-button__label){
+        color: #004D9D;
+        background: transparent;
+        padding: 17px 10px!important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+    }
+    .logoImage {
+        width: 150px;
+    }
+    .logoContainer {
+        padding: 5px;
+    }
+    .imageElement--bannerMenuDesk {
+        width: 97% !important;
+    }
+    .carouselGaleryThumbs {
+      position: absolute;
+      bottom: -37px;
+      margin: 0 auto;
+      display: block;
+      padding: 0 68px;
+      width: 99%;
+    }
+    .carouselGaleryThumbs .productImagesThumbCaret {
+        display: none;
+    }
+    .carouselGaleryThumbs .productImagesThumb {
+        margin: 6px;
+    }
+    .skuSelectorContainer.skuSelectorContainer.skuSelectorContainer--aperturacantidad {display: none;}
+
+    .skuSelectorContainer.skuSelectorContainer.skuSelectorContainer--aperturacantidad.skuSelectorContainer--mobilSkuSelect {
+      display: block;}
+    .imageElement--imageFiltro{
+        width: 100%;
+    }
+    .infoCardContainer--mision-vision {
+        width: 97%!important;
+        border-radius: 10px;
+        height: 215px;
+        position: relative;
+        margin-bottom: 131px;
+    }
+    .infoCardTextContainer--mision-vision {
+        width: 93%;
+        background: white;
+        padding: 0 25px;
+        position: absolute;
+        bottom: -80px;
+        height: 183px;
+    }
+    .imageElement--valorM{
+        width: 70%;
+    }    
+}

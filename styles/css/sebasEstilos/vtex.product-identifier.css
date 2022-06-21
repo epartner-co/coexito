@@ -1,0 +1,25 @@
+/* ajuste para product page */
+:global(.vtex-flex-layout-0-x-flexColChild--productRightColumn) .product-identifier--productReference {
+    justify-content: flex-start;
+}
+/* ajustes del simulator shipping */
+:global(.vtex-address-form-4-x-container):global(.vtex-dropdown__container ){
+  border-color: #015B98;
+  background: #F5F5F5;
+  height: 37px;
+  border: 1px solid #015B98;
+  font-size: 13px;
+}
+
+:global(.vtex-address-form-4-x-dropdown) :global(.vtex-dropdown__label){
+    display: none;
+}
+:global(.vtex-store-components-3-x-shippingContainer) :global(.vtex-button__label){
+    padding: 9px 0 !important;
+}
+.product-identifier__value{
+    overflow: hidden;
+    font-size: 10px;
+    color: black;
+    height: 12px;
+}

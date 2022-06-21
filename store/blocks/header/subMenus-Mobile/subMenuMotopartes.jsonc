@@ -1,0 +1,92 @@
+{
+    // trigger para activar el menu
+    "disclosure-layout#motopartesM-submenu-m-lvl2": {
+        "children": ["disclosure-trigger#menu-motopartesM-lvl2","disclosure-content#menu-motopartesM-lvl2"],
+        "props": {
+            "blockClass": "subMneusM"
+        }
+    },
+    // sub Menu trigger principal
+    "disclosure-trigger#menu-motopartesM-lvl2": {
+        "children": ["menu-item#category-pricipal-motopartesM"],
+        "props": {
+            "blockClass": "subMneusMTrigger"
+        }
+    },
+    // trigger dentro del sub Menu
+    "disclosure-trigger#menu-motopartesM-lvl2-2": {
+        "children": ["menu-item#category-pricipal-motopartesM-2"],
+        "props": {
+            "blockClass": ["subMneusMTrigger","lvl2"]
+        }
+    },
+    "disclosure-content#menu-motopartesM-lvl2": {
+        "children": ["disclosure-trigger#menu-motopartesM-lvl2-2","flex-layout.row#menumotopartesFila1","flex-layout.row#postMenu-motopartes"],
+        "props": {
+            "blockClass": ["subMneusMContent","lvl2"]
+        }
+    },
+
+    // trigger sub menu motopartesM ---------------------------
+    "menu-item#category-pricipal-motopartesM": {
+        "props": {
+            "id": "menu-item-category--pricipal-zapatos",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["menu-lv2","motopartes"],
+            "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "tagTitle": "motopartes",
+            "text": "Motopartes"
+            }
+        }
+    },
+    // trigger numero 2 ----------------------------------
+    "menu-item#category-pricipal-motopartesM-2": {
+        "props": {
+            "id": "menu-item-category--pricipal-zapatos",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["cierreSubMneu"],
+            "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "tagTitle": "Motopartes",
+            "text": "Motopartes"
+            }
+        }
+    },
+    "flex-layout.row#postMenu-motopartes": {
+        "children": [
+            "flex-layout.col#imagenBanner-motopartes",
+            "flex-layout.col#menuItem1",
+            "flex-layout.col#menuItem2",
+            "flex-layout.col#menuItem3",
+            "flex-layout.col#menuItem4"
+        ],
+        "props": {
+        "blockClass": "post-menu"
+        }
+    },
+    "flex-layout.col#imagenBanner-motopartes": {
+        "children": [
+        "image#mobile-banner-lvl2-motopartes"
+        ],
+        "props": {
+        "width":"100%",
+        "blockClass": "item-postMenu"
+        }
+    },
+    "image#mobile-banner-lvl2-motopartes": {
+        "props": {
+        "src": "https://coexitob2b.vteximg.com.br/arquivos/banner-mobile2.png",
+        "link":{
+            "url":""
+        },
+        "blockClass": "bannerMenuDesk"
+        }
+    }
+}

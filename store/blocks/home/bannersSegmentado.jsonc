@@ -1,0 +1,102 @@
+{
+    "responsive-layout.desktop#segmentar": {
+        "children": ["flex-layout.row#BannerSegContainer"]
+    },
+    "responsive-layout.phone": {
+        "children": ["flex-layout.col#bannerSegContainerM"]
+    },
+    "flex-layout.row#BannerSegContainer": {
+        "children": ["flex-layout.col#bannerSegContainer"],
+        "props": {
+          "blockClass": "bannerSegContainer"
+        }
+    },
+    // contenedor principal
+    "flex-layout.col#bannerSegContainer": {
+        "children": [
+            "flex-layout.row#bannerSeg1"
+        ],
+        "props": {
+          "blockClass": "bannerSegContainer"
+        }
+    },
+    // contenedor principal M
+    "flex-layout.col#bannerSegContainerM": {
+        "children": [
+            "flex-layout.row#bannerSeg1M"
+        ],
+        "props": {
+          "blockClass": "bannerSegContainer"
+        }
+    },
+    // sub contenedores
+    "flex-layout.row#bannerSeg1": {
+        "children": ["flex-layout.col#banneSeg1","flex-layout.col#banneSeg2","flex-layout.col#banneSeg3"],
+        "props": {
+          "fullWidth": true
+        }
+    },
+    "flex-layout.row#bannerSeg1M": {
+        "children": ["flex-layout.col#banneSeg2"],
+        "props": {
+          "fullWidth": true
+        }
+    },
+    "flex-layout.col#banneSeg1": {
+        "props": {
+            "width":"26%",
+            "blockClass":["bannerGrande"]
+        },
+        "children": ["image#bannerSeg-1"]
+    },
+    "image#bannerSeg-1": {
+        "props": {
+          "src": "https://coexitob2b.vtexassets.com/arquivos/coexito-izquierda.png",
+          "blockClass": "imgCategoriaSlider",
+          "link":{
+              "url":"/"
+          }
+        }
+    },
+    "flex-layout.col#banneSeg2": {
+        "props": {
+            "width":"47%",
+            "blockClass":["bannerpequeno"]
+        },
+        "children": ["flex-layout.col#bannerCTA"]
+    },
+    "flex-layout.col#bannerCTA": {
+        "props": {
+           "blockClass":"cta-terciario"
+        },
+        "children": ["image#bannerSeg-2","rich-text#saber-Mas-terciario"]
+    },
+    "image#bannerSeg-2": {
+        "props": {
+          "src": "https://coexitob2b.vtexassets.com/arquivos/banner-terciario-desk-new.png",
+          "blockClass": "imgCategoriaSlider"
+        }
+    },
+    "rich-text#saber-Mas-terciario": {
+        "props": {
+          "text": "[SABER MÁS](/)",
+          "blockClass": "saber-mas-button"
+        }
+    },
+    "flex-layout.col#banneSeg3": {
+        "props": {
+            "width":"26%",
+            "blockClass":["bannerGrande"]
+        },
+        "children": ["image#bannerSeg-3"]
+    },
+    "image#bannerSeg-3": {
+        "props": {
+          "src": "https://coexitob2b.vtexassets.com/arquivos/coexito-derecha.png",
+          "blockClass": "imgCategoriaSlider",
+          "link":{
+              "url":"/"
+          }
+        }
+    }
+}

@@ -1,0 +1,8 @@
+@media (max-width: 600px) {
+    .buttonText {
+        color: white;
+        transition: 400ms;
+        font-size: 10px;
+        line-height: 13px;
+    }
+}

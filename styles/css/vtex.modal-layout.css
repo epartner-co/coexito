@@ -34,7 +34,28 @@
   min-width: 320px;
   max-width: 96rem;
 }
-
+:global(.vtex-store-icons-0-x-expandIcon) {
+  display: none;
+}
+.triggerContainer--quickview {
+  padding: 0 !important;
+}
+.triggerContainer--quickview::before {
+  content: "";
+  background: url(https://coexitob2b.vteximg.com.br/arquivos/akar-icons_eye.png);
+  background-size: cover;
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+:global(.vtex-slider-layout-0-x-slideChildrenContainer--vitrinapeque ) .triggerContainer--quickview::before {
+  content: "";
+  background: url(https://coexitob2b.vteximg.com.br/arquivos/icono-azul-ojito.png);
+  background-size: cover;
+  display: block;
+  width: 24px;
+  height: 24px;
+}
 .headerContainer--quickview {
   border: none;
   position: absolute;
@@ -59,8 +80,58 @@
 }
 
 .contentContainer--quickviewContent {
-  padding: 2.5rem 0 2.5rem 2rem;
+  padding: 2.5rem 0 0rem 2rem;
   overflow-x: hidden;
+}
+.contentContainer--quickviewContent :global(.vtex-add-to-cart-button-0-x-buttonText){
+  color: white;
+  font-size: 0;
+  padding: 7px 7px;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contentContainer--quickviewContent :global(.vtex-add-to-cart-button-0-x-buttonText)::before{
+  content: "AGREGAR AL PEDIDO";
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+}
+.contentContainer--quickviewContent :global(.vtex-add-to-cart-button-0-x-buttonText)::after{
+  content: "";
+  background: url(/arquivos/heroicons-outline_shopping-cart-product.png) no-repeat;
+  background-size: 100%;
+  display: block;
+  width: 25px;
+  height: 25px;
+  margin-left: 10px;
+}
+.contentContainer--quickviewContent :global(.vtex-rich-text-0-x-paragraph--tituloRightProductFc){
+  padding: 0;
+  margin: 0 0 10px 0;
+  font-size: 13px;
+  position: relative;
+}
+.contentContainer--quickviewContent :global(.vtex-rich-text-0-x-paragraph--tituloRightProductFc)::before{
+  content: "";
+  background: url(https://coexitob2b.vteximg.com.br/arquivos/promocionespagproduct.png);
+  background-size: 100%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  top: 0px;
+  position: absolute;
+  left: -21px;
+}
+.contentContainer--quickviewContent :global(.vtex-product-price-1-x-sellingPriceValue) :global(.vtex-product-price-1-x-currencyContainer){
+  color: #004D9D;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+}
+.contentContainer--quickviewContent :global(.vtex-product-quantity-1-x-quantitySelectorContainer){
+  position: absolute;
+  right: 0px;
+  bottom: 8px;
 }
 
 .triggerContainer--quickview {

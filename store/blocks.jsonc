@@ -13,14 +13,47 @@
   },
 
   "store.account": {
-    "blocks": ["my-account"],
+    "blocks": ["flex-layout.row#myacccount"],
     "parent": {
       "challenge": "challenge.profile"
     }
   },
+  "list-context.image-list#account-1": {
+    "children": ["slider-layout#demo-account-1"],
+    "props": {
+      "height": 720,
+      "blockClass":"bannerinfeFl",
+      "images": [
+        {
+          "image": "https://coexitob2b.vteximg.com.br/arquivos/Banner-account-new.png",
+          "mobileImage": "https://coexitob2b.vteximg.com.br/arquivos/Banner-account-mobile.png"
+        },
+        {
+          "image": "https://coexitob2b.vteximg.com.br/arquivos/Banner-account-new.png",
+          "mobileImage": "https://coexitob2b.vteximg.com.br/arquivos/Banner-account-mobile.png"
+        }
+      ]
+    }
+  },
+  "slider-layout#demo-account-1": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots":"never",
+      "blockClass": ["carousel", "borderc"]
+    }
+  },
 
   "store.login": {
-    "blocks": ["login-content#default"]
+    "blocks": ["list-context.image-list#login", "flex-layout.row#form"],
+    "props": {
+      "blockClass": "contenedorCF"
+    }
   },
 
   "login-content#default": {
@@ -36,11 +69,11 @@
   },
 
   "store.not-found#product": {
-    "blocks": ["rich-text#not-found"]
+    "blocks": ["search-not-found-layout"]
   },
 
   "store.not-found#search": {
-    "blocks": ["rich-text#not-found"]
+    "blocks": ["search-not-found-layout"]
   },
 
   "rich-text#not-found": {
@@ -51,4 +84,10 @@
       "font": "t-heading-1"
     }
   }
+/*  "product-availability-gallery": {
+    "props": {
+      "showAvailability": true,
+      "showAvailabilityMessage": "Available items:"
+    }
+  }*/
 }

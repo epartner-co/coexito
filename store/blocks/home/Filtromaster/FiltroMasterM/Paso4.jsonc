@@ -1,0 +1,144 @@
+{
+  "flex-layout.row#filtroMpaso3Mob":{
+    "children":[
+      "flex-layout.col#contenedorC4Mob"
+    ],
+    "props":{
+      "blockClass":["contenedorF", "paso4"]
+    }
+  },
+
+  "flex-layout.col#contenedorC4Mob":{
+    "children":[
+
+      "flex-layout.row#breadcrumbbloque4Mob",
+      "flex-layout.row#filtroMpaso4CMob"
+    ]
+  },
+  "flex-layout.row#filtroMpaso4CMob":{
+    "children":[
+    "flex-layout.row#imgprimerpaso4Mob",
+    "flex-layout.col#botonesFprimerpaso3Mob"
+    ],
+    "props":{
+      "blockClass":"bloqueprinci"
+    }
+  },
+  "flex-layout.col#botonprimerpaso4Mob":{
+    "children":["rich-text#antes"],
+    "props":{
+      "blockClass":"bloqueprinci",
+      "width": "15%"
+    }
+  },
+  //Titulo paso 2
+  "rich-text#titulopaso4Mob": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "**PASO 3:** Selecciona las referencías",
+      "blockClass": ["tituloP"]
+    }
+  },
+  //Cuerpo de imagenes
+  "flex-layout.row#imgprimerpaso4Mob":{
+    "children": ["rich-text#titulopaso4Mob","flex-layout.row#bloque4Mob", "flex-layout.row#TextosImg4Mob"],
+    "props":{
+      "blockClass":"bloqueprinci2",
+      "width": "70%"
+    }
+  },
+  "flex-layout.row#bloque4Mob":{
+    "children": [],
+    "props":{
+      "blockClass":["Bloque1", "contenedor4filtros"]
+    }
+  },
+  "flex-layout.row#TextosImg4Mob":{
+    "children": [],
+    "props":{
+      "blockClass":"Bloque1"
+    }
+  },
+  "flex-layout.row#breadcrumbbloque4Mob":{
+    "children": ["rich-text#categoriaP4Mob","rich-text#Paso24Mob","rich-text#Paso34Mob","rich-text#Paso44Mob"],
+    "props":{
+      "blockClass":"Bloque2",
+      "preserveLayoutOnMobile": true
+    }
+  },
+
+  //Texto en images
+
+  //Texto en pages
+  "rich-text#categoriaP4Mob": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Categorías",
+      "blockClass": ["botonF3","botonbuscarF2","cerradoF"]
+    }
+  },
+  "rich-text#Paso24Mob": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Tipo de Vehículo",
+      "blockClass": ["botonF4","botonbuscarF2","cerradoF"]
+    }
+  },
+  "rich-text#Paso34Mob": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Referencias",
+      "blockClass": ["botonF5","botonbuscarF2","selectedF"]
+    }
+  },
+  "rich-text#Paso44Mob": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Paso 4",
+      "blockClass": ["botonF6","botonbuscarF2"]
+    }
+  },
+
+  //Checkbox en image
+
+
+  //Botones finales
+  "flex-layout.col#botonesFprimerpaso3Mob":{
+    "children":[    "flex-layout.col#botonprimerpaso4Mob", "rich-text#botonPp34Mob", "rich-text#botonPp24Mob"],
+    "props":{
+
+      "blockClass":"bloqueprinci3",
+      "width": "15%"
+    }
+  },
+  "rich-text#botonPp34Mob": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "IR PASO 4",
+      "blockClass": ["botonFC","boton4paso"]
+    }
+  },
+  "rich-text#botonPp24Mob": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "BUSCAR",
+      "blockClass": ["botonF2","botonbuscar"]
+    }
+  },
+  "rich-text#antesMob": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Antes",
+      "blockClass": ["botonF2","botonantes4"]
+    }
+  }
+
+}

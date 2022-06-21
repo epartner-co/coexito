@@ -1,0 +1,283 @@
+{
+  "flex-layout.row#filtroMpaso1Mob":{
+    "children":[
+      "flex-layout.col#contenedorCMob"
+    ],
+    "props":{
+      "blockClass":["contenedorF", "paso2"]
+    }
+  },
+
+  "flex-layout.col#contenedorCMob":{
+    "children":[
+      "flex-layout.row#breadcrumbbloqueMob",
+      "flex-layout.row#filtroMpaso1CMob"
+    ]
+  },
+  "flex-layout.row#filtroMpaso1CMob":{
+    "children":[
+    "flex-layout.col#botonprimerpasoMob",
+    "flex-layout.row#imgprimerpasoMob",
+    "flex-layout.col#botonesFprimerpasoMob"
+    ],
+    "props":{
+      "blockClass":"bloqueprinci"
+    }
+  },
+  "flex-layout.col#botonprimerpasoMob":{
+    "children":[],
+    "props":{
+      "blockClass":"bloqueprinci",
+      "width": "15%"
+    }
+  },
+  //Titulo paso 2
+  "rich-text#titulopaso2Mob": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "**PASO 1:** ¿Qué está buscando?",
+      "blockClass": ["tituloP"]
+    }
+  },
+  //Cuerpo de imagenes
+  "flex-layout.row#imgprimerpasoMob":{
+    "children": ["rich-text#titulopaso2Mob","slider-layout#filtroMPaso2"],
+    "props":{
+      "blockClass":"bloqueprinci2",
+      "width": "70%"
+    }
+  },
+
+  "slider-layout#filtroMPaso2": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 3,
+        "phone": 3
+      },
+      "infinite": true,
+      "showPaginationDots": "never",
+      "showNavigationArrows": "always",
+      "blockClass": "carouselCF"
+    },
+    "children": ["flex-layout.col#image1Mob" , "flex-layout.col#image2Mob", "flex-layout.col#image3Mob", "flex-layout.col#image4Mob"]
+  },
+
+  "flex-layout.row#bloque1Mob":{
+    "children": ["flex-layout.col#image1Mob" , "flex-layout.col#image2Mob", "flex-layout.col#image3Mob", "flex-layout.col#image4Mob"],
+    "props":{
+      "blockClass":"Bloque1"
+    }
+  },
+  "flex-layout.row#TextosImgMob":{
+    "children": ["rich-text#bateriaFMob" , "rich-text#llantaFMob", "rich-text#lubricanteFMob", "rich-text#repuestoFMob"],
+    "props":{
+      "blockClass":"Bloque1"
+    }
+  },
+  "flex-layout.row#breadcrumbbloqueMob":{
+    "children": ["rich-text#categoriaPMob","rich-text#Paso2Mob","rich-text#Paso3Mob","rich-text#Paso4Mob"],
+    "props":{
+      "blockClass":"Bloque2",
+      "preserveLayoutOnMobile": true
+    }
+  },
+
+    //Texto en images
+    "rich-text#bateriaFMob": {
+      "props": {
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER",
+        "text": "Baterías",
+        "blockClass": ["botonbuscarFiltro","selectedD"]
+      }
+    },
+    "rich-text#llantaFMob": {
+      "props": {
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER",
+        "text": "Llantas",
+        "blockClass": ["botonbuscarFiltro"]
+      }
+    },
+    "rich-text#lubricanteFMob": {
+      "props": {
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER",
+        "text": "Lubricantes",
+        "blockClass": ["botonbuscarFiltro"]
+      }
+    },
+    "rich-text#repuestoFMob": {
+      "props": {
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER",
+        "text": "Repuestos",
+        "blockClass": ["botonbuscarFiltro"]
+      }
+    },
+  //Texto en pages
+  "rich-text#categoriaPMob": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Categorías",
+      "blockClass": ["botonF3","botonbuscarF2","selectedF"]
+    }
+  },
+  "rich-text#Paso2Mob": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Paso 2",
+      "blockClass": ["botonF4","botonbuscarF2"]
+    }
+  },
+  "rich-text#Paso3Mob": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Paso 3",
+      "blockClass": ["botonF5","botonbuscarF2"]
+    }
+  },
+  "rich-text#Paso4Mob": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Paso 4",
+      "blockClass": ["botonF6","botonbuscarF2"]
+    }
+  },
+
+  //Checkbox en image
+
+  //Bloques de imagenes
+  "flex-layout.col#image1Mob":{
+    "children":[
+      "image#bateriasBloqueMob",
+      "image#bateriasBloquehoverMob",
+      "rich-text#bateriaFMob"
+    ],
+    "props":{
+      "blockClass":["image1", "imageb2"]
+    }
+  },
+  "flex-layout.col#image2Mob":{
+    "children":[
+      "image#llantasBloqueMob",
+      "image#llantasBloquehoverMob",
+      "rich-text#llantaFMob"
+    ],
+    "props":{
+      "blockClass":["image1", "imageb3"]
+    }
+  },
+  "flex-layout.col#image3Mob":{
+    "children":[
+      "image#lubricantesBloqueMob",
+      "image#lubricantesBloquehoverMob",
+      "rich-text#lubricanteFMob"
+    ],
+    "props":{
+      "blockClass":["image1", "imageb4"]
+    }
+  },
+  "flex-layout.col#image4Mob":{
+    "children":[
+      "image#repuestosBloqueMob",
+      "image#repuestosBloquehoverMob",
+      "rich-text#repuestoFMob"
+    ],
+    "props":{
+      "blockClass":["image1", "imageb5"]
+    }
+  },
+  //Imagenes
+  "image#bateriasBloqueMob": {
+    "props": {
+      "src": "https://coexitob2b.vteximg.com.br/arquivos/bateriaFiltro.png",
+      "maxHeight": 240,
+      "blockClass":["imagescomple","bateriasC"]
+    }
+  },
+  "image#llantasBloqueMob": {
+    "props": {
+      "src": "https://coexitob2b.vteximg.com.br/arquivos/llantasFiltro.png",
+      "maxHeight": 240,
+      "blockClass":["imagescomple","llantasC"]
+    }
+  },
+  "image#lubricantesBloqueMob": {
+    "props": {
+      "src": "https://coexitob2b.vteximg.com.br/arquivos/lubricantesFiltro.png",
+      "maxHeight": 240,
+      "blockClass":["imagescomple","lubricantesC"]
+    }
+  },
+  "image#repuestosBloqueMob": {
+    "props": {
+      "src": "https://coexitob2b.vteximg.com.br/arquivos/autopartesFiltro.png",
+      "maxHeight": 240,
+      "blockClass":["imagescomple","repuestosC"]
+    }
+  },
+//imagenes en hover
+    "image#bateriasBloquehoverMob": {
+      "props": {
+        "src": "https://coexitob2b.vteximg.com.br/arquivos/bateria-hoverFiltro.png",
+        "maxHeight": 240,
+        "blockClass":["imagescompleH","bateriasC"]
+      }
+    },
+    "image#llantasBloquehoverMob": {
+      "props": {
+        "src": "https://coexitob2b.vteximg.com.br/arquivos/llantas-hoverFiltro.png",
+        "maxHeight": 240,
+        "blockClass":["imagescompleH","llantasC"]
+      }
+    },
+    "image#lubricantesBloquehoverMob": {
+      "props": {
+        "src": "https://coexitob2b.vteximg.com.br/arquivos/lubricantes-hoverFiltro.png",
+        "maxHeight": 240,
+        "blockClass":["imagescompleH","lubricantesC"]
+      }
+    },
+    "image#repuestosBloquehoverMob": {
+      "props": {
+        "src": "https://coexitob2b.vteximg.com.br/arquivos/autopartes-hoverFiltro.png",
+        "maxHeight": 240,
+        "blockClass":["imagescompleH","repuestosC"]
+      }
+    },
+
+
+  //Botones finales
+  "flex-layout.col#botonesFprimerpasoMob":{
+    "children":["rich-text#botonPpMob", "rich-text#botonPp2Mob"],
+    "props":{
+
+      "blockClass":"bloqueprinci3",
+      "width": "15%"
+    }
+  },
+  "rich-text#botonPpMob": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "IR PASO 2",
+      "blockClass": ["botonFC","boton2paso"]
+    }
+  },
+  "rich-text#botonPp2Mob": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "BUSCAR",
+      "blockClass": ["botonF2","botonbuscar"]
+    }
+  }
+
+}

@@ -3,12 +3,19 @@
   color: #3F3F40;
   padding: 0.375rem 0.75rem 0.375rem 0.75rem;
 }
-
+.searchResultContainer {
+  padding: 0 20px 0 130px;
+}
 .galleryLayoutOptionButton--selected {
   background-color: #3F3F40;
   color: #FFFFFF;
 }
-
+.gallery--grid {
+  padding-left: 0;
+}
+.orderByText {
+  display: none;
+}
 .galleryLayoutSwitcher {
   border-radius: 4px 4px 4px 4px;
   justify-content: center;
@@ -19,4 +26,120 @@
 
 .galleryItem--list {
   border-bottom: 1px #E7E9EE solid;
+}
+.galleryTitle--layout {
+  margin-top: 0;
+}
+.galleryItem--grid {
+  max-width: 25% !important;
+}
+.notFound--layout {
+  padding: 0 30px 0 120px;
+}
+.notFound--layout :global(.vtex-breadcrumb-1-x-container){
+  display: none;
+}
+.container--layout :global(.vtex-flex-layout-0-x-flexRow--contenedorFL){
+  margin: 17px 0 !important;
+}
+/* .galleryItem--grid :global(.vtex-flex-layout-0-x-flexRowContent--selectorProduct) :global(.vtex-flex-layout-0-x-stretchChildrenWidth):first-child{
+  width: 49% !important;
+}
+.galleryItem--grid :global(.vtex-flex-layout-0-x-flexRowContent--selectorProduct) :global(.vtex-flex-layout-0-x-stretchChildrenWidth):first-child{
+  width: 49% !important;
+} */
+.galleryItem--grid :global(.vtex-flex-layout-0-x-flexRowContent--selectorProduct){
+  padding: 0 3px 0 0px;
+}
+.galleryItem--grid :global(.vtex-store-components-3-x-skuSelectorSubcontainer--tamano){
+  min-width: 100% !important;
+}
+:global(.vtex-flex-layout-0-x-flexColChild--filterCol) .filtersWrapper.filtersWrapper--FiltrosSecundarios .filter__container--selectedFilters :global(.vtex-checkbox__line-container) {
+  background: white;
+  border-radius: 2px;
+}
+.galleryLayoutOptionButton.galleryLayoutOptionButton {
+  background: white;
+}
+.galleryLayoutOptionButton :global(.vtex-store-icons-0-x-gridIcon) {
+  background-image: url(https://coexitob2b.vteximg.com.br/arquivos/x4-nor.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: transparent;
+}
+.galleryLayoutOptionButton--selected :global(.vtex-store-icons-0-x-gridIcon) {
+  background-image: url(https://coexitob2b.vteximg.com.br/arquivos/x4-hover.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: transparent;
+}
+.galleryLayoutOptionButton.galleryLayoutOptionButton :global(.vtex-store-icons-0-x-inlineGridIcon) {
+  background-image: url(https://coexitob2b.vteximg.com.br/arquivos/x3-nor.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: transparent;
+  width: 24px;
+}
+
+.galleryLayoutOptionButton.galleryLayoutOptionButton--selected :global(.vtex-store-icons-0-x-inlineGridIcon) {
+  background-image: url(https://coexitob2b.vteximg.com.br/arquivos/x3-hover.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: transparent;
+  width: 24px;
+}
+
+
+@media (max-width: 600px) {
+  .searchResultContainer {
+    padding: 0 5px;
+  }
+  .galleryItem--grid {
+    max-width: 50%!important;
+  }
+  .notFound--layout {
+    padding: 0 10px;
+  }
+  .filters--layout{
+    margin: -23px 0 24px 0;
+    background: white;
+    border-radius: 0px 5px 5px 0px;
+    border-top: 0;
+  }
+  .filterItem.filterItem--FiltrosSecundarios.filterItem--especialfilter.filterItem--especialfilter--selected {width: auto !important;margin-bottom: 12px;}
+  .filter__container--selectedFilters :global(.vtex-checkbox__line-container){
+    padding: 6px 33px 6px 9px!important;
+    border: 1px solid #D3D3D3;
+    border-radius: 5px;
+  }
+  .galleryItem--grid :global(.vtex-flex-layout-0-x-flexRowContent--selectorProduct){
+    padding: 0 0px 0 0px;
+  }
+  .galleryItem--list {
+    max-width: 95%!important;
+}
+.galleryLayoutOptionButton :global(.vtex-store-icons-0-x-gridIcon) {
+  background-image: url(https://coexitob2b.vteximg.com.br/arquivos/x2-nor.png);
+}
+.galleryLayoutOptionButton--selected :global(.vtex-store-icons-0-x-gridIcon) {
+  background-image: url(https://coexitob2b.vteximg.com.br/arquivos/x2-hover.png);
+
+}
+.galleryLayoutOptionButton.galleryLayoutOptionButton :global(.vtex-store-icons-0-x-inlineGridIcon) {
+  background-image: url(https://coexitob2b.vteximg.com.br/arquivos/x1-nor.png);
+
+}
+
+.galleryLayoutOptionButton.galleryLayoutOptionButton--selected :global(.vtex-store-icons-0-x-inlineGridIcon) {
+  background-image: url(https://coexitob2b.vteximg.com.br/arquivos/x1-hover.png);
+
+}
+.galleryLayoutOptionButton.galleryLayoutOptionButton {
+  background: transparent;
+}
+
 }

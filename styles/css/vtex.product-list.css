@@ -1,0 +1,76 @@
+
+.quantitySelectorContainer--cantidadBox {
+    max-width: 100%;
+}
+.inputContainer {
+    width: 49px;
+    font-size: 15px;
+    border: 0;
+}
+.quantitySelectorButton--cantidadBox {
+    border: 0;
+    background: white;
+    color: #363636 !important;
+    font-weight: 400;
+    font-size: 15px;
+}
+.price{
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.productBrandName {
+    display: none;
+}
+
+.minicartSummary--rowProduct {
+    padding: 0;
+}
+
+/*Mod Cami*/
+.productPrice {font-size: 12px;}
+
+.productPriceCurrency {position: absolute;top: -16px;font-size: 10px;}
+
+.price.productPriceContainer {position: relative;}
+
+.productName {font-size: 12px;}
+
+.deleteIcon {color: #ED6B10;width: 10px;}
+
+.quantitySelectorWrapper.quantitySelectorWrapper--cantidadBox {border: 1px solid #d6d0d0;}
+
+.inputContainer {border-right: 1px solid #ccc9c9;border-left: 1px solid #ccc9c9;}
+
+@media (max-width: 700px) {
+    .inputContainer {
+        border-right: 1px solid #ccc9c9;
+        border-left: 1px solid #ccc9c9;
+        padding: 6px;
+        width: 32px;
+    }
+    .quantitySelectorButton--cantidadBox {
+        border: 0;
+        background: white;
+        color: #363636!important;
+        font-weight: 400;
+        font-size: 15px;
+        padding: 7px;
+    }
+}
+.quantitySelectorDecrease--cantidadBox {padding: 0 5px;}
+
+.quantitySelectorButton--cantidadBox.quantitySelectorIncrease.quantitySelectorIncrease--cantidadBox {padding: 7px 7px;}
+
+.quantityDropdownContainer :global(.vtex-styleguide-9-x-container){
+  height: auto !important;
+  padding: 7px 0;
+  font-size: 12px;
+}
+
+.unitPrice {
+  display: none;
+}

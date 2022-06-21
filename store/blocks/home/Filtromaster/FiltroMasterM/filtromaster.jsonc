@@ -1,0 +1,87 @@
+{
+  "flex-layout.row#filtroMob":{
+    "children":[
+      "flex-layout.col#imageFiltroMob",
+      "flex-layout.col#TextoFiltroMob",
+      "flex-layout.col#BotonFiltroMob"
+    ],
+    "props":{
+      "blockClass":"contenedorFL",
+      "preserveLayoutOnMobile": true
+    }
+  },
+  "flex-layout.row#filtroMobC":{
+    "children":[
+      "flex-layout.col#imageFiltroMob",
+      "flex-layout.col#TextoFiltroMobC",
+      "flex-layout.col#BotonFiltroMob"
+    ],
+    "props":{
+      "blockClass":"contenedorFLC",
+      "preserveLayoutOnMobile": true
+    }
+  },
+  "flex-layout.col#imageFiltroMob":{
+    "children":["image#filtroMMob"],
+    "props":{
+      "blockClass":["contenedorFL", "centrarFil"],
+      "width": "15%"
+    }
+  },
+  "flex-layout.col#TextoFiltroMob":{
+    "children":["rich-text#textoFiltroMob"],
+    "props":{
+      "blockClass":["contenedorFC", "centrarFil", "Mobil"],
+      "width": "48%"
+    }
+  },
+  "flex-layout.col#TextoFiltroMobC":{
+    "children":["rich-text#textoFiltroMobC"],
+    "props":{
+      "blockClass":["contenedorFC", "centrarFil", "Mobil"],
+      "width": "48%"
+    }
+  },
+
+
+  "flex-layout.col#BotonFiltroMob":{
+    "children":["rich-text#botonFiltroMob"],
+    "props":{
+      "blockClass":["contenedorFL", "centrarFil"],
+      "width": "37%"
+    }
+  },
+
+  "image#filtroMMob": {
+    "props": {
+      "src": "https://coexitob2b.vteximg.com.br/arquivos/todo.png",
+      "maxHeight": 240,
+      "blockClass":"imageFiltro"
+    }
+  },
+  "rich-text#textoFiltroMob": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "**¡Inicia filtrando tu búsqueda de productos!**",
+      "blockClass": "textoFiltro"
+    }
+  },
+  "rich-text#textoFiltroMobC":{
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "**Estás viendo productos de**",
+      "blockClass": "textoFiltro"
+    }
+  },
+
+  "rich-text#botonFiltroMob": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "INICIAR BÚSQUEDA",
+      "blockClass": "botonF"
+    }
+  }
+}

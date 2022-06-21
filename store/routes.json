@@ -7,5 +7,31 @@
   },
   "store.custom#contact-us": {
     "path": "/contact-us"
+  },
+  "store.custom#notienesacceso": {
+    "path": "/accessdenied"
+  },
+  "store.custom#loginb2b-1": {
+    "path": "/loginb2b-1"
+  },
+  "store.custom#usuario":{
+    "path": "/usuario"
+  },
+  "store.custom#Termin":{
+    "path": "/politica-datos"
+  },
+  "store.custom#Polit":{
+    "path": "/politica-coockies"
+  },
+  "store.custom#Coo":{
+    "path": "/terminos-y-condiciones"
+  },
+  "store.custom#priv":{
+    "path": "/politicas-privacidad"
+  },
+  "store.custom#quien":{
+    "path": "/Quienes-somos"
   }
+
+
 }

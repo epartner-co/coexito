@@ -1,0 +1,34 @@
+.listItem.listItem--bateria.listItemActive.listItemActive--bateria::before {content: "";background: url(https://coexitob2b.vteximg.com.br/arquivos/baterias.png);width: 20px;height: 20px;display: block;background-size: 100%;position: absolute;top: 25%;left: 20%;z-index: 99;}
+.listItem.listItem--llanta.listItemActive.listItemActive--llanta::before {content: "";background: url(https://coexitob2b.vteximg.com.br/arquivos/llantasicon2.png);width: 20px;height: 20px;display: block;background-size: 100%;position: absolute;top: 25%;left: 20%;z-index: 99;}
+.listItem.listItem--lubricante.listItemActive.listItemActive--lubricante::before {content: "";background: url(https://coexitob2b.vteximg.com.br/arquivos/lubricantesicon2.png);width: 20px;height: 20px;display: block;background-size: 100%;position: absolute;top: 25%;left: 20%;z-index: 99;}
+.listItem.listItem--autoparte.listItemActive.listItemActive--autoparte::before {content: "";background: url(https://coexitob2b.vteximg.com.br/arquivos/autopartesv1.png);width: 20px;height: 20px;display: block;background-size: 100%;position: absolute;top: 25%;left: 20%;z-index: 99;}
+.listItem.listItem--Motopartes.listItemActive.listItemActive--Motopartes::before {content: "";background: url(https://coexitob2b.vteximg.com.br/arquivos/motopartesiconv1.png);width: 20px;height: 20px;display: block;background-size: 100%;position: absolute;top: 25%;left: 20%;z-index: 99;}
+
+.listItem.listItem--bateria::before {content: "";background: url(https://coexitob2b.vteximg.com.br/arquivos/baterias2.png);width: 20px;height: 20px;display: block;background-size: 100%;position: absolute;top: 25%;left: 20%;z-index: 99;}
+.listItem.listItem--llanta::before {content: "";background: url(https://coexitob2b.vteximg.com.br/arquivos/llantas2.png);width: 20px;height: 20px;display: block;background-size: 100%;position: absolute;top: 25%;left: 20%;z-index: 99;}
+.listItem.listItem--lubricante::before {content: "";background: url(https://coexitob2b.vteximg.com.br/arquivos/lubricantes2.png);width: 20px;height: 20px;display: block;background-size: 100%;position: absolute;top: 25%;left: 20%;z-index: 99;}
+.listItem.listItem--autoparte::before {content: "";background: url(https://coexitob2b.vteximg.com.br/arquivos/autopartes2.png);width: 20px;height: 20px;display: block;background-size: 100%;position: absolute;top: 25%;left: 20%;z-index: 99;}
+.listItem.listItem--Motopartes::before {content: "";background: url(https://coexitob2b.vteximg.com.br/arquivos/motopartes2.png);width: 20px;height: 20px;display: block;background-size: 100%;position: absolute;top: 25%;left: 20%;z-index: 99;}
+
+
+
+.listItem {position: relative;}
+
+.container.container--product {
+  margin: 0 0 30px 0;
+}
+
+@media (max-width: 700px) {
+  .listItem.listItem--bateria.listItemActive.listItemActive--bateria::before {content: "";background: url(https://coexitob2b.vteximg.com.br/arquivos/baterias.png);width: 20px;height: 20px;display: block;background-size: 100%;position: absolute;top: 25%;left: 15%;z-index: 99;}
+  .listItem.listItem--llanta.listItemActive.listItemActive--llanta::before {content: "";background: url(https://coexitob2b.vteximg.com.br/arquivos/llantasicon2.png);width: 20px;height: 20px;display: block;background-size: 100%;position: absolute;top: 25%;left: 15%;z-index: 99;}
+  .listItem.listItem--lubricante.listItemActive.listItemActive--lubricante::before {content: "";background: url(https://coexitob2b.vteximg.com.br/arquivos/lubricantesicon2.png);width: 20px;height: 20px;display: block;background-size: 100%;position: absolute;top: 25%;left: 15%;z-index: 99;}
+  .listItem.listItem--autoparte.listItemActive.listItemActive--autoparte::before {content: "";background: url(https://coexitob2b.vteximg.com.br/arquivos/autopartesv1.png);width: 20px;height: 20px;display: block;background-size: 100%;position: absolute;top: 25%;left: 15%;z-index: 99;}
+  .listItem.listItem--Motopartes.listItemActive.listItemActive--Motopartes::before {content: "";background: url(https://coexitob2b.vteximg.com.br/arquivos/motopartesiconv1.png);width: 20px;height: 20px;display: block;background-size: 100%;position: absolute;top: 25%;left: 15%;z-index: 99;}
+  
+  .listItem.listItem--bateria::before {content: "";background: url(https://coexitob2b.vteximg.com.br/arquivos/baterias2.png);width: 20px;height: 20px;display: block;background-size: 100%;position: absolute;top: 25%;left: 15%;z-index: 99;}
+  .listItem.listItem--llanta::before {content: "";background: url(https://coexitob2b.vteximg.com.br/arquivos/llantas2.png);width: 20px;height: 20px;display: block;background-size: 100%;position: absolute;top: 25%;left: 15%;z-index: 99;}
+  .listItem.listItem--lubricante::before {content: "";background: url(https://coexitob2b.vteximg.com.br/arquivos/lubricantes2.png);width: 20px;height: 20px;display: block;background-size: 100%;position: absolute;top: 25%;left: 15%;z-index: 99;}
+  .listItem.listItem--autoparte::before {content: "";background: url(https://coexitob2b.vteximg.com.br/arquivos/autopartes2.png);width: 20px;height: 20px;display: block;background-size: 100%;position: absolute;top: 25%;left: 15%;z-index: 99;}
+  .listItem.listItem--Motopartes::before {content: "";background: url(https://coexitob2b.vteximg.com.br/arquivos/motopartes2.png);width: 20px;height: 20px;display: block;background-size: 100%;position: absolute;top: 25%;left: 15%;z-index: 99;}
+}
+

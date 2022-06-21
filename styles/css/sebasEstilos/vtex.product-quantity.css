@@ -1,0 +1,68 @@
+.quantitySelectorContainer {
+    margin: 0;
+}
+:global(.vtex-flex-layout-0-x-flexRow--fichaProducto) .quantitySelectorContainer {
+  position: absolute;
+  left: 36%;
+  bottom: 20%;
+}
+/* ajuste para la ficha de producto */
+:global(.vtex-flex-layout-0-x-flexRow--fichaProducto)  :global(.vtex-numeric-stepper__plus-button){
+    border-color: #015B98;
+    background: #F5F5F5;
+    height: 38px;
+    width: 25px;
+    border: 0px;
+}
+:global(.vtex-flex-layout-0-x-flexRow--fichaProducto)  :global(.vtex-numeric-stepper__minus-button){
+    border-color: #015B98;
+    background: #F5F5F5;
+    height: 38px;
+    width: 25px;
+    border:0px;
+}
+:global(.vtex-flex-layout-0-x-flexRow--fichaProducto)  :global(.vtex-numeric-stepper__input){
+    border-color: #015B98;
+    width: 20px;
+    background: #F5F5F5;
+    height: 38px;
+    border: 0px;
+}
+:global(.vtex-flex-layout-0-x-flexRow--fichaProducto) .quantitySelectorTitle {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+@media (max-width: 600px) {
+.quantitySelectorContainer {display: none !important;}
+
+.quantitySelectorContainer.quantitySelectorContainer--quantitymov {display: block !important;}
+.quantitySelectorTitle.quantitySelectorTitle--quantitymov {font-size: 10px; margin: 0 0 8px 0;}
+
+.quantitySelectorDropdownMobileContainer.quantitySelectorDropdownMobileContainer--quantitymov {width: 100%;margin: 0 auto;}
+
+}
+.quantitySelectorContainer {display: block;}
+
+.quantitySelectorContainer.quantitySelectorContainer--quantitymov {display: none; margin: 0 12px 0 0;}
+
+.quantitySelectorStepper {border: 1px solid #004D9D;border-radius: 5px;}
+
+.quantitySelectorStepper :global(.vtex-numeric-stepper__plus-button){
+  border: 0px;
+}
+.quantitySelectorStepper :global(.vtex-numeric-stepper__input){
+  border: 0px;
+}
+.quantitySelectorStepper :global(.vtex-numeric-stepper__minus-button){
+  border: 0px;
+}
+.quantitySelectorStepper :global(.vtex-numeric-stepper__minus-button-container){
+  z-index: 1;
+}
+.quantitySelectorStepper{
+  z-index: 1;
+}

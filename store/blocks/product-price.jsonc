@@ -7,21 +7,35 @@
       "marginBottom": 4
     },
     "children": [
-      "product-selling-price"
+      "product-selling-price","product-quantity"
     ]
   },
 
   "flex-layout.row#list-price-savings": {
     "props": {
+      "blockClass": "PreciosDTO",
       "colGap": 2,
       "preserveLayoutOnMobile": true,
       "preventHorizontalStretch": true,
       "marginBottom": 2,
-      "marginTop": 5
+      "marginTop": 5,
+      "markers": [
+        "discount",
+        "highlight"
+      ]
     },
     "children": [
-      "product-list-price",
-      "product-price-savings"
+      "product-list-price","product-price-savings"
     ]
+  },
+  "product-price-savings": {
+    "props": {
+      "message": "{savingsPercentage}",
+      "blockClass":"flag-desc-producto",
+      "markers": [
+        "discount",
+        "highlight"
+      ]
+    }
   }
 }

@@ -1,3 +1,33 @@
 .product-identifier--productReference {
   margin-bottom: 1rem;
 }
+.product-identifier__label{
+  font-size: 0;
+}
+.product-identifier__label::before{
+  content: "REF: ";
+  font-size: 12px;
+  color: #004D9D;
+  font-weight: bold;
+}
+.product-identifier--productReference {
+  margin: 0;
+}
+@media (max-width: 600px) {
+.product-identifier__label::before {
+  font-size: 10px !important;
+}
+.product-identifier__value {font-size: 10px !important;}
+.product-identifier--productReference{
+  justify-content: initial !important;
+}
+.product-identifier--productReference{
+  margin: 0 0 3px 0;
+}
+.product-identifier__label {margin: 0 3px 0 0;}
+
+
+}
+.product-identifier__separator {
+  display: none;
+}

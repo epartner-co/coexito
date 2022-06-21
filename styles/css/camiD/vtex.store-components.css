@@ -1,0 +1,72 @@
+/*Home*/
+/*Hovers img*/
+.imageElement.imageElement--img-slider-category-hover {max-width: 150px;}
+
+.discountContainer {width: 100%;}
+
+.imageElement--selectedI {background: white;}
+
+/*Filtro Master*/
+
+.imageElement.imageElement--imagescompleH {display: none;}
+
+.imageElementLink--carouselC{
+  width: 100%;
+}
+
+.shippingContainer :global(.vtex-address-form__state){
+  margin: 0;
+  padding: 2px 0px 0px;
+}
+.shippingContainer :global(.vtex-address-form__city){
+  margin: 0;
+  padding: 10px 0;
+}
+
+.shippingContainer :global(.vtex-address-form-4-x-container){
+  height: 37px;
+}
+
+.shippingTableRadioBtn {margin: 0 55px 0 0;}
+
+.shippingTableLabel::before {content: "";background: url(https://coexitob2b.vteximg.com.br/arquivos/enviov1.png);position: absolute;width: 25px;height: 25px;left: 6%;background-size: 100%;bottom: 9%;}
+
+.shippingTable {background: #f5f5f5;padding: 17px 0;border-radius: 11px;border: 1px solid #015b98;}
+
+.shippingContainer :global(.vtex-button):hover{
+  background: #004d9d;
+}
+
+.specificationItemProperty.specificationItemProperty--especsapli {display: none;}
+
+.specificationsTitle.specificationsTitle--especsapli {display: none;}
+
+.specificationsTableHead.specificationsTableHead--especsapli {display: none;}
+
+.specificationItemSpecifications.specificationItemSpecifications--especsapli {padding: 0;}
+
+.specificationsTableContainer.specificationsTableContainer--especsapli {padding: 0;border: 1px solid #015b98;border-radius: 5px;}
+
+.container.container--especsapli {max-width: 100%;border-radius: 5px;}
+
+.specificationsTable.specificationsTable--especsapli {background: #f5f5f5;}
+
+.specificationItemSpecifications.specificationItemSpecifications--especsapli {
+  padding: 0;
+  font-size: 13px;
+  border-bottom: 0px;
+}
+
+.specificationItemSpecifications.specificationItemSpecifications--especsapli5 {
+  font-size: 19px;
+  text-transform: uppercase;
+  color: gray;
+}
+
+
+.imageElement.imageElement--imgCategoriaSlider.imageElement--imagenprod {
+    padding-top: 34px;
+    background: white;
+    margin-top: 4px;
+}
+.productDescriptionTitle {font-weight: 700;text-transform: uppercase;font-size: 18px;color: gray;text-align: center;border-bottom: 1px solid  #dedddd;    padding-bottom: 5px;}

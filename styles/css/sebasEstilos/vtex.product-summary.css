@@ -1,0 +1,19 @@
+@media (max-width: 600px) {
+    .containerNormal :global(.vtex-button) {
+        background: #004D9D;
+    }
+    .containerNormal :global(.vtex-button__label)::after {
+        background: url(/arquivos/heroicons-outline_shopping-cart-whiteversion.png) no-repeat;
+        background-size: 100%;
+        background-position: center;
+        width: 14px;
+        height: 14px;
+        margin-left: 2px;
+        margin-top: -4px;
+    }
+    .containerNormal :global(.vtex-button__label) {
+        padding: 5px 1px !important;
+    }
+    .productBrandName {margin: 0 3px 0 0;display: block;}
+
+}

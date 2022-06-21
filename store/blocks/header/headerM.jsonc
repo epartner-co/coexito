@@ -1,0 +1,147 @@
+{
+    "header-layout.mobile": {
+        "children": ["sticky-layout#1-mobile"]
+    },
+    "sticky-layout#1-mobile": {
+        "children": ["flex-layout.row#1-mobile","flex-layout.row#2-mobile"]
+    },
+    "flex-layout.row#1-mobile": {
+        "children": [
+            "logo#mobile",
+            "flex-layout.col#spacer"
+        ],
+        "props": {
+          "blockClass": "main-header-mobile",
+          "preventHorizontalStretch": true,
+          "preserveLayoutOnMobile": true,
+            "fullWidth": true
+        }
+    },
+    "flex-layout.row#2-mobile": {
+        "children": [
+            "flex-layout.col#drawer",
+            "flex-layout.col#filtro",
+            "flex-layout.col#minicart",
+            "flex-layout.col#search",
+            "flex-layout.col#login"
+        ],
+        "props": {
+            "blockClass": "main-header-mobile-sticky",
+            "preserveLayoutOnMobile": true
+        }
+    },
+    "flex-layout.col#drawer": {
+        "children": [
+            "drawer"
+        ],
+        "props": {
+            "width":"25%",
+            "blockClass": ["menu","itemsSticky"]
+        }
+    },
+    "flex-layout.col#minicart": {
+        "children": [
+            "minicart.v2"
+        ],
+        "props": {
+            "width":"25%",
+            "blockClass": ["minicart","itemsSticky"]
+        }
+    },
+    //buscador
+    "disclosure-layout#search": {
+      "children": ["disclosure-trigger#search", "disclosure-content#search"]
+    },
+    "disclosure-trigger#search": {
+      "children": ["image#lupa"],
+      "props": {
+        "blockClass": "Lupa"
+      }
+    },
+    "disclosure-content#search": {
+      "children": ["search-bar"],
+      "props":{
+        "blockClass": "BuscarMob"
+      }
+    },
+
+
+
+
+    //Cierre buscador
+
+
+
+
+
+    "flex-layout.col#search": {
+        "children": [
+          "disclosure-layout#search"
+        ],
+        "props": {
+            "width":"25%",
+            "blockClass": ["search","itemsSticky"]
+        }
+    },
+    "link.product#lupa": {
+        "props": {
+          "blockClass": "Lupa"
+        },
+        "children":["image#lupa"]
+      },
+      "image#lupa": {
+        "props": {
+          "src": "https://cutis.vteximg.com.br/arquivos/Lupa.png",
+          "maxHeight": 30,
+          "blockClass":"LupaImagen"
+        }
+    },
+    "flex-layout.col#filtro": {
+        "children": [
+            "link.product#filtro"
+        ],
+        "props": {
+            "width":"25%",
+            "blockClass": ["filtro","itemsSticky"]
+        }
+    },
+    "link.product#filtro": {
+        "props": {
+          "blockClass": "filtro",
+          "href": "/Baterias"
+        },
+        "children":["image#filtro"]
+    },
+    "image#filtro": {
+        "props": {
+          "src": "https://coexitob2b.vteximg.com.br/arquivos/filtros.png",
+          "maxHeight": 30,
+          "blockClass":"filtroImagen"
+        }
+    },
+    "flex-layout.col#login": {
+        "children": [
+            "login"
+        ],
+        "props": {
+            "width":"25%",
+            "blockClass": ["login","itemsSticky"]
+        }
+    },
+    "drawer": {
+        "children": ["menu#drawer"],
+        "props":{
+            "backdropMode":"none",
+            "blockClass":"menu"
+        }
+    },
+
+    "logo#mobile": {
+        "props": {
+            "title": "Logo",
+            "href": "/",
+            "url": "https://coexitob2b.vteximg.com.br/arquivos/coexitoOnline-newlogo.png",
+            "width": "70"
+        }
+    }
+}

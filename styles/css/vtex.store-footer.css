@@ -1,7 +1,11 @@
 .row--menu-row {
   padding-right: 24px;
 }
-
+.footerLayout{
+  background: url(https://coexitob2b.vteximg.com.br/arquivos/fondoFooter.png)no-repeat;
+  background-size: cover;
+  padding: 20px 0 0 0;
+}
 .row--menu-row .rowContainer {
   align-items: flex-start;
 }
@@ -9,12 +13,71 @@
 .row--payment-methods {
   padding-top: 16px;
 }
-
 /*------------------------------------*/
 /*         Porcentaje footer2        */
 /*----------------------------------*/
 .acceptedPaymentMethodContainer {
-  width: 90%;
-  margin-left: 10%;
+  width: 100%;
 }
 /*>>>>>>>>>Cierre Flechas de slider*/
+
+/* logos de las redes soociales */
+.socialNetworkLink {
+  justify-content: center;
+}
+.socialNetworkLink--facebook::before {
+  content: "";
+  background: url(https://coexitob2b.vteximg.com.br/arquivos/facebookLogo.png)no-repeat;
+  background-size: 100%;
+  display: block;
+  width: 11px;
+  height: 21px;
+}
+.socialNetworkImage--facebook {
+  display: none;
+}
+.socialNetworkLink--instagram::before {
+  content: "";
+  background: url(https://coexitob2b.vteximg.com.br/arquivos/instagram.png)no-repeat;
+  background-size: 100%;
+  display: block;
+  width: 21px;
+  height: 21px;
+}
+.socialNetworkImage--instagram {
+  display: none;
+}
+.socialNetworkLink--youtube::before {
+  content: "";
+  background: url(https://coexitob2b.vteximg.com.br/arquivos/youtube.png)no-repeat;
+  background-size: 100%;
+  display: block;
+  width: 21px;
+  height: 21px;
+}
+.socialNetworkImage--youtube {
+  display: none;
+}
+.socialNetworkLink--twitter::before {
+  content: "";
+  background: url(https://coexitob2b.vteximg.com.br/arquivos/linkedin.png)no-repeat;
+  background-size: 100%;
+  display: block;
+  width: 21px;
+  height: 21px;
+}
+.socialNetworkImage--twitter {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .acceptedPaymentMethodContainer {
+    justify-content: center;
+  }
+  .socialNetworksContainer {
+    justify-content: center;
+  }
+  :global(.vtex-menu-2-x-menuContainer){
+    background: transparent;
+  }
+}

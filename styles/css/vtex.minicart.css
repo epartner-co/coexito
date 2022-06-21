@@ -1,0 +1,134 @@
+.openIconContainer--headerItem :global(.vtex-button)::after{
+    content: "Carrito";
+    font-size: 12px;
+    text-transform: capitalize;
+    color: white;
+}
+.openIconContainer--headerItem{
+    padding: 0;
+}
+.openIconContainer--headerItem :global(.vtex-button){
+    background: #ED6B10;
+    border-radius: 5px;
+    padding: 2px 7px;
+    margin: 0 0 0 8px;
+}
+.openIconContainer--headerItem :global(.vtex-button){
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.openIconContainer--headerItem :global(.vtex-button__label){
+    padding: 0 3px;
+}
+.minicartQuantityBadge {
+    background: #004D9D;
+    font-size: 6px;
+    width: 5px;
+    height: 5px;
+    top: -3px;
+    right: 0;
+}
+.openIconContainer--headerItem{
+    padding-left: 0;
+}
+.minicartContainer--headerItem :global(.vtex-button):hover{
+  background: #182841;
+}
+.minicartIconContainer::before {
+    content: "";
+    background: url(https://coexitob2b.vteximg.com.br/arquivos/heroicons-outline_shopping-cart.png) no-repeat;
+    background-size: 100%;
+    font-size: 10px;
+    display: block;
+    width: 20px;
+    height: 24px;
+    margin-top: 0;
+    transition: all 40ms;
+    margin-right: 5px;
+}
+.cartIcon {
+    display: none;
+}
+@media (max-width: 600px) {
+  .openIconContainer--headerItem :global(.vtex-button) {
+    margin: 0;
+  }
+    .openIconContainer{
+        padding: 0 5px;
+  }
+
+  .minicartProductListContainer--rowProduct :global(.vtex-dropdown__caption){
+    margin: 0 !important;
+  }
+  .drawerContent.drawerContent--headerItem {
+    height: 100%;
+  }
+  .openIconContainer--headerItem :global(.vtex-button)::after {
+    display: none;
+  }
+  .openIconContainer--headerItem :global(.vtex-button){
+    border-radius: 50% !important;
+    background: #ED6B10;
+    border-radius: 5px;
+    padding: 2px 5px;
+    width: 41px;
+    margin: 0 0 0 8px;
+    height: 41px;
+  }
+
+}
+
+.minicartProductListContainer--rowProduct{
+  min-height: 375px;
+}
+.minicartCheckoutButton--finalizarPedido :global(.vtex-button){
+  background: #0f3e99;
+}
+.minicartCheckoutButton--finalizarPedido :global(.vtex-button):hover{
+  background: #ed6b10;
+  color: white;
+}
+.minicartCheckoutButton--finalizarPedido :global(.vtex-button__label)::before{
+  content: "Finalizar compra";text-transform: uppercase;font-size: 13px;font-weight: 700;
+}
+.minicartCheckoutButton--finalizarPedido :global(.vtex-button__label){
+  font-size: 0;
+}
+
+.minicartCheckoutButton--verCarrito :global(.vtex-button){
+  background: #0f3e99;
+  color: white;
+
+}
+.minicartCheckoutButton--verCarrito :global(.vtex-button):hover{
+  background: #ed6b10;
+  color: white;
+
+}
+.minicartCheckoutButton--verCarrito :global(.vtex-button__label)::before{
+  content: "Ver Carrito";text-transform: uppercase;font-size: 13px;font-weight: 700;
+}
+.minicartCheckoutButton--verCarrito :global(.vtex-button__label){
+  font-size: 0;
+}
+
+
+.minicartTitle::before {content: "RESUMEN DE COMPRA";font-size: 20px;}
+
+.minicartTitle {font-size: 0;margin-top: 6%;margin-bottom: 4%;}
+
+.minicartTitle::after {content: "";width: 20%;border-bottom: 3px solid #ed6b10;display: block;}
+
+.closeIconContainer.closeIconContainer--headerItem {position: absolute;right: 4%;top: 1%;}
+
+.minicartProductListContainer.minicartProductListContainer--rowProduct::before {font-size: 10px!important;
+  content: "Descuentos tasas y fletes serán caulculados en el carrito de compras";
+  padding-bottom: 8px;
+  margin-bottom: 22px;
+  border-bottom: 1px solid #A0A0A0;
+  display: block;}
+
+.summarySmallDisclaimer {
+    display: none;
+}

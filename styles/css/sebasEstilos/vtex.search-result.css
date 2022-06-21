@@ -1,0 +1,303 @@
+.filterMessage {
+    text-transform: uppercase;
+    font-family: Helvetica;
+    font-size: 23px;
+    font-weight: bold;
+    color: #182841;
+    margin-top: 0;
+}
+.filterTitleSpan{
+    text-transform: uppercase;
+    font-family: Helvetica;
+    font-size: 14px;
+    font-weight: bold;
+    color: #182841;
+}
+.galleryTitle--layout {
+    text-transform: uppercase;
+    font-family: Helvetica;
+    font-size: 23px;
+    font-weight: bold;
+    color: #182841;
+    margin-bottom: 0;
+    padding-left: 10px;
+}
+.galleryTitle--layout::after {
+    content: "";
+    background: #ED6B10;
+    width: 170px;
+    height: 3px;
+    display: block;
+}
+.totalProducts--layout{
+
+    float: right;
+    position: absolute;
+    right: 0;
+    padding-right: 16px;
+    top: -24px;
+}
+.galleryItem--list {
+    border-bottom: 0;
+    max-width: 33.3333% !important;
+}
+.gallery--list {
+    padding: 0;
+}
+.galleryItem--list :global(.vtex-product-summary-2-x-containerNormal){
+    max-width: 100% !important;
+}
+.orderByButton {
+    padding: 6px;
+    border-radius: 5px;
+    margin: 10px 0;
+    border: 1px solid #015B98;
+    background: #F5F5F5;
+}
+.totalProductsMessage {
+    text-transform: initial;
+    font-weight: 400;
+    color: #808080;
+}
+.totalProducts--layout {
+    font-weight: 400;
+    color: #808080;
+}
+.filterPopupTitle  {
+    text-transform: initial;
+}
+.filterAvailable .filterIcon {
+    position: relative;
+}
+.filterAvailable .filterIcon .caretIcon{
+    display: none;
+}
+.filterAvailable .filterIcon::before{
+  content: "";
+  background: url(/arquivos/abrirMenufiltros.png) no-repeat;
+  background-size: 100%;
+  display: block;
+  width: 13px;
+  height: 13px;
+  background-position: center;
+}
+.filterAvailable.filterIsOpen .filterIcon::before{
+  content: "";
+  background: url(/arquivos/cerraMenufiltros.png) no-repeat;
+  background-size: 100%;
+  display: block;
+  width: 13px;
+  height: 13px;
+  background-position: center;
+}
+.filterItem :global(.vtex-checkbox__line-container){
+    align-items: center;
+}
+.filterItem :global(.vtex-checkbox__inner-container){
+    border: 1px solid #015B98;
+    border-radius: 3px;
+}
+.filterItem :global(.vtex-checkbox__box-wrapper){
+    display: none;
+}
+.filterItem :global(.vtex-checkbox__label){
+    color: #808080;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.filter__container--selectedFilters :global(.vtex-checkbox__container){
+    display: none;
+}
+.filter__container--selectedFilters .filterItem {
+    width: 43%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.filter__container--selectedFilters .filterTemplateOverflow {
+    display: flex;
+    flex-wrap: wrap;
+}
+.filter__container--selectedFilters :global(.vtex-checkbox__line-container) {
+    padding: 6px 10px;
+    border: 1px solid #D3D3D3;
+    border-radius: 5px;
+}
+.filter__container--selectedFilters :global(.vtex-checkbox__label) {
+    color: #363636;
+    font-size: 13px;
+}
+.filter__container--selectedFilters :global(.vtex-checkbox__line-container) {
+    align-items: center;
+}
+.filter__container--selectedFilters :global(.vtex-checkbox__label)::after {
+    content: "";
+    background: url(/arquivos/BorrarFiltro.png);
+    background-size: 100%;
+    display: block;
+    width: 8px;
+    height: 9px;
+    position: absolute;
+    top: 30%;
+    right: 11%;
+}
+@media (max-width: 600px) {
+  .filter__container--selectedFilters :global(.vtex-checkbox__label) {
+    color: #363636;
+    font-size: 12px !important;
+}
+    .totalProducts--layout{
+        float: initial;
+        position: relative;
+        right: 0;
+        padding-right: 16px;
+        top: 0;
+        text-align: left;
+        padding-left: 0;
+    }
+    .galleryItem--grid {
+        padding: 3px;
+    }
+    .galleryTitle--layout {
+        font-size: 20px;
+        padding: 0;
+    }
+    .galleryTitle--layout::after {
+        width: 70px;
+    }
+    .galleryLayoutSwitcher {
+        justify-content: flex-start;
+    }
+    .orderByDropdown {
+        padding-left: 20px;
+    }
+    .orderByButton {
+        padding: 12px 6px;
+        margin: 0px 0;
+        justify-content: space-between;
+    }
+    .filters{
+        border: 1px solid #015B98;
+        border-radius: 5px;
+        padding-right: 20px;
+        background: #F5F5F5;
+    }
+    .filterPopupButton {
+        padding: 1px 0;
+        height: 44px;
+    }
+    .filtersWrapperMobile{
+        justify-content: flex-start;
+        padding-left: 10px;
+        position: relative;
+    }
+    .filtersWrapperMobile .filterPopupArrowIcon {
+        position: absolute;
+        right: 0;
+        padding: 0;
+    }
+    .filtersWrapperMobile .filterPopupArrowIcon::before{
+        content: "";
+        background: url(/arquivos/filtrosIcon.png) no-repeat;
+        background-size: 100%;
+        background-position: center;
+        display: block;
+        width: 14px;
+        height: 17px;
+    }
+    .filtersWrapperMobile .filterPopupArrowIcon .filterIcon{
+        display: none;
+    }
+    .filtersWrapperMobile .filterPopupTitle {
+        text-transform: uppercase;
+        color: #182841;
+    }
+    .filterApplyButtonWrapper :global(.vtex-button){
+        background: #004D9D;
+    }
+    .filterApplyButtonWrapper :global(.vtex-button__label){
+        color: white;
+        font-weight: 400;
+    }
+    .filterClearButtonWrapper :global(.vtex-button__label){
+        color: #808080;
+        font-weight: 400;
+    }
+    .accordionFilterContainer {
+        padding-left: 15px;
+    }
+    .accordionFilterItemTitle{
+        font-size: 15px;
+        color: #182841;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .filterAccordionItemBox :global(.vtex-checkbox__box-wrapper ){
+        border-color: #004D9D;
+        border-radius: 5px;
+    }
+    .filterBreadcrumbsItem {
+        margin-left: 5px;
+    }
+    .filterItem :global(.vtex-checkbox__label){
+      font-size: 13px;
+    }
+    .filtersWrapper.filtersWrapper--FiltrosSecundarios.filtersWrapper--especialfilter {
+      background: white;
+      border-radius: 0px 5px 5px 0px;
+      border: 1px solid #e3e3e3;border-top: 0;
+    }
+      .galleryItem--list {
+        max-width: 95%!important;
+    }
+}
+.filterItem :global(.vtex-checkbox__label){
+  font-size: 13px;
+}
+.galleryItem.galleryItem--normal.galleryItem--grid {padding: 10px 5px;}
+.filter__container.filter__container--aplicaciones {display: none;}
+
+.filter__container.filter__container--ficha-tecnica {display: none;}
+
+.filter__container.filter__container--marca {display: none;}
+
+.filter__container.filter__container--tamano {display: none;}
+
+.filterMessage {display: none;}
+
+.filter.filterSelected {display: none;}
+
+.filter__container.filter__container--selectedFilters {display: none;}
+
+.filter__container.filter__container--FiltrosSecundarios {display: none;}
+
+.filter__container.filter__container--FiltrosSecundarios.filter__container--selectedFilters {display: block;}
+
+.filter__container.filter__container--FiltrosSecundarios.filter__container--title.filter__container--FiltrosSecundarios--title {display: block;}
+
+.filter__container--FiltrosSecundarios--title .filterMessage.filterMessage--FiltrosSecundarios {display: block;}
+
+.filter.filter--FiltrosSecundarios.filterSelected.filterSelected--FiltrosSecundarios {display: block;}
+
+.filterItem.filterItem--FiltrosSecundarios.filterItem--2012.filterItem--FiltrosSecundarios--2012.selectedFilterItem.selectedFilterItem--FiltrosSecundarios.filterItem.filterItem--FiltrosSecundarios--selected {margin: 0 14px 8px 0;}
+
+
+.filterMessage.filterMessage--FiltrosSecundarios.filterMessage--especialfilter {display: none;}
+
+.filterTitleSpan.filterTitleSpan--FiltrosSecundarios.filterTitleSpan--especialfilter {display: none;}
+
+.filter.filter--FiltrosSecundarios.filter--especialfilter.filterSelected.filterSelected--FiltrosSecundarios.filterSelected--especialfilter {display: none;}
+
+.filterItem.filterItem--FiltrosSecundarios.filterItem--especialfilter.filterItem--especialfilter--selected {width: 20%;}
+
+.filterTemplateOverflow.filterTemplateOverflow--FiltrosSecundarios.filterTemplateOverflow--especialfilter {border: 0px !important;margin: 0 auto;justify-content: center;}
+
+.filter__container.filter__container--FiltrosSecundarios.filter__container--especialfilter.filter__container--selectedFilters {border: 0px;}
+
+.filter__container.filter__container--FiltrosSecundarios.filter__container--especialfilter.filter__container--title.filter__container--FiltrosSecundarios--title.filter__container--especialfilter--title {display: none;}
+
+.filter.filterAvailable {
+  padding: 10px 0;
+}
+.filterTitleSpan {
+  width: 100%;
+}

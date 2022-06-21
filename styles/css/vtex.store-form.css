@@ -1,0 +1,14 @@
+.formSubmitButton :global(.vtex-button){
+    width: 98%;
+}
+.formSubmitButton :global(.vtex-button){
+  background: #004D9D;
+  height: 44px;
+}
+
+.formSubmitButton :global(.vtex-button):hover{
+  color: black !important;
+}
+.formSubmitButton :global(.vtex-button){
+  text-transform: uppercase;
+}

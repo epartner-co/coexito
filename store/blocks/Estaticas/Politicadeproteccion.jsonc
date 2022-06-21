@@ -1,0 +1,422 @@
+{
+  "store.custom#Termin": {
+    "children": [
+      "flex-layout.row#princ",
+      "flex-layout.row#Termin"
+    ]
+  },
+
+  "rich-text#titleF": {
+    "props": {
+      "text": "## **COEXITO MAYORISTA**",
+      "blockClass": "TitleEstatics"
+    }
+  },
+
+  "flex-layout.row#Termin": {
+    "props": {
+      "blockClass": ["faq","estaticas", "segundocontainer"]
+    },
+    "children": [
+      "flex-layout.col#leftColAccesos-Term",
+      "flex-layout.col#Term"
+    ]
+  },
+  "flex-layout.col#leftColAccesos-Term": {
+    "props":{
+      "blockClass":"primeraCol",
+      "width":"20%"
+    },
+    "children": [
+      "rich-text#Politica-datos-Term",
+      "rich-text#tyc-datos-Term",
+      "rich-text#faq-datos-Term",
+      "rich-text#Nuestro-calzado-Term",
+      "rich-text#todo-sobre-pies-Term",
+      "rich-text#empleado-Term",
+      "rich-text#Nuestro-compromiso-Term",
+      "rich-text#aviso-legal-Term",
+      "rich-text#tiendas-Term"
+    ]
+  },
+    // accesos de las paginas estaticas
+    "rich-text#Politica-datos-Term": {
+      "props": {
+        "text": "[TYC](/terminos-y-condiciones)",
+        "blockClass":["links-paginas-estaticas"]
+      }
+    },
+    "rich-text#tyc-datos-Term": {
+      "props": {
+        "text": "[FAQ](/faq)",
+        "blockClass":["links-paginas-estaticas"]
+      }
+    },
+    "rich-text#faq-datos-Term": {
+      "props": {
+        "text": "[SIC](/sic)",
+        "blockClass":["links-paginas-estaticas"]
+      }
+    },
+    "rich-text#Nuestro-calzado-Term": {
+      "props": {
+        "text": "[Educate](/Educate)",
+        "blockClass":"links-paginas-estaticas"
+      }
+    },
+    "rich-text#todo-sobre-pies-Term": {
+      "props": {
+        "text": "[Politica de protección de datos](/politica-datos)",
+        "blockClass":["links-paginas-estaticas","selected"]
+      }
+    },
+    "rich-text#empleado-Term": {
+      "props": {
+        "text": "[Politica cookies](/politica-coockies)",
+        "blockClass":["links-paginas-estaticas"]
+      }
+    },
+    "rich-text#Nuestro-compromiso-Term": {
+      "props": {
+        "text": "[Politica de protección de derechos al consumidor](/nuestro-compromiso)",
+        "blockClass":["links-paginas-estaticas"]
+      }
+    },
+    "rich-text#aviso-legal-Term": {
+      "props": {
+        "text": "[Paga tu facturas](/Usuario)",
+        "blockClass":"links-paginas-estaticas"
+      }
+    },
+    "rich-text#tiendas-Term": {
+      "props": {
+        "text": "[Radicar PQRS](/pqr)",
+        "blockClass":"links-paginas-estaticas"
+      }
+    },
+
+  "flex-layout.col#Term": {
+    "children": [
+      "rich-text#Term",
+      "disclosure-layout-group#groupT",
+      "image#term"
+    ],
+    "props":{
+      "blockClass":"estaticasti"
+    }
+  },
+  "image#term": {
+    "props": {
+      "src": "https://coexitob2b.vteximg.com.br/arquivos/banner%20terminos%20y%20condiciones.png",
+      "maxHeight": 500
+    }
+  },
+  "rich-text#Term": {
+    "props": {
+      "text": "## POLÍTICAS DE POTECCIÓN DE DATOS",
+      "blockClass": "titlePreguntasfreq"
+    }
+  },
+
+  "disclosure-layout-group#groupT": {
+    "children": [
+      "disclosure-layout#firstT",
+      "disclosure-layout#secondT",
+      "disclosure-layout#thirdT",
+      "disclosure-layout#fourthT",
+      "disclosure-layout#5T",
+      "disclosure-layout#6T",
+      "disclosure-layout#7T",
+
+      "disclosure-layout#8T",
+
+      "disclosure-layout#9T"
+    ]
+  },
+
+  "disclosure-layout#firstT": {
+    "props": {
+      "animated": true,
+      "blockClass": "contendorEstaticas"
+    },
+    "children": ["disclosure-trigger#firstT", "disclosure-content#firstT"]
+  },
+  "disclosure-trigger#firstT": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["disclosure-state-indicator", "rich-text#question1T"]
+  },
+  "disclosure-content#firstT": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer1T"]
+  },
+  "rich-text#question1T": {
+    "props": {
+      "text": "ASPECTOS GENERALES"
+    }
+  },
+  "rich-text#answer1T": {
+    "props": {
+      "text": "En cumplimiento de las disposiciones contenidas en la Ley estatutaria 1581 del 2012 de Protección de Datos Personales, en el artículo 13º del Decreto No. 1377 de 2013 y demás lineamientos normativos y reglamentarios, la empresa COÉXITO S.A.S. – NIT 890.300.225-7, sociedad comercial con domicilio en la ciudad de Cali (Valle del Cauca), se permite divulgar su política relacionada con el tratamiento de datos personales, para conocimiento de sus titulares y del público en general."
+    }
+  },
+
+  "disclosure-layout#secondT": {
+    "props": {
+      "animated": true,
+      "blockClass": "contendorEstaticas"
+    },
+    "children": ["disclosure-trigger#secondT", "disclosure-content#secondT"]
+  },
+  "disclosure-trigger#secondT": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["disclosure-state-indicator", "rich-text#question2T"]
+  },
+  "disclosure-content#secondT": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer2T"]
+  },
+  "rich-text#question2T": {
+    "props": {
+      "text": "DEFINICIONES"
+    }
+  },
+  "rich-text#answer2T": {
+    "props": {
+      "text": "RESPONSABLE: el responsable del tratamiento de los datos personales, es la sociedad comercial denominada COÉXITO S.A.S., identificada con el NIT 890.300.225-7, con domicilio en la Carrera 5 No. 61A – 95 de la ciudad de Cali, Valle del Cauca, teléfono (602) 6910500, correo electrónico notificacionescoexito@coexito.com.co. \n\n TRATAMIENTO: cualquier operación o conjunto de operaciones sobre datos personales, relacionadas con  la recolección, almacenamiento, uso, circulación o supresión de los mismos. \n\n AUTORIZACIÓN: consentimiento previo, expreso e informado del titular para que el responsable pueda llevar a cabo el tratamiento de sus datos personales.  \n\n AVISO DE PRIVACIDAD: comunicación verbal o escrita generada por el responsable, dirigida al titular para el tratamiento de sus datos personales, mediante la cual se le informa acerca de la existencia de las políticas de tratamiento de información que le serán aplicables, la forma de acceder a las mismas y las finalidades del tratamiento que se pretende dar a los datos personales suministrados por el titular. \n\n BASE DE DATOS: conjunto organizado de datos personales que será objeto de tratamiento. \n\n DATO PERSONAL: cualquier información vinculada o que pueda asociarse a una o varias personas naturales determinadas o determinables. \n\n DATO PRIVADO: es el dato, que por su naturaleza íntima o reservada, sólo es relevante para el titular. \n\n DATO PÚBLICO: es el dato que no sea semiprivado, privado o sensible. Son considerados datos públicos, entre otros, los datos relativos al estado civil de las personas, a su profesión u oficio, y a su calidad de comerciante o de servidor público. Por su naturaleza, los datos públicos pueden estar contenidos, entre otros, en registros públicos, documentos públicos, gacetas, boletines oficiales y sentencias judiciales debidamente ejecutoriadas que no estén sometidas a reserva. \n\n DATO SEMIPRIVADO: es la información que no tiene naturaleza íntima, reservada, ni pública, y cuyo conocimiento o divulgación puede interesar no sólo a su titular sino a cierto sector o grupo de personas, o a la sociedad en general, como el dato financiero y crediticio de actividad comercial, o de servicios a que se refiere la Ley 1266 de 2008. \n\n DATO SENSIBLE: cualquier información que afecte la intimidad del titular o que su uso indebido puede generar su discriminación, entre los cuales están aquellos que revelen el origen racial o étnico, la orientación política, las convicciones religiosas o filosóficas, la pertenencia a sindicatos, organizaciones sociales, de derechos humanos o que promueva intereses de cualquier partido político o que garanticen los derechos y garantías de partidos políticos de oposición, así como los datos relativos a la salud, a la vida sexual y los datos biométricos. \n\n ENCARGADO DEL TRATAMIENTO: persona natural o jurídica, pública o privada, que por sí misma, o en asocio con otros, realice el tratamiento de datos personales por cuenta del responsable del tratamiento. \n\n RESPONSABLE DEL TRATAMIENTO: persona natural o jurídica, pública o privada, que por sí misma o en asocio con otros, decida sobre la base de datos o sobre el tratamiento de los datos personales. \n\n TITULAR: persona natural cuyos datos personales sean objeto de tratamiento. \n\n TRANSFERENCIA: se presenta cuando el responsable o encargado del tratamiento de los datos personales, ubicado en Colombia, envía la información o los datos personales a un receptor, que a su vez es responsable del tratamiento y se encuentra dentro o fuera del país. \n\n TRANSMISIÓN: implica la comunicación entre el responsable y el encargado, dentro o fuera del territorio de la República de Colombia, y tiene por objeto la realización de un tratamiento por el encargado por cuenta del responsable. \n\n Para el entendimiento de los términos que no se encuentren listados anteriormente, deberá remitirse a la legislación vigente, en especial a la Ley Estatutaria 1581 de 2012 y las demás normas complementarias."
+    }
+  },
+
+
+  "disclosure-layout#thirdT": {
+    "props": {
+      "animated": true,
+      "blockClass": "contendorEstaticas"
+    },
+    "children": ["disclosure-trigger#thirdT", "disclosure-content#thirdT"]
+  },
+  "disclosure-trigger#thirdT": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["disclosure-state-indicator", "rich-text#question3T"]
+  },
+  "disclosure-content#thirdT": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer3T"]
+  },
+  "rich-text#question3T": {
+    "props": {
+      "text": "PRINCIPIOS"
+    }
+  },
+  "rich-text#answer3T": {
+    "props": {
+      "text": "COÉXITO S.A.S. se encuentra comprometida en preservar y velar por el cumplimiento de los principios rectores establecidos por el Congreso de Colombia en la Ley Estatutaria 1581 del 17 de octubre de 2012, en su ejercicio del tratamiento de los datos personales de: accionistas, empleados, aspirantes, clientes, potenciales clientes, proveedores, contratistas, visitantes o cualquier otra persona natural de la cual, la empresa hubiese requerido tratar sus datos personales, garantizando la aplicación de los siguientes principios generales: \n\n ACCESO Y CIRCULACIÓN RESTRINGIDA: el tratamiento se sujeta a los límites que se derivan de la naturaleza de los datos personales y lo dispuesto en la Ley Estatutaria 1581 de 2012 y demás lineamientos normativo y reglamentarios. En este sentido, el tratamiento sólo podrá hacerse por personas autorizadas por el titular o por las personas previstas en la legislación vigente. Los datos personales, salvo la información pública, no podrán estar disponibles en Internet u otros medios de divulgación o comunicación masiva, salvo que el acceso sea técnicamente controlable para brindar un conocimiento restringido sólo a los titulares o terceros autorizados. \n\n CONFIDENCIALIDAD: todas las personas que intervengan en el tratamiento de datos personales que no tengan la naturaleza de públicos, están obligadas a garantizar la reserva de la información, inclusive después de finalizada su relación con alguna de las labores que comprenden el tratamiento, pudiendo sólo realizar suministro o comunicación de datos personales cuando ello corresponda al desarrollo de las actividades autorizadas en la Ley Estatutaria 1581 de 2012 y las demás normas complementarias. \n\n FINALIDAD: el tratamiento debe obedecer a una finalidad legítima de acuerdo con la Constitución, la Ley Estatutaria 1581 de 2012 y demás normas complementarias, la cual debe ser informada al titular. \n\n LIBERTAD: el tratamiento sólo puede ejercerse con el consentimiento, previo, expreso e informado del titular. Los datos personales no podrán ser obtenidos o divulgados sin previa autorización, o en ausencia de un mandato legal o judicial que releve el consentimiento. \n\n LEGALIDAD EN MATERIA DE TRATAMIENTO DE DATOS PERSONALES: el tratamiento es una actividad reglada que debe sujetarse a lo establecido en la Ley Estatutaria 1581 de 2012 y en las demás disposiciones que la desarrollen. \n\n SEGURIDAD: la información sujeta a tratamiento por el responsable del tratamiento o encargado del tratamiento, se deberá manejar con las medidas técnicas, humanas y administrativas que sean necesarias para otorgar seguridad a los registros evitando su adulteración, pérdida, consulta, uso o acceso no autorizado o fraudulento. \n\n TRANSPARENCIA: en el tratamiento debe garantizarse el derecho del titular a obtener del responsable del tratamiento o del encargado del tratamiento, en cualquier momento y sin restricciones, información acerca de la existencia de datos personales que le conciernan. \n\n VERACIDAD O CALIDAD: la información sujeta a tratamiento debe ser veraz, completa, exacta, actualizada, comprobable y comprensible. Se prohíbe el tratamiento de datos personales parciales, incompletos, fraccionados o que induzcan a error."
+    }
+  },
+
+
+  "disclosure-layout#fourthT": {
+    "props": {
+      "animated": true,
+      "blockClass": "contendorEstaticas"
+    },
+    "children": ["disclosure-trigger#fourthT", "disclosure-content#fourthT"]
+  },
+  "disclosure-trigger#fourthT": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["disclosure-state-indicator", "rich-text#question4T"]
+  },
+  "disclosure-content#fourthT": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer4T"]
+  },
+  "rich-text#question4T": {
+    "props": {
+      "text": "TRATAMIENTO Y FINALIDADES"
+    }
+  },
+  "rich-text#answer4T": {
+    "props": {
+      "text": "TRATAMIENTO: los datos personales podrán ser recolectados, almacenados, procesados, usados, suprimidos, actualizados y transmitidos mediante los canales de comunicación previstos por COÉXITO S.A.S. (físicos, digitales, medios magnéticos, aplicativos tecnológicos y otros). \n\n Metodología utilizada para la recolección de datos personales: los datos personales captados o que capturará COÉXITO S.A.S., podrán ser recolectados de manera: \n\n - Inequívoca: conducta o comportamiento que permite inferir sin lugar a duda, que el titular está consintiendo el tratamiento de sus datos personales, tal como: ingreso a instalaciones que anuncian contar con CCTV. \n\n - Escrita: cuando el titular de los datos personales autoriza a COÉXITO, utilizar sus datos  personales, mediante formatos físicos de autorización. \n\n Digital: cuando el titular de los datos personales autoriza a COÉXITO, utilizar sus datos mediante canales electrónicos, como formatos electrónicos, vía telefónica o casilla de aceptación. \n\n FINALIDAD GENERAL: los datos personales se usarán para el desarrollo del objeto social de COÉXITO S.A.S., igualmente para el desarrollo de las obligaciones legales, administrativas, operativas, contractuales y comerciales; para ofrecer o proveer nuestros servicios; evaluar la calidad de los mismos; enviar información comercial, publicitaria o promocional sobre  los bienes y servicios que comercializamos; tramitar la facturación, cobro, pagos y temas contables asociados; soportar procesos de auditoría interna o externa; cumplir decisiones judiciales y administrativas; realizar la transmisión de los datos personales a terceros y a los países donde se encuentren los centros de datos del proveedor del servicio quien actuará como encargado del tratamiento, si es el caso; para mantener actualizada la información de nuestros grupos de interés, de tal manera, que su finalidad sea única y exclusivamente comercial y de índole laboral en el caso de nuestros colaboradores, dar cumplimiento a requerimientos de Ley como los reportes ante las autoridades de vigilancia y control, en los casos que aplique. \n\n Las instalaciones de COÉXITO S.A.S. cuentan con sistemas de video vigilancia debidamente señalizados, por lo cual el ingreso a las instalaciones será considerado como una conducta inequívoca de autorización por parte de los titulares para ser grabados, teniendo como finalidad el control de ingreso a las instalaciones de la empresa, sucursales, agencias y en general a cualquier lugar donde COÉXITO S.A.S. realice algún tipo de actividad.  Esto tiene por objetivo el cumplimiento de medidas de seguridad establecidas por la empresa.    \n\n Para el proceso del tratamiento de los datos personales, COÉXITO S.A.S., con el propósito de cumplir con las finalidades mencionadas en este documento podrá transferir o transmitir los datos personales a otros responsables o encargados en Colombia o fuera del territorio de la República de Colombia, implementando los controles requeridos para garantizar su confidencialidad, disponibilidad e integridad, tomando como marco de referencia la norma ISO 27001:2013. \n\n FINALIDADES POR GRUPOS DE INTERÉS: COÉXITO S.A.S tiene fines específicos para los datos personales según la tipificación del titular: \n\n ASPIRANTES Y EMPLEADOS: los datos personales que sean capturados durante el proceso de selección, serán almacenados de manera física o digital y tendrán un tiempo de conservación según lineamientos organizacionales o en el caso de empleados hasta que sea necesario según requerimientos de Ley. \n\n COÉXITO S.A.S. (responsable) y sus aliados estratégicos (encargados), podrán usar los datos personales de aspirantes a vinculación laboral, empleados y trabajadores retirados para las siguientes finalidades: (i) procesos de reclutamiento, selección y archivo para efectos estadísticos; (ii) realizar directamente o a través de terceros consultas en las listas inhibitorias o restrictivas y bases de datos de la Procuraduría, Contraloría, CIFIN, Data Crédito, verificación de antecedentes, pruebas y exámenes de ingreso; (iii) gestionar el proceso de contratación; (iv) dar cumplimiento a las obligaciones legales y contractuales; (v) dar cumplimiento a la legislación laboral, de seguridad social, salud ocupacional y demás disposiciones referentes a temas laborales, actividades culturales, programas de bienestar y capacitaciones; (vi) afiliación a las diferentes entidades del Sistema General de Seguridad Social y Parafiscales;  (vii) incentivar la participación en programas de desarrollo, bienestar organizacional o campañas de endomarketing; (viii) gestionar controles de ingreso y retiro de instalaciones; (ix) gestión de pagos y descuentos, incluidas las novedades o autorizaciones que el colaborador da a entidades terceras para descuentos por nómina; (x) dar cumplimiento a requerimientos de Ley; y (xi) procesos administrativos para la gestión del recurso humano, clima laboral y ambiente de trabajo. \n\n CLIENTES Y PROVEEDORES: COÉXITO S.A.S. (responsable) y sus aliados estratégicos (encargados), podrán usar los datos personales de proveedores, ex proveedores, clientes, ex clientes y potenciales clientes, para las siguientes finalidades: (i) ordenar, catalogar, clasificar, almacenar y separar la información suministrada para su fácil identificación; (ii) consultar, comparar y evaluar toda la información que se encuentre almacenada en las bases de datos judiciales o de cualquier entidad pública de vigilancia, control o seguridad legítimamente constituida; (iii) analizar, procesar, evaluar, tratar o comparar la información suministrada, de forma directa o a través de algún aliado estratégico  y utilizarla para los fines propios del negocio a celebrarse; (iv) consultar en las listas inhibitorias o restrictivas, y demás fuentes públicas para la prevención y el control de lavado de activos, financiación del terrorismo y financiamiento de la proliferación de armas de destrucción masiva; (v) realizar el proceso de vinculación y gestión contractual de acuerdo con las políticas, procesos y procedimientos establecidos por COÉXITO; (vi) gestionar solicitudes, quejas o reclamos; (vii) realizar análisis estadísticos; (viii) envío de información de interés, material publicitario, ofertas e invitaciones a eventos programados por COÉXITO S.A.S.; (ix) dar cumplimiento a la ley colombiana o extranjera y a las órdenes de autoridades judiciales, administrativas o entidades privadas en el ejercicio de servicios públicos cuando es requerido; (x) ejecución y cumplimiento de los contratos u órdenes de trabajo que se celebren, facturación y gestión de su cobranza; (xi) emisión de certificaciones relativas a la relación del titular del dato personal con COÉXITO S.A.S.; (xii) realización de encuestas de satisfacción o evaluación de calidad de servicios/productos ofrecidos; (xiii) entrega de los datos personales a terceros a quienes se les encargue el tratamiento de los mismos; y (xiv) dar cumplimiento a requerimientos de Ley. \n\n ACCIONISTAS: COÉXITO S.A.S. (responsable) y sus aliados estratégicos (encargados), podrán usar los datos personales de accionistas con el fin de dar cumplimiento a las disposiciones de los estatutos sociales y demás acuerdos de los accionistas, adicionalmente para las siguientes finalidades: (i) la creación y registro como accionista o miembro de la Junta Directiva de la Empresa en la base de datos interna; (ii) citación de Asambleas o Juntas Directivas según corresponda; (iii) envío/recepción de mensajes con fines del desarrollo de las actividades propias como accionista y miembro de la Junta Directiva; (iv) realizar el pago de dividendos; y (v) cualquier otra finalidad que resulte en el desarrollo de funciones que le corresponden en virtud de la relación entre accionista o miembro de la Junta Directiva y la Empresa, de acuerdo con sus estatutos sociales. \n\n VISITANTES/CONTRATISTAS: COÉXITO S.A.S. (responsable) y sus aliados estratégicos (encargados), podrán usar los datos personales de los visitantes para las siguientes finalidades: (i) mantener registrado todo el personal que ingresa a las instalaciones; (ii) verificar que el personal que ingrese se encuentre afiliado a una ARL y comprobar titularidad; (iii) llevar a cabo las medidas de seguridad implementadas por la empresa; y (iv) cumplimiento de la normatividad vigente y de conformidad con la Ley Estatutaria 1581 del 2012. \n\n Tratamiento de datos personales de menores de edad: de acuerdo con lo establecido en el artículo 12 del Decreto 1377 de 2013 y el artículo 7 de la Ley Estatutaria 1581 de 2012, COÉXITO S.A.S. para el tratamiento de datos personales de niños, niñas y adolescentes cumplirá los siguientes parámetros adicionales a los ya establecidos: \n\n La autorización será otorgada por personas que estén facultadas para representar al niño, niña o adolescente. \n\n La persona encargada del niño, niña o adolescente deberá garantizarle el derecho a ser escuchado y valorar su opinión en el tratamiento de sus datos, teniendo en cuenta la madurez, autonomía y capacidad de ellos \n\n El tratamiento de los datos deberá respetar los derechos fundamentales del niño, niña o adolescente. Se debe informar de forma explícita y previa al Titular cuáles de los datos que serán objeto de tratamiento son sensibles y la finalidad del mismo. "
+    }
+  },
+  "disclosure-layout#5T": {
+    "props": {
+      "animated": true,
+      "blockClass": "contendorEstaticas"
+    },
+    "children": ["disclosure-trigger#5T", "disclosure-content#5T"]
+  },
+  "disclosure-trigger#5T": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["disclosure-state-indicator", "rich-text#5T"]
+  },
+  "disclosure-content#5T": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer5T"]
+  },
+  "rich-text#5T": {
+    "props": {
+      "text": "DERECHOS DE LOS TITULARES DE LOS DATOS PERSONALES"
+    }
+  },
+  "rich-text#answer5T": {
+    "props": {
+      "text": "Atendiendo la enunciada normatividad, el titular de los datos personales cuenta con los siguientes derechos contenidos en el artículo 8º de la Ley Estatutaria 1581 de 2012: \n Artículo 8°. Derechos de los Titulares. El Titular de los datos personales tendrá los siguientes derechos: \n Conocer, actualizar y rectificar sus datos personales frente a los Responsables del Tratamiento o Encargados del Tratamiento. Este derecho se podrá ejercer, entre otros, frente a datos parciales, inexactos, incompletos, fraccionados, que induzcan a error, o aquellos cuyo Tratamiento esté expresamente prohibido o no haya sido autorizado; \n Solicitar prueba de la autorización otorgada al Responsable del Tratamiento, salvo cuando expresamente se exceptúe como requisito para el Tratamiento, de conformidad con lo previsto en el artículo 10 de la presente Ley; \n Ser informado por el Responsable del Tratamiento o el Encargado del Tratamiento, previa solicitud, respecto del uso que le ha dado a sus datos personales; \n Presentar ante la Superintendencia de Industria y Comercio quejas por infracciones a lo dispuesto en la presente Ley y las demás normas que la modifiquen, adicionen o complementen; \n Revocar la autorización y/o solicitar la supresión del dato cuando en el Tratamiento no se respeten los principios, derechos y garantías constitucionales y legales. La revocatoria y/o supresión procederá cuando la Superintendencia de Industria y Comercio haya determinado que en el Tratamiento el Responsable o Encargado han incurrido en conductas contrarias a esta Ley y a la Constitución; \n Acceder en forma gratuita a sus datos personales que hayan sido objeto de Tratamiento. \n\n Lo anterior, sin perjuicio de todos los demás derechos consagrados en la anotada Ley Estatutaria 1581 de 2012, el Decreto No. 1377 de 2013 y demás normas reglamentarias relacionadas. \n Para los datos considerados de tipo sensible, el titular no está obligado a dar su autorización. \n\n INSTANCIA RESPONSABLE: al interior de COÉXITO S.A.S., el responsable del manejo de los datos personales es el Comité de Seguridad de la Información y el canal de contacto dispuesto es el correo electrónico protecciondedatospersonales@coexito.com.co a través del cual se atenderán las consultas, peticiones y reclamos que sobre el particular tengan sus titulares, quienes podrán hacer valer ante la empresa sus derechos a actualizar, rectificar y suprimir el dato personal y a revocar la autorización. "
+    }
+  },
+
+  "disclosure-layout#6T": {
+    "props": {
+      "animated": true,
+      "blockClass": "contendorEstaticas"
+    },
+    "children": ["disclosure-trigger#6T", "disclosure-content#6T"]
+  },
+  "disclosure-trigger#6T": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["disclosure-state-indicator", "rich-text#question6T"]
+  },
+  "disclosure-content#6T": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer6T"]
+  },
+  "rich-text#question6T": {
+    "props": {
+      "text": "DEBERES DEL RESPONSABLE DEL TRATAMIENTO DE LOS DATOS PERSONALES"
+    }
+  },
+  "rich-text#answer6T": {
+    "props": {
+      "text": "Atendiendo la Ley Estatutaria 1851 de 2012, el responsable de los datos personales deberá cumplir con los siguientes deberes, contenidos en el artículo 17º de la referida Ley. \n \n ARTÍCULO 17. Deberes de los Responsables del Tratamiento. Los Responsables del Tratamiento deberán cumplir los siguientes deberes, sin perjuicio de las demás disposiciones previstas en la presente Ley y en otras que rijan su actividad: \n\n Garantizar al Titular, en todo tiempo, el pleno y efectivo ejercicio del derecho de hábeas data. \n\n Solicitar y conservar, en las condiciones previstas en la presente Ley, copia de la respectiva autorización otorgada por el Titular. \n\n Informar debidamente al Titular sobre la finalidad de la recolección y los derechos que le asisten por virtud de la autorización otorgada. \n\n Conservar la información bajo las condiciones de seguridad necesarias para impedir su adulteración, pérdida, consulta, uso o acceso no autorizado o fraudulento. \n\n Garantizar que la información que se suministre al Encargado del Tratamiento sea veraz, completa, exacta, actualizada, comprobable y comprensible. \n\n Actualizar la información, comunicando de forma oportuna al Encargado del Tratamiento, todas las novedades respecto de los datos que previamente haya suministrado, y adoptar las demás medidas necesarias para que la información suministrada a éste se mantenga actualizada. \n\n Rectificar la información cuando sea incorrecta y comunicar lo pertinente al Encargado del Tratamiento. \n\n Suministrar al Encargado del Tratamiento, según el caso, únicamente datos cuyo Tratamiento esté previamente autorizado de conformidad con lo previsto en la presente Ley. \n\n Exigir al Encargado del Tratamiento en todo momento, el respeto a las condiciones de seguridad y privacidad de la información del Titular. \n\n Tramitar las consultas y reclamos formulados en los términos señalados en la ley y en la presente política. \n\n Adoptar un manual interno de políticas y procedimientos para garantizar el adecuado cumplimiento de la Ley, y en especial, para la atención de consultas y reclamos. \n\n Informar al Encargado del Tratamiento cuando determinada información se encuentra en discusión por parte del Titular, una vez se haya presentado la reclamación y no haya finalizado el trámite respectivo. \n\n Informar, a solicitud del Titular, sobre el uso dado a sus datos. \n\n Informar a la autoridad de protección de datos cuando se presenten violaciones a los códigos de seguridad y existan riesgos en la administración de la información de los Titulares. \n\n Cumplir las instrucciones y requerimientos que imparta la Superintendencia de Industria y Comercio. \n\n Los demás deberes establecidos en la Ley para el Responsable del tratamiento. \n\n Lo anterior, sin perjuicio de todos los demás deberes consagrados en la anotada Ley Estatutaria 1581 de 2012, el Decreto No. 1377 de 2013 y demás normas reglamentarias relacionadas."
+    }
+  },
+
+  "disclosure-layout#7T": {
+    "props": {
+      "animated": true,
+      "blockClass": "contendorEstaticas"
+    },
+    "children": ["disclosure-trigger#7T", "disclosure-content#7T"]
+  },
+  "disclosure-trigger#7T": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["disclosure-state-indicator", "rich-text#question7T"]
+  },
+  "disclosure-content#7T": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer7T"]
+  },
+  "rich-text#question7T": {
+    "props": {
+      "text": "DEBERES DEL ENCARGADO DEL TRATAMIENTO DE LOS DATOS PERSONALES"
+    }
+  },
+  "rich-text#answer7T": {
+    "props": {
+      "text": "Atendiendo la Ley Estatutaria 1581 de 2012, el responsable de los datos personales deberá cumplir con los siguientes deberes contenidos en el artículo 18º de la referida Ley. \n\n ARTÍCULO 18. Deberes de los Encargados del Tratamiento. Los Encargados del Tratamiento deberán cumplir los siguientes deberes, sin perjuicio de las demás disposiciones previstas en la presente Ley y en otras que rijan su actividad: \n Garantizar al Titular, en todo tiempo, el pleno y efectivo ejercicio del derecho de hábeas data. \n Conservar la información bajo las condiciones de seguridad necesarias para impedir su adulteración, pérdida, consulta, uso o acceso no autorizado o fraudulento. \n Realizar oportunamente la actualización, rectificación o supresión de los datos en los términos de la presente Ley. \n Actualizar la información reportada por los Responsables del Tratamiento dentro de los cinco (5) días hábiles contados a partir de su recibo. \n Tramitar las consultas y los reclamos formulados por los Titulares en los términos señalados en la presente Ley. \n Adoptar un manual interno de políticas y procedimientos para garantizar el adecuado cumplimiento de la presente Ley y, en especial, para la atención de consultas y reclamos por parte de los Titulares. \n Registrar en la base de datos la leyenda reclamo en trámite en la forma en que se regula en la presente Ley. \n Insertar en la base de datos la leyenda información en discusión judicial, una vez notificado por parte de la autoridad competente sobre procesos judiciales relacionados con la calidad del dato personal. \n Abstenerse de circular información que esté siendo controvertida por el Titular, y cuyo bloqueo haya sido ordenado por la Superintendencia de Industria y Comercio. \n Permitir el acceso a la información únicamente a las personas que pueden tener acceso a ella. \n Informar a la Superintendencia de Industria y Comercio cuando se presenten violaciones a los códigos de seguridad o existan riesgos en la administración de la información de los Titulares. \n Cumplir las instrucciones y requerimientos que imparta la Superintendencia de Industria y Comercio. \n\n Lo anterior, sin perjuicio de todos los demás deberes consagrados en la anotada Ley Estatutaria 1581 de 2012, el Decreto No. 1377 de 2013 y demás normas reglamentarias relacionadas. \n\n CONCURRENCIA DE CALIDADES: en el evento en que concurran las calidades de responsable y encargado del tratamiento sobre COÉXITO S.A.S., esta cumplirá con los deberes previstos para cada uno."
+    }
+  },
+
+
+  "disclosure-layout#8T": {
+    "props": {
+      "animated": true,
+      "blockClass": "contendorEstaticas"
+    },
+    "children": ["disclosure-trigger#8T", "disclosure-content#8T"]
+  },
+
+  "disclosure-trigger#8T": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["disclosure-state-indicator", "rich-text#question8T"]
+  },
+  "disclosure-content#8T": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer8T"]
+  },
+  "rich-text#question8T": {
+    "props": {
+      "text": "PROCEDIMIENTO PARA EL TRATAMIENTO DE LOS DATOS PERSONALES"
+    }
+  },
+  "rich-text#answer8T": {
+    "props": {
+      "text": "El canal designado para la radicación de solicitudes es el correo protecciondedatospersonales@coexito.com.co. Para facilitar el ejercicio de los derechos por parte del titular de los datos personales, el siguiente es el procedimiento establecido por COÉXITO S.A.S. \n\n Los derechos de los Titulares podrán ejercerse por las personas legitimadas y de la siguiente forma: \n Por el Titular, quien deberá acreditar su identidad en forma suficiente por los distintos medios que estén disponibles por la Empresa. \n Por sus causahabientes, quienes deberán acreditar tal calidad. \n Por el representante o apoderado del Titular, previa acreditación de la representación o apoderamiento. \n Por disposición de un ente regulatorio facultado para otorgar potestad a un tercero distinto al titular. \n Los derechos de los niños, niñas o adolescentes se ejercerán por las personas que estén facultadas para representarlos. \n Las consultas o reclamos deberán ser presentadas por el Titular de la Información o por su representante legal o apoderado. \n\n La solicitud debe estar dirigida a COÉXITO S.A.S y debe contener como mínimo los siguientes datos: \n Nombres y apellidos del titular. \n Número de identificación del titular. \n Datos de contactos del titular. \n Descripción de los hechos que dan lugar a la consulta o reclamo. \n Documentos que soportan su consulta o reclamo. \n Medio por el cual desea recibir respuesta. \n Firma del peticionario. \n\n CONSULTA: las consultas realizadas por los titulares o sus causahabientes, serán atendidas en un término máximo de diez (10) días hábiles contados a partir de la fecha de su recibo. Cuando no fuere posible atender la consulta dentro de dicho término, se informará al interesado, expresando los motivos de la demora y señalando la fecha en que se atenderá su consulta, la cual en ningún caso podrá superar los cinco (5) días hábiles siguientes al vencimiento del primer término. \n\n RECLAMOS: el titular o sus causahabientes que consideren que la información contenida en una base de datos de COÉXITO S.A.S debe ser objeto de corrección, actualización o supresión, o cuando adviertan el presunto incumplimiento de cualquiera de los deberes contenidos en la normativa de protección de datos personales, podrán presentar un reclamo ante COÉXITO S.A.S. \n\n El término máximo para atender el reclamo será de quince (15) días hábiles contados a partir del día siguiente a la fecha del recibo del reclamo completo. Cuando no fuere posible atender el reclamo dentro de dicho término, se informará al interesado los motivos de la demora y la fecha en que se atenderá su reclamo, y en ningún caso esto podrá superar los ocho (8) días hábiles siguientes al vencimiento del primer término. \n\n Si el reclamo se encuentra incompleto, se requerirá al interesado dentro de los cinco (5) días siguientes a la recepción del reclamo para que subsane las fallas; transcurridos dos (2) meses desde la fecha del requerimiento, sin que el solicitante presente la información requerida, se entenderá que ha desistido del reclamo. \n\n Una vez recibido el reclamo completo, se incluirá en la base de datos una leyenda que diga reclamo en trámite y el motivo del mismo, en un término no mayor a dos (2) días hábiles; dicha leyenda deberá mantenerse hasta que el reclamo sea decidido. \n\n La supresión de información no procede cuando el Titular tenga el deber legal o un vínculo contractual de permanecer en la base de datos, o por exigencia de alguna normatividad legal."
+    }
+  },
+
+
+  "disclosure-layout#9T": {
+    "props": {
+      "animated": true,
+      "blockClass": "contendorEstaticas"
+    },
+    "children": ["disclosure-trigger#8T", "disclosure-content#8T"]
+  },
+
+  "disclosure-trigger#9T": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["disclosure-state-indicator", "rich-text#question9T"]
+  },
+  "disclosure-content#9T": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer9T"]
+  },
+  "rich-text#question9T": {
+    "props": {
+      "text": "VIGENCIA"
+    }
+  },
+  "rich-text#answer9T": {
+    "props": {
+      "text": "La presente política de tratamiento de información ha entrado en vigencia de conformidad con las exigencias contenidas en la Ley Estatutaria 1581 de 2012 y demás normas reglamentarias relacionadas. \n\n Una vez cumplida(s) la(s) finalidad(es) del tratamiento de los datos personales, COÉXITO S.A.S. realizará la supresión de los datos personales almacenados, a no ser que estos deban conservarse para el cumplimiento de una obligación legal o contractual."
+    }
+  }
+
+
+}

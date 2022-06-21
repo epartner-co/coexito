@@ -1,0 +1,46 @@
+{
+    "store.custom#notienesacceso": {
+      "blocks": [
+        "info-card#bannernotacces",
+        "info-card#bannersecundarionotacces",
+        "rich-text#title-notaccesM",
+        "rich-text#title-notaccesB"
+      ]
+    },
+    "info-card#bannernotacces":{
+      "props":{
+        "id":"texting",
+        "imageUrl":"https://impormedical.vteximg.com.br/arquivos/bannerestaticab2c2.png",
+        "callToActionUrl": "#",
+        "textPosition": "CENTER",
+        "textAlignment": "CENTER",
+        "blockClass":"bannerC"
+      }
+    },
+    "info-card#bannersecundarionotacces":{
+      "props":{
+        "id":"texting",
+        "imageUrl":"",
+        "callToActionUrl": "#",
+        "textPosition": "CENTER",
+        "textAlignment": "CENTER",
+        "blockClass":"bannerC"
+      }
+    },
+    "rich-text#title-notaccesM": {
+      "props": {
+        "text":
+        "# No tienes acceso para realizar compras, Comunicate con nosotros para incluirte como cliente \n en el botón inferior puedes volver al catálogo",
+        "blockClass": "textodene"
+      }
+    },
+    "rich-text#title-notaccesB": {
+      "props": {
+        "text":
+        "[Volver al Catalogo](https://www.impormedical.com.co/)",
+        "blockClass": "botonnotacces"
+      }
+    }
+    
+   
+  }

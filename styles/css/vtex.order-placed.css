@@ -1,0 +1,157 @@
+.confirmationIconWrapper {
+    display: none;
+}
+.section--notices {
+    display: none;
+}
+.section--bank-invoice {
+    display: none;
+}
+.orderOptionsWrapper {
+    display: none;
+}
+.productList {
+    display:none;
+}
+.orderSoldBy {
+    display: none;
+}
+.section--paymentMethods {
+    width: 100%;
+    border-radius: 5px;
+    padding: 0px;
+    border: 0;
+}
+.package--delivery {
+    margin: 0;
+}
+.section--productList .productList {
+    display: block;
+}
+.section--productList .packageHeaderColumn{
+    display: none;
+}
+.section--productList {
+    margin: 30px 0 50px 0;
+    border: 0;
+    background: white;
+    border: 1px solid #D3D3D3;
+    border-radius: 5px;
+    padding: 10px 0;
+}
+.productList  {
+    width: 100%;
+    padding: 0 20px;
+}
+.productInfoColumn {
+    justify-content: center;
+    color: #808080;
+}
+.productPrice {
+    display: flex;
+    align-items: center;
+    font-family: 'Inter';
+    color: #808080;
+}
+.confirmationTitle {
+    color: #182841;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.confirmationTitle::after {
+    content: "";
+    background: #ED6B10;
+    width: 170px;
+    height: 3px;
+    display: block;
+    margin-left: 39%;
+}
+.confirmationMessage {
+    color: #363636;
+    font-weight: 500;
+    font-size: 13px;
+}
+.orderNumber {
+    font-size: 15px;
+}
+.packageDeliveryTitle{
+    color: #004D9D;
+    font-weight: bold;
+    font-size: 18px;
+}
+.orderPlacedMainWrapper {
+    width: 90%;
+    margin-left: 6%;
+    padding-left: 75px;
+}
+.section--paymentMethods::before {
+    content: "Pago";
+    color: #004D9D;
+    font-weight: bold;
+    font-size: 18px;
+}
+:global(.vtex-profile-form-3-x-profileSummary)::before {
+    content: "Datos";
+    color: #004D9D;
+    font-weight: bold;
+    font-size: 18px;
+}
+.orderPlacedWrapper {
+    padding: 0;
+    background: url(https://coexitob2b.vteximg.com.br/arquivos/imagen-back-check.png);
+    background-size: 100%;
+}
+
+@media (max-width: 900px) {
+    .orderPlacedMainWrapper {
+        width: 100%;
+        margin-left: 0;
+        padding:0  10px !important;
+    }
+
+    .confirmationTitle {
+        font-size: 18px;
+    }
+    .confirmationTitle::after {
+        content: "";
+        background: #ED6B10;
+        width: 170px;
+        height: 3px;
+        display: block;
+        margin-left: 17%;
+    }
+    .productWrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .productInfoColumn {
+        height: 50px;
+        width: 50%;
+        text-align: left;
+        color: black;
+    }
+    .productName {
+        color: black;
+        font-size: 15px;
+    }
+    .productPrice {
+        display: flex;
+        align-items: center;
+        font-family: 'Inter';
+        color: #808080;
+        position: absolute;
+        right: 36px;
+        margin-top: 22%;
+        color: #004D9D;
+        font-weight: bold;
+    }
+    .productListItem::before{
+        content: "Producto";
+        color: #004D9D;
+        font-weight: bold;
+        font-size: 19px;
+    }
+    .productQuantity {
+        display: block;
+    }
+}
